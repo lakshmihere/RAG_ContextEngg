@@ -9,33 +9,42 @@ The series of capstone checkpoints guide the development of the Research Paper N
 introduced in the corresponding module. Only one GitHub repository is used for the capstone project throughout the program. Because each capstone checkpoint builds 
 on the same system, as we continue using this repository to organize, document, and submit the work as the project evolves.
 
-**Folder Layout**
+## Folder Layout
 
+```text
 Capstone_RPN/
 ├── Checkpoint 1.1/
-│   ├── Solution 1       ← learners 
-│   └── Worksheet 1      ← the corpus
-└── Checkpoint 2.1/
-|   ├── Solution 2       ← learners 
-|   └── Worksheet 2      ← the corpus
+│   ├── Solution 1        ← learners
+│   └── Worksheet 1       ← the corpus
+│
+├── Checkpoint 2.1/
+│   ├── Solution 2        ← learners
+│   └── Worksheet 2       ← the corpus
+│
 ├── Checkpoint 3.1/
-│   ├── Solution 3       ← learners 
-│   └── Worksheet 3      ← the corpus
+│   ├── Solution 3        ← learners
+│   └── Worksheet 3       ← the corpus
+│
 ├── Checkpoint 4.1/
-│   ├── Solution 4       ← learners 
-│   └── Worksheet 4      ← the corpus
+│   ├── Solution 4        ← learners
+│   └── Worksheet 4       ← the corpus
+│
 ├── Checkpoint 5.1/
-│   ├── Solution 5       ← learners 
-│   └── Worksheet 5      ← the corpus
+│   ├── Solution 5        ← learners
+│   └── Worksheet 5       ← the corpus
+│
 ├── Checkpoint 6.1/
-│   ├── Solution 6       ← learners 
-│   └── Worksheet 6      ← the corpus
+│   ├── Solution 6        ← learners
+│   └── Worksheet 6       ← the corpus
+│
 ├── Checkpoint 7.1/
-│   ├── Solution 7       ← learners 
-│   └── Worksheet 7      ← the corpus
-├── Checkpoint 8.1/
-    ├── Solution 8       ← learners 
-    └── Worksheet 8      ← the corpus
+│   ├── Solution 7        ← learners
+│   └── Worksheet 7       ← the corpus
+│
+└── Checkpoint 8.1/
+    ├── Solution 8        ← learners
+    └── Worksheet 8       ← the corpus
+```
 
 
 

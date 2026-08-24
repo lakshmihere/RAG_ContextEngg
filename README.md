@@ -3,6 +3,7 @@ Develop a conversational interface that helps users answer questions about a col
 from individual papers, compare ideas across multiple papers, identify trends or changes over time, and provide direct quotations from source documents in support 
 of its responses. This scenario is intended to model retrieval systems that support research, knowledge management, policy analysis, and other document-intensive 
 environments.
+
 **Capstone Project — Wikipedia Retrieval Engine:**
 Develop a conversational interface that answers questions about significant people, places, and topics using information 
 retrieved from a collection of Wikipedia articles. The system should support both single-document and multi-document questions and provide direct quotations from source 

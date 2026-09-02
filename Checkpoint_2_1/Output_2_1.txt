@@ -1,0 +1,87 @@
+Loaded 6 documents
+Adolf_Hitler.html 178252
+Emirates_(airline).html 102096
+Empire_State_Building.html 200418
+Margaret_Thatcher.html 206825
+Steve_Jobs.html 149790
+Hallstatt.html 22515
+Loading existing vector DB from chroma_db/
+Hybrid retriever ready over 6 Wikipedia articles (BM25 weight=0.5, vector weight=0.5).
+Checkpoint 2.1 — hybrid retrieval (BM25 + vector)  |  scenario: wikipedia
+
+========================================================================
+QUERY 1: According to the Wikipedia article on the Empire State Building, when was the building completed and when did it officially open? Quote the relevant sentence from the article.
+  retrieved:
+    1. Empire_State_Building.html | hybrid score = 0.9744
+    2. Steve_Jobs.html | hybrid score = 0.5986
+    3. Margaret_Thatcher.html | hybrid score = 0.5000
+
+  answer: The article says: “Construction started on March 17, 1930, and the building opened thirteen and a half months afterward on May 1, 1931.” It also lists the building as “Completed April 11, 1931” and “Opened May 1, 1931.”
+
+========================================================================
+QUERY 2: Quote, word for word, the opening sentence of the Wikipedia article on Steve Jobs.
+  retrieved:
+    1. Steve_Jobs.html | hybrid score = 1.0000
+    2. Margaret_Thatcher.html | hybrid score = 0.1911
+    3. Adolf_Hitler.html | hybrid score = 0.1096
+
+  answer: “Steven Paul Jobs (February 24, 1955 – October 5, 2011) was an American businessman, inventor, [ 2 ] and investor.”
+
+========================================================================
+QUERY 3: According to the Wikipedia article on Margaret Thatcher, what was her educational background before entering politics? Quote the relevant passage.
+  retrieved:
+    1. Margaret_Thatcher.html | hybrid score = 1.0000
+    2. Adolf_Hitler.html | hybrid score = 0.2730
+    3. Empire_State_Building.html | hybrid score = 0.2639
+
+  answer: According to the article, Margaret Thatcher studied at Oxford before entering politics. The relevant passage says:
+
+> “Thatcher studied chemistry at Somerville College, Oxford, and worked briefly as a research chemist before becoming a barrister.”
+
+It also notes in the early life section:
+
+> “Roberts graduated in 1947 with a second-class honours degree in chemistry, and in 1950 also received the degree of Master of Arts.”
+
+So, her educational background was chemistry at Somerville College, Oxford, where she earned a second-class honours degree, later receiving an MA.
+
+========================================================================
+QUERY 4: Compare the leadership roles and historical significance of Margaret Thatcher and Adolf Hitler as described in their respective Wikipedia articles. Support the comparison with a direct quote from each article.
+  retrieved:
+    1. Adolf_Hitler.html | hybrid score = 0.9694
+    2. Margaret_Thatcher.html | hybrid score = 0.9556
+    3. Steve_Jobs.html | hybrid score = 0.4758
+
+  answer: Margaret Thatcher and Adolf Hitler held very different kinds of leadership roles and had very different historical significance.
+
+- **Margaret Thatcher** was a democratic political leader in the United Kingdom. Her article says she “**served as Prime Minister of the United Kingdom from 1979 to 1990 and Leader of the Conservative Party from 1975 to 1990**.” Her historical significance is described mainly in terms of domestic and global policy change: “**She was the longest-serving British prime minister of the 20th century and the first woman to hold the office**,” and her tenure “**constituted a realignment towards neoliberal policies in Britain**.”
+
+- **Adolf Hitler** was a dictator of Germany. His article says he was “**the dictator of Germany during the Nazi era from 1933 until his suicide in 1945**,” and that he “**replaced [Hindenburg] as head of state and thereafter transformed Germany into a totalitarian dictatorship**.” His historical significance is tied to World War II and the Holocaust: “**Germany's invasion of Poland on 1 September 1939 under his leadership marked the outbreak of the Second World War**,” and he was “**central to the perpetration of the Holocaust**.”
+
+In short, Thatcher is presented as a long-serving elected leader associated with major policy and political change, while Hitler is presented as a dictatorial ruler whose legacy is defined by war, genocide, and totalitarian rule.
+
+========================================================================
+QUERY 5: According to the Wikipedia article on Emirates airline, when was Emirates founded, where is it based, and who owns it? Quote the relevant sentence or sentences.
+  retrieved:
+    1. Emirates_(airline).html | hybrid score = 1.0000
+    2. Empire_State_Building.html | hybrid score = 0.2896
+    3. Steve_Jobs.html | hybrid score = 0.2891
+
+  answer: Emirates was founded on **15 March 1985**, is **based in Al Garhoud, Dubai**, and is **owned by the government of Dubai’s Investment Corporation of Dubai**.
+
+Relevant quote:
+- “**Emirates was founded on 15 March 1985**…”
+- “**Based in Al Garhoud, Dubai, the airline is a subsidiary of The Emirates Group, which is owned by the government of Dubai's Investment Corporation of Dubai.**”
+
+========================================================================
+QUERY 6: According to the Hallstatt article, how many levels does the Hallstatt salt mine comprise, and what is the elevation range of its shafts?
+  retrieved:
+    1. Hallstatt.html | hybrid score = 1.0000
+    2. Empire_State_Building.html | hybrid score = 0.2767
+    3. Adolf_Hitler.html | hybrid score = 0.1928
+
+  answer: According to the Hallstatt article, the Hallstatt salt mine “comprises **21 levels** and several smaller shafts ranging from **514 metres (1,686 ft)** above sea level ... to an elevation of around **1,267 m (4,157 ft)**.”
+
+
+
+========================================================================
+Done. Use the hybrid retrieved document results above as evidence in your writeup.

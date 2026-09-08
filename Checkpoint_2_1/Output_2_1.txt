@@ -1,87 +1,112 @@
-Loaded 6 documents
-Adolf_Hitler.html 178252
-Emirates_(airline).html 102096
-Empire_State_Building.html 200418
-Margaret_Thatcher.html 206825
-Steve_Jobs.html 149790
-Hallstatt.html 22515
-Loading existing vector DB from chroma_db/
-Hybrid retriever ready over 6 Wikipedia articles (BM25 weight=0.5, vector weight=0.5).
+Found 2419 Wikipedia HTML files.
+Successfully loaded 2419 Wikipedia documents.
+...Baby_One_More_Time_(song).html          101622 characters
+100_metres.html                             87519 characters
+13_(2010_film).html                         12024 characters
+1580.html                                   22923 characters
+1819.html                                   23697 characters
+1828_United_States_presidential_election.html    61331 characters
+1844_Susilva.html                            8631 characters
+1854_Broad_Street_cholera_outbreak.html     40494 characters
+1869_Newfoundland_general_election.html     11917 characters
+1900–01_Football_League.html                14501 characters
+... plus 2409 additional documents.
+Loading existing vector DB from wikipedia_chroma_full/
+Hybrid retriever ready over 2419 Wikipedia articles (BM25 weight=0.4, vector weight=0.6).
 Checkpoint 2.1 — hybrid retrieval (BM25 + vector)  |  scenario: wikipedia
 
 ========================================================================
 QUERY 1: According to the Wikipedia article on the Empire State Building, when was the building completed and when did it officially open? Quote the relevant sentence from the article.
   retrieved:
-    1. Empire_State_Building.html | hybrid score = 0.9744
-    2. Steve_Jobs.html | hybrid score = 0.5986
-    3. Margaret_Thatcher.html | hybrid score = 0.5000
+    1. Empire_State_Building.html | hybrid score = 0.6000
+    2. India.html | hybrid score = 0.4000
+    3. European_Convention_on_Human_Rights.html | hybrid score = 0.3556
+    4. List_of_tallest_buildings_in_New_York_City.html | hybrid score = 0.3521
+    5. Shreve,_Lamb_&_Harmon.html | hybrid score = 0.3512
+    6. United_States_Capitol.html | hybrid score = 0.3217
 
-  answer: The article says: “Construction started on March 17, 1930, and the building opened thirteen and a half months afterward on May 1, 1931.” It also lists the building as “Completed April 11, 1931” and “Opened May 1, 1931.”
+  answer: The article says the Empire State Building was “**Completed April 11, 1931**” and “**Opened May 1, 1931**.”
+
+Relevant sentence from the article:  
+> “**Construction started on March 17, 1930, and the building opened thirteen and a half months afterward on May 1, 1931.**”
 
 ========================================================================
 QUERY 2: Quote, word for word, the opening sentence of the Wikipedia article on Steve Jobs.
   retrieved:
-    1. Steve_Jobs.html | hybrid score = 1.0000
-    2. Margaret_Thatcher.html | hybrid score = 0.1911
-    3. Adolf_Hitler.html | hybrid score = 0.1096
+    1. Steve_Jobs.html | hybrid score = 0.7550
+    2. Makassarese_language.html | hybrid score = 0.4000
+    3. Marshall_McLuhan.html | hybrid score = 0.3819
+    4. Apple_Inc..html | hybrid score = 0.3420
+    5. IPhone_(1st_generation).html | hybrid score = 0.2328
+    6. Harry_Potter_and_the_Deathly_Hallows.html | hybrid score = 0.2155
 
   answer: “Steven Paul Jobs (February 24, 1955 – October 5, 2011) was an American businessman, inventor, [ 2 ] and investor.”
 
 ========================================================================
 QUERY 3: According to the Wikipedia article on Margaret Thatcher, what was her educational background before entering politics? Quote the relevant passage.
   retrieved:
-    1. Margaret_Thatcher.html | hybrid score = 1.0000
-    2. Adolf_Hitler.html | hybrid score = 0.2730
-    3. Empire_State_Building.html | hybrid score = 0.2639
+    1. Margaret_Thatcher.html | hybrid score = 0.8715
+    2. Edward_Heath.html | hybrid score = 0.6342
+    3. John_Major.html | hybrid score = 0.4912
+    4. Theresa_May.html | hybrid score = 0.3219
+    5. Liz_Truss.html | hybrid score = 0.3165
+    6. Guildford_Four_and_Maguire_Seven.html | hybrid score = 0.2707
 
-  answer: According to the article, Margaret Thatcher studied at Oxford before entering politics. The relevant passage says:
+  answer: According to the article, Margaret Thatcher:
 
-> “Thatcher studied chemistry at Somerville College, Oxford, and worked briefly as a research chemist before becoming a barrister.”
+- “studied chemistry at Somerville College, Oxford”
+- “graduated in 1947 with a second-class honours degree in chemistry”
+- and “in 1950 also received the degree of Master of Arts”
 
-It also notes in the early life section:
-
-> “Roberts graduated in 1947 with a second-class honours degree in chemistry, and in 1950 also received the degree of Master of Arts.”
-
-So, her educational background was chemistry at Somerville College, Oxford, where she earned a second-class honours degree, later receiving an MA.
+The relevant passage says: **“Thatcher studied chemistry at Somerville College, Oxford, and worked briefly as a research chemist before becoming a barrister.”** It also states that she “**graduated in 1947 with a second-class honours degree in chemistry**.”
 
 ========================================================================
 QUERY 4: Compare the leadership roles and historical significance of Margaret Thatcher and Adolf Hitler as described in their respective Wikipedia articles. Support the comparison with a direct quote from each article.
   retrieved:
-    1. Adolf_Hitler.html | hybrid score = 0.9694
-    2. Margaret_Thatcher.html | hybrid score = 0.9556
-    3. Steve_Jobs.html | hybrid score = 0.4758
+    1. Adolf_Hitler.html | hybrid score = 0.8623
+    2. Margaret_Thatcher.html | hybrid score = 0.8473
+    3. Hermann_Göring.html | hybrid score = 0.5156
+    4. Luftwaffe.html | hybrid score = 0.4730
+    5. Last_will_and_testament_of_Adolf_Hitler.html | hybrid score = 0.4134
+    6. Heinz_Lorenz.html | hybrid score = 0.3440
 
   answer: Margaret Thatcher and Adolf Hitler held very different kinds of leadership roles and had very different historical significance.
 
-- **Margaret Thatcher** was a democratic political leader in the United Kingdom. Her article says she “**served as Prime Minister of the United Kingdom from 1979 to 1990 and Leader of the Conservative Party from 1975 to 1990**.” Her historical significance is described mainly in terms of domestic and global policy change: “**She was the longest-serving British prime minister of the 20th century and the first woman to hold the office**,” and her tenure “**constituted a realignment towards neoliberal policies in Britain**.”
+- **Margaret Thatcher** was described as “**Prime Minister of the United Kingdom from 1979 to 1990**” and “**the first woman to hold the office**.” Her article emphasizes domestic policy, economic change, and long-term political impact in Britain. It also says her tenure “**constituted a realignment towards neoliberal policies in Britain**.”
 
-- **Adolf Hitler** was a dictator of Germany. His article says he was “**the dictator of Germany during the Nazi era from 1933 until his suicide in 1945**,” and that he “**replaced [Hindenburg] as head of state and thereafter transformed Germany into a totalitarian dictatorship**.” His historical significance is tied to World War II and the Holocaust: “**Germany's invasion of Poland on 1 September 1939 under his leadership marked the outbreak of the Second World War**,” and he was “**central to the perpetration of the Holocaust**.”
+- **Adolf Hitler** was described as “**the dictator of Germany during the Nazi era from 1933 until his suicide in 1945**” and as someone who “**rose to power as the leader of the Nazi Party**.” His article presents him as central to World War II and the Holocaust, saying he was “**central to the perpetration of the Holocaust**” and that his “**aggressive, expansionist foreign policy is considered the primary cause of World War II in Europe**.”
 
-In short, Thatcher is presented as a long-serving elected leader associated with major policy and political change, while Hitler is presented as a dictatorial ruler whose legacy is defined by war, genocide, and totalitarian rule.
+In short: Thatcher was a democratically elected prime minister associated with major policy and ideological change, while Hitler was a dictatorial leader whose rule led to war and genocide.
 
 ========================================================================
 QUERY 5: According to the Wikipedia article on Emirates airline, when was Emirates founded, where is it based, and who owns it? Quote the relevant sentence or sentences.
   retrieved:
     1. Emirates_(airline).html | hybrid score = 1.0000
-    2. Empire_State_Building.html | hybrid score = 0.2896
-    3. Steve_Jobs.html | hybrid score = 0.2891
+    2. United_Arab_Emirates.html | hybrid score = 0.6466
+    3. Economy_of_the_United_Arab_Emirates.html | hybrid score = 0.4171
+    4. Boeing_777.html | hybrid score = 0.3188
+    5. Abu_Dhabi_United_Group.html | hybrid score = 0.2180
+    6. Lists_of_airports.html | hybrid score = 0.1833
 
-  answer: Emirates was founded on **15 March 1985**, is **based in Al Garhoud, Dubai**, and is **owned by the government of Dubai’s Investment Corporation of Dubai**.
+  answer: According to the article, Emirates was:
 
-Relevant quote:
-- “**Emirates was founded on 15 March 1985**…”
-- “**Based in Al Garhoud, Dubai, the airline is a subsidiary of The Emirates Group, which is owned by the government of Dubai's Investment Corporation of Dubai.**”
+- **Founded:** “**Founded 15 March 1985**”
+- **Based:** “**Based in Al Garhoud, Dubai, the airline is a subsidiary of The Emirates Group**”
+- **Owned by:** “**The Emirates Group, which is owned by the government of Dubai's Investment Corporation of Dubai**”
+
+So, in one quoted passage:  
+“**Founded 15 March 1985 ... Based in Al Garhoud, Dubai, the airline is a subsidiary of The Emirates Group, which is owned by the government of Dubai's Investment Corporation of Dubai.**”
 
 ========================================================================
 QUERY 6: According to the Hallstatt article, how many levels does the Hallstatt salt mine comprise, and what is the elevation range of its shafts?
   retrieved:
     1. Hallstatt.html | hybrid score = 1.0000
-    2. Empire_State_Building.html | hybrid score = 0.2767
-    3. Adolf_Hitler.html | hybrid score = 0.1928
+    2. Memory_of_Mankind.html | hybrid score = 0.2595
+    3. Treasury_of_Atreus.html | hybrid score = 0.1940
+    4. Matterhorn.html | hybrid score = 0.1451
+    5. List_of_highest_mountains_on_Earth.html | hybrid score = 0.1398
+    6. Lake_Peigneur.html | hybrid score = 0.1174
 
-  answer: According to the Hallstatt article, the Hallstatt salt mine “comprises **21 levels** and several smaller shafts ranging from **514 metres (1,686 ft)** above sea level ... to an elevation of around **1,267 m (4,157 ft)**.”
-
-
+  answer: According to the Hallstatt article, the Hallstatt salt mine "comprises **21 levels**" and its shafts range from **514 metres above sea level** to **around 1,267 m**.
 
 ========================================================================
-Done. Use the hybrid retrieved document results above as evidence in your writeup.

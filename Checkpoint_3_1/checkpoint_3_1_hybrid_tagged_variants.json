@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What role did Steve Jobs play in the development of Apple, according to his Wikipedia article?",
+    "grading_notes": "Identifies Steve Jobs as a co-founder and major leader of Apple and describes his important role in the company's development and products.",
+    "question_type": "original"
+  },
+  {
+    "question": "What role did Steve Jobs have in Apple’s development, according to his Wikipedia article?",
+    "grading_notes": "Identifies Steve Jobs as a co-founder and major leader of Apple and describes his important role in the company's development and products.",
+    "question_type": "variant"
+  },
+  {
+    "question": "According to his Wikipedia article, what part did Steve Jobs play in developing Apple?",
+    "grading_notes": "Identifies Steve Jobs as a co-founder and major leader of Apple and describes his important role in the company's development and products.",
+    "question_type": "variant"
+  },
+  {
+    "question": "How is Steve Jobs’ role in the development of Apple described in his Wikipedia article?",
+    "grading_notes": "Identifies Steve Jobs as a co-founder and major leader of Apple and describes his important role in the company's development and products.",
+    "question_type": "variant"
+  },
+  {
+    "question": "According to the Wikipedia article on Hallstatt, where is Hallstatt located and what is it particularly known for?",
+    "grading_notes": "States that Hallstatt is in Austria and identifies its historical significance, especially its association with salt mining and/or the prehistoric Hallstatt culture.",
+    "question_type": "original"
+  },
+  {
+    "question": "Where is Hallstatt located, and what is it especially known for according to the Wikipedia article?",
+    "grading_notes": "States that Hallstatt is in Austria and identifies its historical significance, especially its association with salt mining and/or the prehistoric Hallstatt culture.",
+    "question_type": "variant"
+  },
+  {
+    "question": "In the Wikipedia article on Hallstatt, where is it situated and what is it particularly famous for?",
+    "grading_notes": "States that Hallstatt is in Austria and identifies its historical significance, especially its association with salt mining and/or the prehistoric Hallstatt culture.",
+    "question_type": "variant"
+  },
+  {
+    "question": "According to Hallstatt’s Wikipedia page, where is Hallstatt located, and what is it best known for?",
+    "grading_notes": "States that Hallstatt is in Austria and identifies its historical significance, especially its association with salt mining and/or the prehistoric Hallstatt culture.",
+    "question_type": "variant"
+  },
+  {
+    "question": "According to the Wikipedia article on Emirates airline, when was Emirates founded, where is it based, and who owns it? Quote the relevant sentence or sentences.",
+    "grading_notes": "States that Emirates was founded in 1985, is based in Dubai, United Arab Emirates, and is owned by the Emirates Group, and includes a relevant supporting quote or quotes from the article.",
+    "question_type": "original"
+  },
+  {
+    "question": "According to the Wikipedia article on Emirates airline, when was Emirates founded, where is it headquartered, and who owns it? Quote the relevant sentence or sentences.",
+    "grading_notes": "States that Emirates was founded in 1985, is based in Dubai, United Arab Emirates, and is owned by the Emirates Group, and includes a relevant supporting quote or quotes from the article.",
+    "question_type": "variant"
+  },
+  {
+    "question": "From the Wikipedia article on Emirates airline, what year was Emirates founded, where is it based, and who owns the airline? Please quote the relevant sentence or sentences.",
+    "grading_notes": "States that Emirates was founded in 1985, is based in Dubai, United Arab Emirates, and is owned by the Emirates Group, and includes a relevant supporting quote or quotes from the article.",
+    "question_type": "variant"
+  },
+  {
+    "question": "In the Wikipedia article about Emirates airline, when was Emirates established, where is its base, and who is its owner? Quote the sentence or sentences that answer this.",
+    "grading_notes": "States that Emirates was founded in 1985, is based in Dubai, United Arab Emirates, and is owned by the Emirates Group, and includes a relevant supporting quote or quotes from the article.",
+    "question_type": "variant"
+  },
+  {
+    "question": "How were Margaret Thatcher and Adolf Hitler connected through the major European political and military events that shaped the periods in which they rose to prominence?",
+    "grading_notes": "Recognizes that they belonged to different historical periods and does not invent a direct relationship; a correct answer must explain that establishing broader connections across events would require combining information from multiple Wikipedia articles.",
+    "question_type": "original"
+  },
+  {
+    "question": "How were Margaret Thatcher and Adolf Hitler linked by the major political and military events in Europe that influenced their rise to prominence?",
+    "grading_notes": "Recognizes that they belonged to different historical periods and does not invent a direct relationship; a correct answer must explain that establishing broader connections across events would require combining information from multiple Wikipedia articles.",
+    "question_type": "variant"
+  },
+  {
+    "question": "In what way were Margaret Thatcher and Adolf Hitler connected through the key European political and military developments that shaped the eras they emerged in?",
+    "grading_notes": "Recognizes that they belonged to different historical periods and does not invent a direct relationship; a correct answer must explain that establishing broader connections across events would require combining information from multiple Wikipedia articles.",
+    "question_type": "variant"
+  },
+  {
+    "question": "How did the major European political and military events of their times connect Margaret Thatcher and Adolf Hitler as they rose to prominence?",
+    "grading_notes": "Recognizes that they belonged to different historical periods and does not invent a direct relationship; a correct answer must explain that establishing broader connections across events would require combining information from multiple Wikipedia articles.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Compare the leadership roles and historical significance of Margaret Thatcher and Adolf Hitler as described in their respective Wikipedia articles.",
+    "grading_notes": "Identifies Margaret Thatcher as a democratic British prime minister and Adolf Hitler as the dictator of Nazi Germany, and clearly distinguishes their substantially different political roles and historical legacies.",
+    "question_type": "original"
+  },
+  {
+    "question": "How do Margaret Thatcher and Adolf Hitler differ in their leadership roles and historical importance according to their Wikipedia articles?",
+    "grading_notes": "Identifies Margaret Thatcher as a democratic British prime minister and Adolf Hitler as the dictator of Nazi Germany, and clearly distinguishes their substantially different political roles and historical legacies.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Compare the leadership positions and historical significance of Margaret Thatcher and Adolf Hitler as presented in their Wikipedia pages.",
+    "grading_notes": "Identifies Margaret Thatcher as a democratic British prime minister and Adolf Hitler as the dictator of Nazi Germany, and clearly distinguishes their substantially different political roles and historical legacies.",
+    "question_type": "variant"
+  },
+  {
+    "question": "What are the differences between Margaret Thatcher and Adolf Hitler in terms of their roles as leaders and their historical impact, based on their Wikipedia articles?",
+    "grading_notes": "Identifies Margaret Thatcher as a democratic British prime minister and Adolf Hitler as the dictator of Nazi Germany, and clearly distinguishes their substantially different political roles and historical legacies.",
+    "question_type": "variant"
+  },
+  {
+    "question": "According to the Wikipedia article on the Empire State Building, when was the building completed and when did it officially open?",
+    "grading_notes": "States that the Empire State Building was completed on April 11, 1931 and officially opened on May 1, 1931.",
+    "question_type": "original"
+  },
+  {
+    "question": "According to the Wikipedia article on the Empire State Building, when was it finished and when did it officially open?",
+    "grading_notes": "States that the Empire State Building was completed on April 11, 1931 and officially opened on May 1, 1931.",
+    "question_type": "variant"
+  },
+  {
+    "question": "What does the Wikipedia article on the Empire State Building say about its completion date and official opening date?",
+    "grading_notes": "States that the Empire State Building was completed on April 11, 1931 and officially opened on May 1, 1931.",
+    "question_type": "variant"
+  },
+  {
+    "question": "In the Empire State Building Wikipedia article, when was the building completed, and when was its official opening?",
+    "grading_notes": "States that the Empire State Building was completed on April 11, 1931 and officially opened on May 1, 1931.",
+    "question_type": "variant"
+  }
+]

@@ -1,0 +1,589 @@
+Found 10 Wikipedia TXT files.
+Successfully loaded 10 Wikipedia text documents.
+85th_Academy_Awards.txt                         141675 characters
+Adolf_Hitler.txt                                411162 characters
+Bird.txt                                        384010 characters
+Emirates_(airline).txt                          224680 characters
+Empire_State_Building.txt                       442086 characters
+Hallstatt.txt                                    54011 characters
+Margaret_Thatcher.txt                           504839 characters
+Mytilidae.txt                                    36533 characters
+Queen_Victoria.txt                              253549 characters
+Steve_Jobs.txt                                  306403 characters
+Loaded topic metadata lookup with 20 keys from wikipedia_topics_10.json
+Metadata matched to 10/10 Wikipedia documents.
+
+CATEGORY METADATA CHECK
+85th_Academy_Awards.txt category= arts_entertainment topics= ['Category', 'Academy Awards ceremonies', '2012 film awards', '2013 in Los Angeles', '2013 controversies in the United States', 'Television controversies in the United States', '2013 in American cinema', '2013 awards in the United States', 'February 2013 in the United States', 'Television shows directed by Don Mischer', 'Featured lists']
+Adolf_Hitler.txt category= person topics= ['_[contradictory', 'Category', 'Atrocities  \nand war crimes', 'Adolf Hitler', 'Hitler family', '1889 births', '1945 deaths', '1945 suicides', '20th-century chancellors of Germany', '20th-century German male writers', '20th-century German non-fiction writers', '20th-century presidents of Germany', 'Anti-American sentiment in Germany', 'Anti-French sentiment in Europe', 'Anti-black racism in Germany', 'Austrian people imprisoned in Germany', 'Austrian people of World War I', 'Austrian war criminals', 'Emigrants from Austria-Hungary to Germany', 'German anti-communists', 'Former Roman Catholics', 'German former Christians', 'German Army personnel of World War I', 'German Workers Party members', 'German casualties of World War I', 'German conspiracy theorists', 'German critics of Christianity', 'German eugenicists', 'German military leaders of World War II', 'German military personnel who died by suicide', 'German political writers', 'German politicians who died by suicide', 'German revolutionaries', 'German rhetoricians', 'German war criminals', 'Heads of state who died by suicide', 'Holocaust perpetrators', 'Jewish German history', 'Joint suicides by Nazis', 'Male suicides', 'Members of the Reichstag 1933', 'Members of the Reichstag 1933–1936', 'Members of the Reichstag 1936–1938', 'Members of the Reichstag 1938–1945', 'Military personnel of Bavaria', 'Natalist politicians', 'Naturalized citizens of Germany', 'Nazi eugenics', 'Nazi Party officials', 'Nazi Party politicians', 'Nazi war criminals', 'Nazis convicted of crimes', 'Nazis who died by suicide in Nazi Germany', 'Nazis who participated in the Beer Hall Putsch', 'People convicted of treason against Germany', 'People from Braunau am Inn', "People with Parkinson's disease", 'Perpetrators of the Night of the Long Knives', 'Politicians from Upper Austria', 'Politicians killed in World War II', 'Recipients of German pardons', 'Recipients of the Iron Cross (1914), 1st class', 'Recipients of the Iron Cross (1914), 2nd class', 'Recipients of the Military Merit Cross (Bavaria)', 'Perpetrators of the Romani Holocaust', 'Stateless people', 'Suicides by firearm in Germany', 'Supreme SA Leader', 'The Holocaust in Germany', 'Time Person of the Year', 'Totalitarianism', 'World War II political leaders', 'Writers about activism and social change', 'Pages including recorded pronunciations', 'Use shortened footnotes from February 2021', 'Use British English from November 2024', 'All self-contradictory articles', 'Self-contradictory articles from September 2025', 'Spoken articles']
+Bird.txt category= arts_entertainment topics= ['Category:Avian sexuality', 'Category', 'In heraldry', 'Animated films', 'Chicken films', 'Horror films', 'Category:Birds and humans', 'Birds', 'Animal classes', 'Ornithurae', 'Extant Late Cretaceous first appearances', 'Extant Maastrichtian first appearances', 'Feathered dinosaurs', 'Animal taxa named by Carl Linnaeus', 'Use British English from September 2016', 'Spoken articles', 'Taxonbars with 20–24 taxon IDs']
+Emirates_(airline).txt category= organization_company topics= ['link', 'Emirates (airline)', 'The Emirates Group', 'Airlines of the United Arab Emirates', 'Arab Air Carriers Organization members', 'Airlines established in 1985', 'Companies based in Dubai', 'Emirati brands', 'Government-owned airlines', 'Government-owned companies of Dubai', 'Emirati companies established in 1985', 'United Arab Emirates']
+Empire_State_Building.txt category= building_landmark topics= ['link', 'Empire State Building', '1930s architecture in the United States', '1931 establishments in New York City', '34th Street (Manhattan)', 'Art Deco architecture in Manhattan', 'Art Deco skyscrapers', 'Fifth Avenue', "Former world's tallest buildings", 'Midtown Manhattan', 'National Historic Landmarks in Manhattan', 'New York City Designated Landmarks in Manhattan', 'New York City interior landmarks', 'New York State Register of Historic Places in New York County', 'Office buildings completed in 1931', 'Office buildings on the National Register of Historic Places in Manhattan', 'Radio masts and towers in the United States', 'Skyscraper office buildings in Manhattan', 'Symbols of New York City', 'Tourist attractions in Manhattan', 'Towers completed in 1953', 'Articles using NRISref without a reference number', 'Use American English from June 2023']
+Hallstatt.txt category= place_geography topics= ['link', 'Archaeological type sites', 'Cities and towns in Gmunden District', 'Tourist attractions in Upper Austria', 'World Heritage Sites in Austria', 'Iron Age Europe', 'Hallstatt', 'Pages including recorded pronunciations']
+Margaret_Thatcher.txt category= person topics= ['the politics series', 'link', 'Category', 'Margaret Thatcher', '1925 births', '2013 deaths', '20th-century Anglicans', '20th-century British chemists', '20th-century British women scientists', '20th-century English lawyers', '20th-century English memoirists', '20th-century English women lawyers', '20th-century English women writers', '20th-century Methodists', '20th-century prime ministers of the United Kingdom', '20th-century women prime ministers', '21st-century Anglicans', '21st-century English women writers', '21st-century English writers', 'Alumni of Somerville College, Oxford', 'British anti-communists', 'British baronesses', 'British fellows of the Royal Society', 'British Methodists', 'British people of the Falklands War', 'British secretaries of state for education', 'British women memoirists', 'Chancellors of the College of William & Mary', 'Conservative Party (UK) life peers', 'Conservative Party (UK) MPs for English constituencies', 'Conservative Party prime ministers of the United Kingdom', 'Converts to Anglicanism from Methodism', 'Critics of feminism', 'Critics of socialism', 'Dames of Justice of the Order of St John', 'Deaths from bladder cancer in England', 'Deaths from dementia in England', 'English Anglicans', 'English autobiographers', 'English barristers', 'English chemists', 'English non-fiction writers', 'English people of Irish descent', 'English women chemists', 'Fellows of Somerville College, Oxford', 'Fellows of the Royal Institute of Chemistry', 'Fellows of the Royal Society (Statute 12)', 'Female critics of feminism', 'Female fellows of the Royal Society', 'Female heads of government in the United Kingdom', 'Female members of the Cabinet of the United Kingdom', 'Female members of the Parliament of the United Kingdom for English constituencies', 'First Lords of the Treasury', 'First women prime ministers', 'The Heritage Foundation people', 'Ladies Companion of the Garter', 'Leaders of the Conservative Party (UK)', 'Leaders of the opposition (United Kingdom)', 'Life peeresses created by Elizabeth II', 'Life peers created by Elizabeth II', 'Members of the Order of Merit', 'Members of the Privy Council of the United Kingdom', 'Ministers in the Macmillan and Douglas-Home governments, 1957–1964', 'National Society for the Prevention of Cruelty to Children people', 'People associated with the University of Buckingham', "People educated at Kesteven and Grantham Girls' School", 'People from Grantham', 'People of the Cold War', "People with Dupuytren's contracture", 'Presidential Medal of Freedom recipients', 'Presidents of the European Council', 'Presidents of the Oxford University Conservative Association', 'Recipients of the Ronald Reagan Freedom Award', 'Right-wing politics in the United Kingdom', 'Survivors of terrorist attacks', 'UK MPs 1959–1964', 'UK MPs 1964–1966', 'UK MPs 1966–1970', 'UK MPs 1970–1974', 'UK MPs 1974', 'UK MPs 1974–1979', 'UK MPs 1979–1983', 'UK MPs 1983–1987', 'UK MPs 1987–1992', 'Wesleyan Methodists', 'Wives of baronets', 'Women opposition leaders', 'Women prime ministers in Europe', 'Use British English from July 2024', 'People appearing on C-SPAN']
+Mytilidae.txt category= nature_biology topics= ['Category', 'Mytilidae', 'Bivalve families', 'Taxa named by Constantine Samuel Rafinesque']
+Queen_Victoria.txt category= person topics= ['link', 'Category', 'Queen Victoria', '1819 births', '1901 deaths', '19th-century British monarchs', '20th-century British monarchs', '19th-century queens regnant', '20th-century queens regnant', '19th-century British letter writers', '20th-century British letter writers', '19th-century British diarists', '19th-century British women writers', '20th-century British diarists', '20th-century British women writers', 'British people of German descent', 'British women diarists', 'Monarchs of the United Kingdom', 'Monarchs of the Isle of Man', 'Heads of state of Australia', 'Heads of state of Canada', 'Queens regnant in the British Isles', 'House of Hanover', 'Hanoverian princesses', 'House of Saxe-Coburg and Gotha (United Kingdom)', 'Empresses regnant in Asia', 'Indian empresses', 'British royal memoirists', 'Founders of English schools and colleges', 'People associated with the Royal National College for the Blind', 'People from Kensington', 'Writers from the Royal Borough of Kensington and Chelsea', 'Heirs presumptive to the British throne', 'Princesses of Saxe-Coburg and Gotha by marriage', 'Knights Grand Cross of the Order of the Immaculate Conception of Vila Viçosa', 'Dames of the Order of Saint Isabel', 'Grand Cross of the Legion of Honour', 'Grand Crosses of the Order of St. Sava', 'Recipients of the Order of the Cross of Takovo', 'Use British English from October 2012', 'Spoken articles']
+Steve_Jobs.txt category= person topics= ['Hardware', 'Services', 'Subsidiaries', 'Partnerships', 'People', 'Category', 'Steve Jobs', '1955 births', '2011 deaths', '20th-century American Buddhists', '20th-century American businesspeople', '20th-century American inventors', '21st-century American Buddhists', '21st-century American businesspeople', '21st-century American inventors', 'American adoptees', 'American animated film producers', 'American billionaires', 'American chairpersons of corporations', 'American chief executives in the manufacturing industry', 'American businesspeople in the computer industry', 'American film studio executives', 'American financiers', 'American former Protestants', 'American industrial designers', 'American investors', 'American mass media owners', 'American people of Swiss-German descent', 'American people of Syrian descent', 'American psychedelic drug advocates', 'American chief executives in technology', 'American technology company founders', 'American Zen Buddhists', 'Atari people', 'Burials at Alta Mesa Memorial Park', 'Businesspeople from Palo Alto, California', 'Businesspeople from San Francisco', 'Businesspeople in the electronics industry', 'Businesspeople in the software industry', 'Computer designers', 'Deaths from pancreatic cancer in California', 'Directors of Apple Inc.', 'Directors of The Walt Disney Company', 'Disney executives', 'Film producers from California', 'Former Lutherans', 'Gap Inc. people', 'Homestead High School (California) alumni', 'Internet pioneers', 'Inventors from California', 'Liver transplant recipients', 'Mass media people from San Francisco', 'National Medal of Technology recipients', 'NeXT people', 'People from Cupertino, California', 'People from Los Altos, California', 'People from Mountain View, California', 'Personal computing', 'Philanthropists from California', 'Pixar people', 'Presidential Medal of Freedom recipients', 'Proprietary technology salespersons', 'Spokespersons', 'Technicians', 'Use American English from March 2015', 'Biography with signature']
+LM Studio reachable at http://127.0.0.1:1234/v1
+Available LM Studio model(s): deepseek-coder-6.7b-instruct:2, meta-llama-3.1-8b-instruct, qwen3.8-27b, openai_gpt-oss-120b, deepseek-coder-6.7b-instruct, text-embedding-nomic-embed-text-v1.5
+Selected LM Studio model: meta-llama-3.1-8b-instruct
+
+LLM CONFIGURATION
+Decomposition model: deepseek-coder-6.7b-instruct
+Answer model:        meta-llama-3.1-8b-instruct
+Loading existing vector DB from Wikipedia_chroma_topics_full/
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 26690.55it/s]
+
+================================================================================
+CHROMA METADATA CHECK
+================================================================================
+5088f435-39e4-453f-8644-d1f841811606 {'source': '85th_Academy_Awards.txt', 'topics': '', 'category': 'other'}
+aca4ee5f-215f-48b0-8e9b-a1ea76df84ef {'category': 'other', 'source': 'Adolf_Hitler.txt', 'topics': ''}
+af3c7c32-6c96-4c3f-a1f8-d2284b1ec81e {'source': 'Bird.txt', 'topics': '', 'category': 'other'}
+acb9f860-dfc0-4655-a98d-4189a45e330f {'source': 'Emirates_(airline).txt', 'category': 'other', 'topics': ''}
+1984e631-ec97-4d37-a54f-e69d9720944e {'topics': '', 'category': 'other', 'source': 'Empire_State_Building.txt'}
+7f576860-247c-4803-9fdd-63376934fa7f {'category': 'other', 'topics': '', 'source': 'Hallstatt.txt'}
+0b72b730-71da-454d-ae8b-6ea6e2fe445c {'source': 'Margaret_Thatcher.txt', 'topics': '', 'category': 'other'}
+4f172254-6bc6-4990-9267-49b5330546c9 {'source': 'Mytilidae.txt', 'category': 'other', 'topics': ''}
+db2ceeb3-9c81-44e0-a8ee-cbccc1f96f30 {'category': 'other', 'source': 'Queen_Victoria.txt', 'topics': ''}
+151a266c-7b22-4faf-af65-7c735601ac68 {'source': 'Steve_Jobs.txt', 'topics': '', 'category': 'other'}
+================================================================================
+
+================================================================================
+SYNCING CHROMA METADATA -> SAMPLE_DOCS
+================================================================================
+85th_Academy_Awards.txt                       category=other                  topics=0
+Adolf_Hitler.txt                              category=other                  topics=0
+Bird.txt                                      category=other                  topics=0
+Emirates_(airline).txt                        category=other                  topics=0
+Empire_State_Building.txt                     category=other                  topics=0
+Hallstatt.txt                                 category=other                  topics=0
+Margaret_Thatcher.txt                         category=other                  topics=0
+Mytilidae.txt                                 category=other                  topics=0
+Queen_Victoria.txt                            category=other                  topics=0
+Steve_Jobs.txt                                category=other                  topics=0
+Metadata synchronized for 10/10 documents.
+================================================================================
+
+CATEGORY METADATA AFTER SYNC
+85th_Academy_Awards.txt                       category=other                  topics=0
+Adolf_Hitler.txt                              category=other                  topics=0
+Bird.txt                                      category=other                  topics=0
+Emirates_(airline).txt                        category=other                  topics=0
+Empire_State_Building.txt                     category=other                  topics=0
+Hallstatt.txt                                 category=other                  topics=0
+Margaret_Thatcher.txt                         category=other                  topics=0
+Mytilidae.txt                                 category=other                  topics=0
+Queen_Victoria.txt                            category=other                  topics=0
+Steve_Jobs.txt                                category=other                  topics=0
+Hybrid retriever ready over 10 Wikipedia articles (BM25 weight=0.5, vector weight=0.5).
+Tagged Hybrid category-aware routing enabled.
+Active retriever: hybrid_tagged
+
+================================================================================
+GRAPH CREATED
+================================================================================
+Nodes: 10
+Edges: 0
+Node types: Counter({'article': 10})
+Edge types: Counter()
+================================================================================
+
+GRAPH DIAGNOSTICS
+Nodes: 10
+Edges: 0
+Edge types: Counter()
+
+DOCUMENT GRAPH METADATA
+85th_Academy_Awards.txt links= 0 topics= 0
+Adolf_Hitler.txt links= 0 topics= 0
+Bird.txt links= 0 topics= 0
+Emirates_(airline).txt links= 0 topics= 0
+Empire_State_Building.txt links= 0 topics= 0
+Hallstatt.txt links= 0 topics= 0
+Margaret_Thatcher.txt links= 0 topics= 0
+Mytilidae.txt links= 0 topics= 0
+Queen_Victoria.txt links= 0 topics= 0
+Steve_Jobs.txt links= 0 topics= 0
+==========================================================================================
+Checkpoint 4.1 — Advanced Retrieval Evaluation | scenario: wikipedia
+Running 10 Wikipedia test queries
+==========================================================================================
+
+==========================================================================================
+QUESTION 1
+According to the Wikipedia article on the Empire State Building, when was the building completed and when did it officially open?
+==========================================================================================
+
+DECOMPOSITION:
+  1. When was the Empire State Building completed?
+  2. When did the Empire State Building officially open?
+  3. What is the official opening date of the Empire State Building on Wikipedia?
+  4. On which date was the Empire State Building officially opened on Wikipedia?
+  tagged routing: ['building_landmark'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+BASELINE:
+['Empire_State_Building.txt', 'Steve_Jobs.txt', 'Adolf_Hitler.txt']
+  tagged routing: ['building_landmark'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['building_landmark'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['building_landmark'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['building_landmark'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+MULTI-STEP:
+['Empire_State_Building.txt', 'Queen_Victoria.txt', 'Adolf_Hitler.txt']
+  tagged routing: ['building_landmark'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+GRAPH:
+{'Empire_State_Building.txt': 'seed', 'Steve_Jobs.txt': 'seed', 'Adolf_Hitler.txt': 'seed'}
+  tagged routing: ['building_landmark'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['building_landmark'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['building_landmark'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['building_landmark'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  advanced evidence:
+    Empire_State_Building.txt: score=2.985, sources=['seed']
+    Queen_Victoria.txt: score=2.798, sources=['seed']
+    Adolf_Hitler.txt: score=2.546, sources=['seed']
+
+COMBINED:
+['Empire_State_Building.txt', 'Queen_Victoria.txt', 'Adolf_Hitler.txt']
+  Answer context: 16,646 characters from 9 chunks
+
+ADVANCED ANSWER:
+According to the provided evidence:
+
+Construction started on March 17, 1930. 
+The building opened thirteen and a half months afterward on May 1, 1931.
+
+So, the building was completed in May 1931 (13.5 months after construction began) and officially opened on May 1, 1931.
+
+==========================================================================================
+QUESTION 2
+According to the Wikipedia article on Hallstatt, where is Hallstatt located and what is it particularly known for?
+==========================================================================================
+
+DECOMPOSITION:
+  1. Where is Hallstatt located according to the Wikipedia article?
+  2. What is Hallstatt specifically known for in the Wikipedia article?
+  3. Do not answer the question.
+  tagged routing: ['place_geography'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+BASELINE:
+['Hallstatt.txt', 'Steve_Jobs.txt', 'Bird.txt']
+  tagged routing: ['place_geography'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+
+MULTI-STEP:
+['Hallstatt.txt', 'Margaret_Thatcher.txt', 'Steve_Jobs.txt']
+  tagged routing: ['place_geography'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+GRAPH:
+{'Hallstatt.txt': 'seed', 'Steve_Jobs.txt': 'seed', 'Bird.txt': 'seed'}
+  tagged routing: ['place_geography'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  advanced evidence:
+    Hallstatt.txt: score=1.750, sources=['seed']
+    Margaret_Thatcher.txt: score=1.436, sources=['seed']
+    Steve_Jobs.txt: score=1.225, sources=['seed']
+
+COMBINED:
+['Hallstatt.txt', 'Margaret_Thatcher.txt', 'Steve_Jobs.txt']
+  Answer context: 16,611 characters from 9 chunks
+
+ADVANCED ANSWER:
+According to the Wikipedia article on Hallstatt (SOURCE: Hallstatt.txt | relevance=9.0), Hallstatt is a small town in the Gmunden District of the Austrian state of Upper Austria. It is situated between the southwestern shore of Hallstätter See and the steep slopes of the Dachstein massif, in the Salzkammergut region.
+
+Hallstatt is particularly known for its production of salt dating back to prehistoric times, and it gave its name to the Hallstatt culture, an archaeological culture linked to Proto-Celtic and early Celtic people of the Early Iron Age in Europe.
+
+==========================================================================================
+QUESTION 3
+What role did Steve Jobs play in the development of Apple, according to his Wikipedia article?
+==========================================================================================
+
+DECOMPOSITION:
+  1. Who was Steve Jobs?
+  2. What were the key roles he played in the development of Apple?
+  3. In what year did Steve Jobs start working at Apple?
+  4. When did Apple launch its first product under his leadership?
+  tagged routing: no confident category -> full-corpus hybrid fallback
+
+BASELINE:
+['Steve_Jobs.txt', 'Margaret_Thatcher.txt', 'Queen_Victoria.txt']
+  tagged routing: ['person'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: ['chronology_year'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['person'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+MULTI-STEP:
+['Steve_Jobs.txt', 'Adolf_Hitler.txt', 'Empire_State_Building.txt']
+  tagged routing: no confident category -> full-corpus hybrid fallback
+
+GRAPH:
+{'Steve_Jobs.txt': 'seed', 'Margaret_Thatcher.txt': 'seed', 'Queen_Victoria.txt': 'seed'}
+  tagged routing: ['person'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: ['chronology_year'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['person'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  advanced evidence:
+    Steve_Jobs.txt: score=2.910, sources=['seed']
+    Adolf_Hitler.txt: score=1.859, sources=['seed']
+    Empire_State_Building.txt: score=1.771, sources=['seed']
+
+COMBINED:
+['Steve_Jobs.txt', 'Adolf_Hitler.txt', 'Empire_State_Building.txt']
+  Answer context: 16,633 characters from 9 chunks
+
+ADVANCED ANSWER:
+The retrieved evidence is insufficient to answer this question.
+
+==========================================================================================
+QUESTION 4
+Compare the leadership roles and historical significance of Margaret Thatcher and Adolf Hitler as described in their respective Wikipedia articles.
+==========================================================================================
+
+DECOMPOSITION:
+  1. What are the leadership roles and historical significance of Margaret Thatcher?
+  2. What are the leadership roles and historical significance of Adolf Hitler?
+  3. ```python
+  4. # Code to generate these queries would go here, but it's not necessary for this task.
+  tagged routing: ['person'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+BASELINE:
+['Adolf_Hitler.txt', 'Margaret_Thatcher.txt', 'Bird.txt']
+  tagged routing: ['person'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['person'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+
+MULTI-STEP:
+['Margaret_Thatcher.txt', 'Adolf_Hitler.txt', 'Empire_State_Building.txt']
+  tagged routing: ['person'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+GRAPH:
+{'Adolf_Hitler.txt': 'seed', 'Margaret_Thatcher.txt': 'seed', 'Bird.txt': 'seed'}
+  tagged routing: ['person'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['person'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  advanced evidence:
+    Margaret_Thatcher.txt: score=2.213, sources=['seed']
+    Adolf_Hitler.txt: score=2.105, sources=['seed']
+    Empire_State_Building.txt: score=2.004, sources=['seed']
+
+COMBINED:
+['Margaret_Thatcher.txt', 'Adolf_Hitler.txt', 'Empire_State_Building.txt']
+  Answer context: 16,653 characters from 9 chunks
+
+ADVANCED ANSWER:
+The retrieved evidence is insufficient to answer this question.
+
+However, I can describe some differences between the two leaders based on the provided sources:
+
+1. **Leadership Roles**:
+   - Margaret Thatcher: The article describes her as a "conviction politician" who insisted she didn't care about poll ratings and pointed instead to her unbeaten election record.
+   - Adolf Hitler: The article portrays him as a skilled crowd manipulator, effective at public speaking, and eventually the dictator of Germany from 1933 to 1945.
+
+2. **Historical Significance**:
+   - Margaret Thatcher: Her leadership is described in the context of British politics, with mentions of her support for the Conservative Party campaign in various elections.
+   - Adolf Hitler: His historical significance is deeply tied to World War II and the Nazi regime's atrocities, including the Holocaust.
+
+These descriptions are based on the provided sources and do not allow a comprehensive comparison between the two leaders.
+
+==========================================================================================
+QUESTION 5
+How were Margaret Thatcher and Adolf Hitler connected through the major European political and military events that shaped the periods in which they rose to prominence?
+==========================================================================================
+
+DECOMPOSITION:
+  1. How was Margaret Thatcher related to Adolf Hitler during the German occupation of Poland?
+  2. What were the major European political and military events that affected their rise to prominence?
+  3. In what ways did Margaret Thatcher and Adolf Hitler connect through these periods?
+  4. When did the major European political and military events shape their rise to prominence for both of them?
+  tagged routing: ['politics_government'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+BASELINE:
+['Adolf_Hitler.txt', 'Margaret_Thatcher.txt', 'Bird.txt']
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: ['politics_government'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: ['politics_government'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+MULTI-STEP:
+['Adolf_Hitler.txt', 'Margaret_Thatcher.txt', 'Bird.txt']
+  tagged routing: ['politics_government'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+GRAPH:
+{'Adolf_Hitler.txt': 'seed', 'Margaret_Thatcher.txt': 'seed', 'Bird.txt': 'seed'}
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: ['politics_government'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: ['politics_government'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  advanced evidence:
+    Adolf_Hitler.txt: score=2.850, sources=['seed']
+    Margaret_Thatcher.txt: score=2.799, sources=['seed']
+    Bird.txt: score=1.877, sources=['seed']
+
+COMBINED:
+['Adolf_Hitler.txt', 'Margaret_Thatcher.txt', 'Bird.txt']
+  Answer context: 16,608 characters from 9 chunks
+
+ADVANCED ANSWER:
+The retrieved evidence is insufficient to answer this question.
+
+==========================================================================================
+QUESTION 6
+According to the Wikipedia article on Emirates airline, when was Emirates founded, where is it based, and who owns it? Quote the relevant sentence or sentences.
+==========================================================================================
+
+DECOMPOSITION:
+  1. When was Emirates founded in its original form as an airline?
+  2. Where is Emirates headquartered today?
+  3. Who owns Emirates Airlines, Inc., the parent company of Emirates?
+  4. What are some key differences between Emirates and other major airlines?
+  tagged routing: ['place_geography', 'organization_company'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+BASELINE:
+['Emirates_(airline).txt', 'Empire_State_Building.txt', 'Steve_Jobs.txt']
+  tagged routing: ['organization_company', 'transportation'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['place_geography', 'organization_company'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['organization_company', 'transportation'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['transportation'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+MULTI-STEP:
+['Emirates_(airline).txt', 'Empire_State_Building.txt', 'Bird.txt']
+  tagged routing: ['place_geography', 'organization_company'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+GRAPH:
+{'Emirates_(airline).txt': 'seed', 'Empire_State_Building.txt': 'seed', 'Steve_Jobs.txt': 'seed'}
+  tagged routing: ['organization_company', 'transportation'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['place_geography', 'organization_company'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['organization_company', 'transportation'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['transportation'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  advanced evidence:
+    Emirates_(airline).txt: score=3.000, sources=['seed']
+    Empire_State_Building.txt: score=2.415, sources=['seed']
+    Bird.txt: score=1.452, sources=['seed']
+
+COMBINED:
+['Emirates_(airline).txt', 'Empire_State_Building.txt', 'Bird.txt']
+  Answer context: 16,637 characters from 9 chunks
+
+ADVANCED ANSWER:
+According to the Wikipedia article on Emirates airline:
+
+1. When was Emirates founded?
+   During the mid 1980s, Gulf Air began to cut back its services to Dubai. As a result, Emirates was founded on 15 March 1985...
+
+2. Where is it based?
+   ...with backing from Dubai's royal family and its first two aircraft provided by Pakistan International Airlines.
+
+3. Who owns it?
+   The airline was founded by Ahmed bin Saeed Al Maktoum, the airline's present chairman.
+
+==========================================================================================
+QUESTION 7
+Which Austrian settlement in the corpus is strongly associated with prehistoric salt mining, and where is it located?
+==========================================================================================
+
+DECOMPOSITION:
+  1. Which Austrian settlement in the corpus has a strong association with prehistoric salt mining?
+  2. Where is this settlement located on the map?
+  3. Do not answer the question.
+  tagged routing: ['place_geography'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+BASELINE:
+['Hallstatt.txt', 'Bird.txt', 'Empire_State_Building.txt']
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: ['place_geography'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+
+MULTI-STEP:
+['Hallstatt.txt', 'Margaret_Thatcher.txt', 'Adolf_Hitler.txt']
+  tagged routing: ['place_geography'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+GRAPH:
+{'Hallstatt.txt': 'seed', 'Bird.txt': 'seed', 'Empire_State_Building.txt': 'seed'}
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: ['place_geography'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  advanced evidence:
+    Hallstatt.txt: score=1.672, sources=['seed']
+    Margaret_Thatcher.txt: score=1.388, sources=['seed']
+    Adolf_Hitler.txt: score=1.348, sources=['seed']
+
+COMBINED:
+['Hallstatt.txt', 'Margaret_Thatcher.txt', 'Adolf_Hitler.txt']
+  Answer context: 16,620 characters from 9 chunks
+
+ADVANCED ANSWER:
+Hallstatt. 
+
+It is located between the southwestern shore of Hallstätter See and the steep slopes of the Dachstein massif, on the national road linking Salzburg and Graz.
+
+==========================================================================================
+QUESTION 8
+What did Margaret Thatcher study at the University of Oxford, and what academic qualification did she receive?
+==========================================================================================
+
+DECOMPOSITION:
+  1. What was Margaret Thatcher studying at the University of Oxford?
+  2. What academic qualification did Margaret Thatcher receive at the University of Oxford?
+  3. Do not answer the question.
+  tagged routing: ['education'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+BASELINE:
+['Margaret_Thatcher.txt', 'Bird.txt', 'Adolf_Hitler.txt']
+  tagged routing: ['education'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['education'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+
+MULTI-STEP:
+['Margaret_Thatcher.txt', 'Steve_Jobs.txt', 'Adolf_Hitler.txt']
+  tagged routing: ['education'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+GRAPH:
+{'Margaret_Thatcher.txt': 'seed', 'Bird.txt': 'seed', 'Adolf_Hitler.txt': 'seed'}
+  tagged routing: ['education'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['education'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  advanced evidence:
+    Margaret_Thatcher.txt: score=2.250, sources=['seed']
+    Steve_Jobs.txt: score=1.330, sources=['seed']
+    Adolf_Hitler.txt: score=1.270, sources=['seed']
+
+COMBINED:
+['Margaret_Thatcher.txt', 'Steve_Jobs.txt', 'Adolf_Hitler.txt']
+  Answer context: 16,618 characters from 9 chunks
+
+ADVANCED ANSWER:
+The retrieved evidence is insufficient to answer this question.
+
+==========================================================================================
+QUESTION 9
+Compare the roles of Queen Victoria and Margaret Thatcher in British history using evidence from their respective Wikipedia articles.
+==========================================================================================
+
+DECOMPOSITION:
+  1. What were the key roles of Queen Victoria during her reign?
+  2. What were the key roles of Margaret Thatcher during her time as Prime Minister?
+  3. How did these roles compare in terms of their impact on British history and society?
+  4. Can you provide examples or instances where each role was particularly significant or notable?
+  tagged routing: no confident category -> full-corpus hybrid fallback
+
+BASELINE:
+['Margaret_Thatcher.txt', 'Bird.txt', 'Queen_Victoria.txt']
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: ['person', 'politics_government'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+
+MULTI-STEP:
+['Bird.txt', 'Margaret_Thatcher.txt', 'Queen_Victoria.txt']
+  tagged routing: no confident category -> full-corpus hybrid fallback
+
+GRAPH:
+{'Margaret_Thatcher.txt': 'seed', 'Bird.txt': 'seed', 'Queen_Victoria.txt': 'seed'}
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: ['person', 'politics_government'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  advanced evidence:
+    Bird.txt: score=2.406, sources=['seed']
+    Margaret_Thatcher.txt: score=2.059, sources=['seed']
+    Queen_Victoria.txt: score=2.043, sources=['seed']
+
+COMBINED:
+['Bird.txt', 'Margaret_Thatcher.txt', 'Queen_Victoria.txt']
+  Answer context: 16,608 characters from 9 chunks
+
+ADVANCED ANSWER:
+The retrieved evidence is insufficient to answer this question.
+
+However, I can provide some information about each individual based on the provided sources:
+
+Queen Victoria:
+- She was the monarch of the United Kingdom during a significant period in British history.
+- She had nine children with her husband Prince Albert and used chloroform for childbirth despite opposition from clergy members.
+- She found Lord Palmerston's actions as Foreign Secretary particularly offensive, but he continued to serve due to his influence.
+
+Margaret Thatcher:
+- She was the Prime Minister of the United Kingdom from 1979 to 1990.
+- She implemented policies that rolled back socialism and reduced state intervention in the economy.
+- She supported the invasion of Iraq in 2003, citing the need for "facts, evidence, and proof" before committing armed forces.
+
+Comparing these roles would require more information about their contributions to British history, their relationships with other politicians, and their impact on society.
+
+==========================================================================================
+QUESTION 10
+Who was Victoria, what position did she hold, and which country or kingdom did she rule?
+==========================================================================================
+
+DECOMPOSITION:
+  1. Victoria (person)
+  2. Position held by Victoria
+  3. Country/kingdom ruled by Victoria
+  4. These are three separate information needs that can be independently useful for retrieving evidence from Wikipedia articles. The named entities, "Victoria", "position" and "country or kingdom", have been preserved exactly as they appear in the original question.
+  tagged routing: ['person', 'place_geography'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+BASELINE:
+['Queen_Victoria.txt', 'Empire_State_Building.txt', 'Margaret_Thatcher.txt']
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: ['place_geography'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['place_geography'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+MULTI-STEP:
+['Queen_Victoria.txt', 'Empire_State_Building.txt', 'Steve_Jobs.txt']
+  tagged routing: ['person', 'place_geography'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+
+GRAPH:
+{'Queen_Victoria.txt': 'seed', 'Empire_State_Building.txt': 'seed', 'Margaret_Thatcher.txt': 'seed'}
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: no confident category -> full-corpus hybrid fallback
+  tagged routing: ['place_geography'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  tagged routing: ['place_geography'] produced only 0 candidate(s) -> full-corpus hybrid fallback
+  advanced evidence:
+    Queen_Victoria.txt: score=3.000, sources=['seed']
+    Empire_State_Building.txt: score=2.257, sources=['seed']
+    Steve_Jobs.txt: score=1.876, sources=['seed']
+
+COMBINED:
+['Queen_Victoria.txt', 'Empire_State_Building.txt', 'Steve_Jobs.txt']
+  Answer context: 16,639 characters from 9 chunks
+
+ADVANCED ANSWER:
+Based on the provided documents:
+
+Victoria held the position of Queen of the United Kingdom.
+
+This is supported by the following evidence:
+- "Victoria became Queen of the United Kingdom" (SOURCE: Queen_Victoria.txt | relevance=8.0)
+- "Victoria receives the news of her accession from Lord Conyngham (bowing) and the Archbishop Howley (right). Painting by Henry Tanworth Wells, 1887." (SOURCE: Queen_Victoria.txt | relevance=8.0)
+
+There is no information about Victoria's personal characteristics or background in the provided documents.
+
+==========================================================================================
+Your advanced-retrieval plan:
+{
+  "technique": "both",
+  "node_types": [
+    "article",
+    "category",
+    "topic"
+  ],
+  "edge_types": [
+    "belongs_to_category",
+    "category_contains",
+    "relates_to"
+  ],
+  "test_queries": [
+    "Compare the leadership roles and historical significance of Margaret Thatcher and Adolf Hitler as described in their respective Wikipedia articles. Support the comparison with a direct quote from each article.",
+    "According to the Wikipedia article on Emirates, when was the airline founded, where is it based, and who owns it?",
+    "According to the Wikipedia article on Margaret Thatcher, where did she study, what degree did she receive, and when did she graduate?"
+  ],
+  "rationale": "The Wikipedia corpus contains complex multi-part questions and relationships among articles, categories, and topics. Query decomposition separates complex questions into focused retrieval needs, while graph-based retrieval can expand the initial hybrid retrieval results through shared Wikipedia metadata. Together, these techniques are intended to improve evidence coverage for questions that are difficult to answer with a single retrieval pass."
+}
+==========================================================================================
+Done. Completed all Wikipedia test queries.

@@ -1,0 +1,6 @@
+{
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "corpus_sha256": "647dce6ca0ed291d0f9cf860b6a853f441418157bcf40c16762e6fbb4c17deb7",
+  "passage_count": 1697,
+  "collection": "wikipedia_checkpoint_5_1_passages"
+}

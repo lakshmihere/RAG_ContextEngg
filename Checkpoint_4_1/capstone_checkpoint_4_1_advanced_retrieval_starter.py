@@ -1801,3 +1801,24 @@ def run_demo() -> None:
 if __name__ == "__main__":
     run_demo()
 
+
+
+
+# I don't know about research papers, but wiki pages give you similar approach:
+# by topic -> at the end of each page there is categories list, you can use this 
+# as your "topics" and links to other pages can be be used similarly like a thread.
+# The above 2 things can be done generically on entire corpus. In a real world you 
+# would probably go crazy  with more logical/ontology-specific linking but that would 
+# be slower.
+
+
+# You’re right, you did not miss a step. Both Lab 4.2 starter and solution begin with 
+# annotatedEmails.json, where the sender, recipients, mentions, thread ID, and topics 
+# are already populated. The graph builder only converts those fields into email, thread, 
+# person, and topic nodes and edges.The Module 4 quick reference describes using an LLM to 
+# extract entities, mentions, and topics, but the downloadable files do not implement that 
+# preprocessing step. A full pipeline would parse deterministic fields first, run schema-constrained 
+# extraction for topics, entities, and relationships, normalize and validate them, preserve source 
+# provenance, then update the graph. So this lab focuses on using an existing graph for retrieval, 
+# not generating the annotations from raw documents. Good catch on the mismatch.
+

@@ -54,26 +54,23 @@ passage-ID citations.
 
 ## Retrieval Configuration
 
-  Setting               Value
-  --------------------- ------------------------------------------
-  Corpus                `Wikipedia_10_text`
-  Chunk size            180 words
-  Chunk stride          150 words
-  Overlap               30 words
-  Candidate pool        12
-  BM25 weight           0.50
-  Vector weight         0.50
-  Embedding model       `sentence-transformers/all-MiniLM-L6-v2`
-  Vector store          Persistent Chroma
-  Collection            `wikipedia_checkpoint_5_1_passages`
-  Top-k per retrieval   4
-  Maximum agent steps   3
-  Default temperature   0.0
+| Setting | Value |
+|---|---|
+| **Corpus** | `Wikipedia_10_text` |
+| **Chunk size** | 180 words |
+| **Chunk stride** | 150 words |
+| **Overlap** | 30 words |
+| **Candidate pool** | 12 |
+| **BM25 weight** | 0.50 |
+| **Vector weight** | 0.50 |
+| **Embedding model** | `sentence-transformers/all-MiniLM-L6-v2` |
+| **Vector store** | Persistent Chroma |
+| **Collection** | `wikipedia_checkpoint_5_1_passages` |
+| **Top-k per retrieval** | 4 |
+| **Maximum agent steps** | 3 |
+| **Default temperature** | 0.0 |
 
-Article/title terms are weighted twice in the BM25 representation. The
-persistent Chroma index uses a manifest containing the embedding model,
-corpus hash, passage count, and collection name so that an incompatible
-index is not silently reused.
+Article/title terms are weighted twice in the BM25 representation.The persistent Chroma index uses a manifest containing the **embedding model, corpus hash, passage count, and collection name** so that an incompatible index is not silently reused.
 
 ## Security Model Ladder
 

@@ -36,30 +36,25 @@ final/
 
 ## Agentic RAG Workflow
 
-``` text
-User Question
-     |
-     v
-Initial Query / Query Decomposition
-     |
-     v
-Hybrid Retrieval (BM25 + Vector)
-     |
-     v
-Collected Evidence
-     |
-     v
-Planner / Evidence Sufficiency Check
-     |
-     +---- insufficient ----> Focused New Query
-     |                            |
-     |                            v
-     |                       Retrieval
-     |                            |
-     +----------------------------+
-     |
-     v
-Grounded Answer + Passage-ID Citations
+## Agentic RAG Workflow
+
+The system follows a bounded retrieve → decide → retrieve-if-needed → answer workflow.
+
+```mermaid
+flowchart TD
+    A["User Question"] --> B["Initial Query / Query Decomposition"]
+    B --> C["Hybrid Retrieval<br/>BM25 + Vector"]
+    C --> D["Collect & Deduplicate Evidence"]
+    D --> E{"Planner / Evidence<br/>Sufficiency Check"}
+
+    E -->|"Evidence sufficient"| F["Grounded Answer Generation"]
+    F --> G["Answer + Passage-ID Citations"]
+
+    E -->|"Evidence insufficient"| H["Generate 1–2 Focused New Queries"]
+    H --> I["Hybrid Retrieval<br/>BM25 + Vector"]
+    I --> D
+
+    J["MAX_STEPS = 3"] -.-> E
 ```
 
 The agent is bounded by `MAX_STEPS = 3`.

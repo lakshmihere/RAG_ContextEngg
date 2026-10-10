@@ -36,56 +36,41 @@ final/
 
 ## Agentic RAG Workflow
 
-``` text
-User Question
-     |
-     v
-Initial Query / Query Decomposition
-     |
-     v
-Hybrid Retrieval (BM25 + Vector)
-     |
-     v
-Collected Evidence
-     |
-     v
-Planner / Evidence Sufficiency Check
-     |
-     +---- insufficient ----> Focused New Query
-     |                            |
-     |                            v
-     |                       Retrieval
-     |                            |
-     +----------------------------+
-     |
-     v
-Grounded Answer + Passage-ID Citations
-```
+The system follows a bounded **retrieve → decide → retrieve-if-needed → answer** workflow.  
+The planner evaluates whether the collected evidence is sufficient and can generate
+1–2 focused follow-up queries when additional evidence is required. The agent loop
+is bounded by `MAX_STEPS = 3`.
 
-The agent is bounded by `MAX_STEPS = 3`.
+<p align="center">
+  <img src="mermaid_diagram_6.png"
+       alt="Agentic RAG Workflow"
+       width="750">
+</p>
+
+**Figure 1. Agentic RAG workflow.** The system combines BM25 and vector retrieval,
+deduplicates retrieved evidence, evaluates evidence sufficiency, performs focused
+additional retrieval when necessary, and generates a grounded answer with
+passage-ID citations.
 
 ## Retrieval Configuration
 
-  Setting               Value
-  --------------------- ------------------------------------------
-  Corpus                `Wikipedia_10_text`
-  Chunk size            180 words
-  Chunk stride          150 words
-  Overlap               30 words
-  Candidate pool        12
-  BM25 weight           0.50
-  Vector weight         0.50
-  Embedding model       `sentence-transformers/all-MiniLM-L6-v2`
-  Vector store          Persistent Chroma
-  Collection            `wikipedia_checkpoint_5_1_passages`
-  Top-k per retrieval   4
-  Maximum agent steps   3
-  Default temperature   0.0
+| Setting | Value |
+|---|---|
+| **Corpus** | `Wikipedia_10_text` |
+| **Chunk size** | 180 words |
+| **Chunk stride** | 150 words |
+| **Overlap** | 30 words |
+| **Candidate pool** | 12 |
+| **BM25 weight** | 0.50 |
+| **Vector weight** | 0.50 |
+| **Embedding model** | `sentence-transformers/all-MiniLM-L6-v2` |
+| **Vector store** | Persistent Chroma |
+| **Collection** | `wikipedia_checkpoint_5_1_passages` |
+| **Top-k per retrieval** | 4 |
+| **Maximum agent steps** | 3 |
+| **Default temperature** | 0.0 |
 
-Article/title terms are weighted twice in the BM25 representation. The
-persistent Chroma index uses a manifest containing the embedding model,
-corpus hash, passage count, and collection name so that an incompatible
-index is not silently reused.
+Article/title terms are weighted twice in the BM25 representation.The persistent Chroma index uses a manifest containing the **embedding model, corpus hash, passage count, and collection name** so that an incompatible index is not silently reused.
 
 ## Security Model Ladder
 

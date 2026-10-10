@@ -14,8 +14,6 @@ and a quantitative evaluation framework.
 
 ## System Architecture
 
-## System Architecture
-
 ![Checkpoint 7.1 Production-Ready RAG System Architecture](mermaid_7.png)
 
 ------------------------------------------------------------------------

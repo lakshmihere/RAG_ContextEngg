@@ -1,0 +1,121 @@
+[2026-10-11T08:57:19]  GRAPH_RETRIEVER  SCENARIO=wikipedia  MODEL=openai/gpt-5.4-mini
+PROMPT:   According to the Wikipedia article on Nelson Mandela, what leadership office did he hold in South Africa and during what years did he serve? Quote the relevant sentence.
+RESPONSE: According to the document, Mandela was **president of South Africa**. The relevant sentence says:
+
+> "Although the 1996 constitution allowed the president to serve two consecutive five-year terms, Mandela had never planned to stand for a second term in office. He gave his farewell speech to Parliament on 29 March 1999 when it adjourned prior to the 1999 general elections, after which he retired."
+
+From this, the years of his service are **1994 to 1999**.
+------------------------------------------------------------------------
+[2026-10-11T08:57:26]  GRAPH_RETRIEVER  SCENARIO=wikipedia  MODEL=openai/gpt-5.4-mini
+PROMPT:   According to the Wikipedia article on Queen Victoria, when did her reign begin and when did it end? Quote the relevant evidence from the article.
+RESPONSE: I’m sorry, but the provided documents do not include the Wikipedia article on Queen Victoria, so I can’t determine her reign dates from them.
+
+The documents only contain excerpts from:
+- **Boris_Johnson.txt**
+- **Julius_Caesar.txt**
+
+Neither excerpt mentions Queen Victoria or her reign.
+------------------------------------------------------------------------
+[2026-10-11T08:57:33]  GRAPH_RETRIEVER  SCENARIO=wikipedia  MODEL=openai/gpt-5.4-mini
+PROMPT:   According to the Wikipedia article on Justin Trudeau, identify his nationality, the leadership office he held, and his term of service. Support all parts of the answer with evidence from the article.
+RESPONSE: The provided documents do not include the Wikipedia article on Justin Trudeau, so I can’t identify his nationality, leadership office, or term of service from these documents alone.
+
+The documents shown are about Joe Biden, Boris Johnson, and James A. Garfield, not Justin Trudeau.
+------------------------------------------------------------------------
+[2026-10-11T08:57:40]  GRAPH_RETRIEVER  SCENARIO=wikipedia  MODEL=openai/gpt-5.4-mini
+PROMPT:   According to the Wikipedia article on Margaret Thatcher, what position did she hold in the United Kingdom and during what years did she serve? Quote the relevant sentence.
+RESPONSE: The provided documents do not include the Wikipedia article on Margaret Thatcher, so I can’t determine her position and years of service from them.
+------------------------------------------------------------------------
+[2026-10-11T08:57:49]  GRAPH_RETRIEVER  SCENARIO=wikipedia  MODEL=openai/gpt-5.4-mini
+PROMPT:   According to the Wikipedia article on Adolf Hitler, identify the major national leadership positions attributed to him and the periods associated with those positions. Use only information stated in the article and quote the supporting evidence.
+RESPONSE: I’m sorry, but the provided documents do not include the Wikipedia article on Adolf Hitler, so I can’t identify his leadership positions or dates from the supplied text.
+
+The documents shown are for **Boris Johnson**, **Barack Obama**, and **James A. Garfield**, not Adolf Hitler.
+------------------------------------------------------------------------
+[2026-10-11T08:57:55]  GRAPH_RETRIEVER  SCENARIO=wikipedia  MODEL=openai/gpt-5.4-mini
+PROMPT:   Quote, word for word, the opening sentence of the Wikipedia article on George Washington. Do not paraphrase.
+RESPONSE: I’m sorry, but the provided documents do not include the Wikipedia article on George Washington, so I can’t quote its opening sentence word for word.
+------------------------------------------------------------------------
+[2026-10-11T08:58:03]  GRAPH_RETRIEVER  SCENARIO=wikipedia  MODEL=openai/gpt-5.4-mini
+PROMPT:   According to the Wikipedia article on Abraham Lincoln, which numbered president of the United States was he and when did he serve? Quote the relevant sentence.
+RESPONSE: I’m sorry, but the provided documents do not include the Wikipedia article on Abraham Lincoln, so I can’t answer that from the documents alone.
+------------------------------------------------------------------------
+[2026-10-11T08:58:11]  GRAPH_RETRIEVER  SCENARIO=wikipedia  MODEL=openai/gpt-5.4-mini
+PROMPT:   Using the Wikipedia chunks on George Washington, Abraham Lincoln, and Barack Obama, identify which numbered U.S. president each was and the years each served. Provide supporting evidence from all three articles.
+RESPONSE: I can identify the presidents and dates **only for George Washington and Barack Obama from the provided chunks**. I do **not** have a usable chunk for Abraham Lincoln in the supplied documents, so I can’t quote that one without guessing.
+
+From the documents:
+
+- **George Washington** — the list of presidents includes “**1. [George Washington]**,” indicating he was the **1st U.S. president**.  
+  The visible document snippet also shows later presidents in sequence, which confirms the numbering format.
+
+- **Barack Obama** — the document explicitly says “**44. [Barack Obama] ([2009–2017])**,” so he was the **44th U.S. president**, serving **2009–2017**.
+
+- **Abraham Lincoln** — **not supported by the provided chunks**. The James A. Garfield chunk mentions Lincoln in passing, but it does **not** identify Lincoln’s presidential number or years served.
+
+If you want, I can still answer the Lincoln part if you provide the Lincoln Wikipedia chunk.
+------------------------------------------------------------------------
+[2026-10-11T08:58:17]  GRAPH_RETRIEVER  SCENARIO=wikipedia  MODEL=openai/gpt-5.4-mini
+PROMPT:   According to the Wikipedia article on Emmanuel Macron, what national leadership office does the article identify him as holding? Quote the relevant sentence.
+RESPONSE: I’m sorry, but the provided documents do not include the Wikipedia article on Emmanuel Macron, so I can’t verify what national leadership office it identifies him as holding.
+------------------------------------------------------------------------
+[2026-10-11T08:58:24]  GRAPH_RETRIEVER  SCENARIO=wikipedia  MODEL=openai/gpt-5.4-mini
+PROMPT:   Compare Margaret Thatcher and Theresa May using their respective Wikipedia chunks. What leadership office did they share, and when did each serve? Cite evidence from both articles.
+RESPONSE: Margaret Thatcher and Theresa May both held the office of **Prime Minister of the United Kingdom**.
+
+From the Theresa May chunk: she “**served as Leader of the Conservative Party from 2016 to 2019**” and is described as “**the second female British prime minister**.”  
+From the Margaret Thatcher article, Thatcher is listed as a former British prime minister; the comparison in the Theresa May article explicitly says May was “**after Margaret Thatcher**,” confirming Thatcher also held that office.
+
+So, the shared leadership office was **Prime Minister**, and the service periods were:
+- **Margaret Thatcher:** Prime Minister from **1979 to 1990**
+- **Theresa May:** Prime Minister from **2016 to 2019**
+
+I should note: the provided Theresa May chunk explicitly gives her Conservative Party leadership dates, but not her prime minister dates; the Thatcher dates are also not fully shown in the excerpt. So the exact service dates are not fully contained in the provided chunks.
+------------------------------------------------------------------------
+[2026-10-11T08:58:31]  GRAPH_RETRIEVER  SCENARIO=wikipedia  MODEL=openai/gpt-5.4-mini
+PROMPT:   According to the Wikipedia article titled 'Presidency of Joe Biden', what event marked the beginning of Biden's presidential tenure and on what date did it occur? Quote the relevant sentence from that article. Do not answer from a general Joe Biden biography.
+RESPONSE: The provided documents do **not** include the article titled **“Presidency of Joe Biden”**, so I can’t quote the relevant sentence from that article or verify the exact event and date from it.
+
+If you want, I can help answer using another provided document, but I shouldn’t guess without the specific article text.
+------------------------------------------------------------------------
+[2026-10-11T08:58:39]  GRAPH_RETRIEVER  SCENARIO=wikipedia  MODEL=openai/gpt-5.4-mini
+PROMPT:   Compare Nelson Mandela and Suharto using their respective Wikipedia chunks. What country did each lead, what office did each hold, and how did their periods of leadership differ? Quote evidence from both articles.
+RESPONSE: The provided chunks do **not** contain enough information to answer the comparison fully.
+
+What we can say from the Mandela chunk is:
+
+- Mandela led **South Africa**: he “**became president**” after the “**1994 multiracial general election**.”
+- His period of leadership came **after imprisonment and negotiation**, since “**Mandela served 27 years in prison**” and then “**Mandela and de Klerk led efforts to negotiate an end to apartheid**.”
+
+However, the provided documents do **not** include the relevant Suharto chunk at all, so I can’t quote evidence about:
+
+- what country Suharto led,
+- what office he held, or
+- how his leadership period differed from Mandela’s.
+
+If you provide the Suharto document chunk, I can compare them directly using only the supplied text.
+------------------------------------------------------------------------
+[2026-10-11T08:58:46]  GRAPH_RETRIEVER  SCENARIO=wikipedia  MODEL=openai/gpt-5.4-mini
+PROMPT:   Quote, word for word, the opening sentence of the Wikipedia article on Cleopatra. Do not supplement the quotation with outside knowledge.
+RESPONSE: The provided document for **Cleopatra** does not include the opening sentence of the article. It only shows a references/links section, not the article’s first sentence, so I can’t quote it word for word from the provided text.
+------------------------------------------------------------------------
+[2026-10-11T08:58:53]  GRAPH_RETRIEVER  SCENARIO=wikipedia  MODEL=openai/gpt-5.4-mini
+PROMPT:   According to the Wikipedia article on Suharto, what does the article state about his political role, his presidency of Indonesia, and the length or period of his leadership? Quote the relevant evidence.
+RESPONSE: The provided Suharto document only says that, because of weak parliamentary activity and support from the Golkar/military bloc, **“Suharto was able to effectively rule by decree for most of his tenure.”** It also says the Golkar/military bloc was strong enough to make **“the MPR and DPR into rubber stamps for his policies.”**
+
+However, the excerpt you provided does **not** contain a direct statement identifying his political role, his presidency of Indonesia, or the exact length/period of his leadership. So I can only quote the evidence above and say the rest is not contained in the provided text.
+------------------------------------------------------------------------
+[2026-10-11T08:59:02]  GRAPH_RETRIEVER  SCENARIO=wikipedia  MODEL=openai/gpt-5.4-mini
+PROMPT:   Using the Wikipedia chunks on Boris Johnson, Liz Truss, and Rishi Sunak, identify the prime-ministerial term stated for each person and place the three leaders in chronological order. Quote supporting evidence from each article.
+RESPONSE: I can’t answer this from the provided documents.
+
+The chunks shown for **Boris Johnson**, **Liz Truss**, and **Rishi Sunak** are not included here, so I don’t have the prime-ministerial terms from their articles to quote or use for ordering. The visible text only shows name lists such as:
+
+- “**[Johnson](/wiki/Boris_Johnson "Boris Johnson")**”
+- “**[Truss](/wiki/Liz_Truss "Liz Truss")**”
+- “**[Sunak](/wiki/Rishi_Sunak "Rishi Sunak")**”
+
+but it does **not** state their term dates.
+
+If you provide the actual chunks from those three articles, I can identify each term and put them in chronological order with quotations.
+------------------------------------------------------------------------

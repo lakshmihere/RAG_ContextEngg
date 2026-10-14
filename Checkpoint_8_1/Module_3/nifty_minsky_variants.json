@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Locate the passage in the George Washington article that identifies him as the first president of the United States. Then inspect the surrounding article context and explain what additional leadership or nation-building role the nearby passages attribute to Washington. Cite the retrieved and neighboring passages separately.",
+    "grading_notes": "The response should retrieve evidence identifying George Washington as the first president of the United States and use neighboring passage evidence to describe an additional leadership or nation-building role attributed to him. Both the initial passage and expanded local context should be represented.",
+    "question_type": "original"
+  },
+  {
+    "question": "Where in the George Washington article does it say he was the first president of the United States, and what other leadership or nation-building role is mentioned in the surrounding text? Please quote the identified passage and the nearby context separately.",
+    "grading_notes": "The response should retrieve evidence identifying George Washington as the first president of the United States and use neighboring passage evidence to describe an additional leadership or nation-building role attributed to him. Both the initial passage and expanded local context should be represented.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Find the part of the George Washington article that describes him as the first president of the United States, then look at the surrounding text to see what other leadership or nation-building role it gives him. Cite the target passage and the neighboring passages separately.",
+    "grading_notes": "The response should retrieve evidence identifying George Washington as the first president of the United States and use neighboring passage evidence to describe an additional leadership or nation-building role attributed to him. Both the initial passage and expanded local context should be represented.",
+    "question_type": "variant"
+  },
+  {
+    "question": "In the George Washington article, which passage identifies him as the first president of the United States, and what additional role in leadership or nation-building do the adjacent passages assign to him? Provide separate citations for the retrieved passage and the surrounding context.",
+    "grading_notes": "The response should retrieve evidence identifying George Washington as the first president of the United States and use neighboring passage evidence to describe an additional leadership or nation-building role attributed to him. Both the initial passage and expanded local context should be represented.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Locate evidence in the Emmanuel Macron article identifying his presidency of France. Then examine nearby passages to determine what immediately preceding political role or political background the article associates with his rise to the presidency. Support both parts using passage evidence.",
+    "grading_notes": "The response should retrieve evidence identifying Emmanuel Macron as President of France and use nearby context to identify the political role or background preceding his presidency as stated in the article. Both claims must be supported by passage evidence.",
+    "question_type": "original"
+  },
+  {
+    "question": "Which passage in the Emmanuel Macron article shows that he became President of France, and what nearby text says about the political position or background he had right before that? Use the article’s wording to support both points.",
+    "grading_notes": "The response should retrieve evidence identifying Emmanuel Macron as President of France and use nearby context to identify the political role or background preceding his presidency as stated in the article. Both claims must be supported by passage evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Find the part of the Emmanuel Macron article that identifies him as President of France, then look at the surrounding text to see what political role or background is described as leading up to that office. Quote the relevant evidence for both.",
+    "grading_notes": "The response should retrieve evidence identifying Emmanuel Macron as President of France and use nearby context to identify the political role or background preceding his presidency as stated in the article. Both claims must be supported by passage evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "In the Emmanuel Macron article, where does it state that he served as President of France, and what does the immediately adjacent passage say about the political office or background associated with his path to the presidency? Support your answer with text from the article.",
+    "grading_notes": "The response should retrieve evidence identifying Emmanuel Macron as President of France and use nearby context to identify the political role or background preceding his presidency as stated in the article. Both claims must be supported by passage evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Using the Wikipedia article on Abraham Lincoln, identify when his presidency began and explain the major national crisis described in the article around the beginning of his presidency. Support the answer with evidence from the relevant and surrounding passages.",
+    "grading_notes": "The response should identify the beginning of Abraham Lincoln's presidency in 1861 and explain the major national crisis associated with the beginning of his presidency, particularly the secession crisis and/or beginning of the American Civil War, using evidence from the Abraham Lincoln article.",
+    "question_type": "original"
+  },
+  {
+    "question": "When did Abraham Lincoln’s presidency start, and what major national crisis does the Wikipedia article say was happening around the start of his presidency? Use the relevant surrounding passages to support the answer.",
+    "grading_notes": "The response should identify the beginning of Abraham Lincoln's presidency in 1861 and explain the major national crisis associated with the beginning of his presidency, particularly the secession crisis and/or beginning of the American Civil War, using evidence from the Abraham Lincoln article.",
+    "question_type": "variant"
+  },
+  {
+    "question": "According to the Wikipedia article on Abraham Lincoln, when did he become president, and what was the major crisis the country was facing at that time? Back up the response with evidence from the nearby text.",
+    "grading_notes": "The response should identify the beginning of Abraham Lincoln's presidency in 1861 and explain the major national crisis associated with the beginning of his presidency, particularly the secession crisis and/or beginning of the American Civil War, using evidence from the Abraham Lincoln article.",
+    "question_type": "variant"
+  },
+  {
+    "question": "From the Abraham Lincoln Wikipedia page, what date marks the beginning of his presidency, and what significant national crisis is described as occurring around then? Cite the relevant surrounding passages in your answer.",
+    "grading_notes": "The response should identify the beginning of Abraham Lincoln's presidency in 1861 and explain the major national crisis associated with the beginning of his presidency, particularly the secession crisis and/or beginning of the American Civil War, using evidence from the Abraham Lincoln article.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Using the Wikipedia article on Nelson Mandela, identify when he became President of South Africa and explain what the article says about the political transition surrounding his presidency. Support both the office/date and the surrounding political context with passage evidence.",
+    "grading_notes": "The response should identify Nelson Mandela as President of South Africa beginning in 1994 and describe the political transition surrounding his presidency using evidence from the Nelson Mandela article. Both the leadership fact and surrounding political context must be supported by retrieved evidence.",
+    "question_type": "original"
+  },
+  {
+    "question": "When did Nelson Mandela become President of South Africa, and what does the Wikipedia article say about the political transition around his presidency? Support your answer with evidence from the article.",
+    "grading_notes": "The response should identify Nelson Mandela as President of South Africa beginning in 1994 and describe the political transition surrounding his presidency using evidence from the Nelson Mandela article. Both the leadership fact and surrounding political context must be supported by retrieved evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "According to the Wikipedia article on Nelson Mandela, when did he take office as President of South Africa, and how is the political transition before and during his presidency described? Cite the relevant passage.",
+    "grading_notes": "The response should identify Nelson Mandela as President of South Africa beginning in 1994 and describe the political transition surrounding his presidency using evidence from the Nelson Mandela article. Both the leadership fact and surrounding political context must be supported by retrieved evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "From the Nelson Mandela Wikipedia article, identify the date he became President of South Africa and explain the article’s account of the political shift surrounding his presidency, using supporting text from the passage.",
+    "grading_notes": "The response should identify Nelson Mandela as President of South Africa beginning in 1994 and describe the political transition surrounding his presidency using evidence from the Nelson Mandela article. Both the leadership fact and surrounding political context must be supported by retrieved evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "From the Adolf Hitler article, identify when he became Chancellor of Germany, explain how his national leadership position changed after Paul von Hindenburg's death, and identify the title associated with that later position. Cite evidence supporting each stage of the leadership transition.",
+    "grading_notes": "The response should identify Hitler becoming Chancellor of Germany in 1933 and explain the change in his leadership position following Paul von Hindenburg's death, including the Führer title or merger of presidential and chancellorial authority as supported by the Adolf Hitler article. Each stage must be grounded in evidence.",
+    "question_type": "original"
+  },
+  {
+    "question": "When did Adolf Hitler become Chancellor of Germany, how did his role in national leadership change after Paul von Hindenburg died, and what title went with that later position? Please cite evidence for each step in the leadership transition.",
+    "grading_notes": "The response should identify Hitler becoming Chancellor of Germany in 1933 and explain the change in his leadership position following Paul von Hindenburg's death, including the Führer title or merger of presidential and chancellorial authority as supported by the Adolf Hitler article. Each stage must be grounded in evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "From the Adolf Hitler article, when did he become Chancellor of Germany, what happened to his national leadership after Paul von Hindenburg’s death, and what title was used for that later role? Include evidence for each stage of the transition.",
+    "grading_notes": "The response should identify Hitler becoming Chancellor of Germany in 1933 and explain the change in his leadership position following Paul von Hindenburg's death, including the Führer title or merger of presidential and chancellorial authority as supported by the Adolf Hitler article. Each stage must be grounded in evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "According to the Adolf Hitler article, when was Hitler appointed Chancellor of Germany, how did his leadership status change after Hindenburg died, and what was the title of his later position? Support each part with evidence.",
+    "grading_notes": "The response should identify Hitler becoming Chancellor of Germany in 1933 and explain the change in his leadership position following Paul von Hindenburg's death, including the Führer title or merger of presidential and chancellorial authority as supported by the Adolf Hitler article. Each stage must be grounded in evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Using the Margaret Thatcher, Theresa May, Boris Johnson, Liz Truss, and Rishi Sunak articles, arrange the five leaders chronologically by their periods as UK prime minister. Then identify any gaps between their premierships that show that another prime minister must have served between members of this set. Base the dates only on evidence retrieved from the corpus.",
+    "grading_notes": "The response should order Margaret Thatcher, Theresa May, Boris Johnson, Liz Truss, and Rishi Sunak correctly by their periods as UK prime minister. It should recognize gaps between the listed terms where the supplied leaders are not consecutive. Claims about dates and gaps must be supported by corpus evidence.",
+    "question_type": "original"
+  },
+  {
+    "question": "Using the Margaret Thatcher, Theresa May, Boris Johnson, Liz Truss, and Rishi Sunak articles, put the five UK prime ministers in chronological order by their time in office, and note any gaps between their terms that indicate another prime minister served in between, based only on dates from the corpus.",
+    "grading_notes": "The response should order Margaret Thatcher, Theresa May, Boris Johnson, Liz Truss, and Rishi Sunak correctly by their periods as UK prime minister. It should recognize gaps between the listed terms where the supplied leaders are not consecutive. Claims about dates and gaps must be supported by corpus evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "From the Margaret Thatcher, Theresa May, Boris Johnson, Liz Truss, and Rishi Sunak articles, order these five leaders by when they served as UK prime minister, then point out any breaks between their premierships that show an intervening prime minister must have existed, using only the corpus for the dates.",
+    "grading_notes": "The response should order Margaret Thatcher, Theresa May, Boris Johnson, Liz Truss, and Rishi Sunak correctly by their periods as UK prime minister. It should recognize gaps between the listed terms where the supplied leaders are not consecutive. Claims about dates and gaps must be supported by corpus evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Using the articles for Margaret Thatcher, Theresa May, Boris Johnson, Liz Truss, and Rishi Sunak, arrange them in the order they held the office of UK prime minister and identify any date gaps between their terms that imply another prime minister served between them, relying only on evidence in the corpus.",
+    "grading_notes": "The response should order Margaret Thatcher, Theresa May, Boris Johnson, Liz Truss, and Rishi Sunak correctly by their periods as UK prime minister. It should recognize gaps between the listed terms where the supplied leaders are not consecutive. Claims about dates and gaps must be supported by corpus evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Compare Margaret Thatcher and Theresa May as British prime ministers. Determine when each entered office, when each left office, and what political event or circumstance described in their respective articles was associated with the end of each premiership. Cite evidence from both articles.",
+    "grading_notes": "The response should identify Margaret Thatcher's premiership as 1979 to 1990 and Theresa May's as 2016 to 2019, and explain the political circumstances associated with the end of each premiership using evidence from their respective articles. Evidence from both articles must be present.",
+    "question_type": "original"
+  },
+  {
+    "question": "When did Margaret Thatcher and Theresa May each start and finish serving as British prime minister, and what political event or situation mentioned in their articles marked the end of each of their premierships? Please use evidence from both articles.",
+    "grading_notes": "The response should identify Margaret Thatcher's premiership as 1979 to 1990 and Theresa May's as 2016 to 2019, and explain the political circumstances associated with the end of each premiership using evidence from their respective articles. Evidence from both articles must be present.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Compare Margaret Thatcher and Theresa May as UK prime ministers. State the dates they took office and left office, and explain what political event or circumstance in each article was tied to the end of their time in office, citing both sources.",
+    "grading_notes": "The response should identify Margaret Thatcher's premiership as 1979 to 1990 and Theresa May's as 2016 to 2019, and explain the political circumstances associated with the end of each premiership using evidence from their respective articles. Evidence from both articles must be present.",
+    "question_type": "variant"
+  },
+  {
+    "question": "What were the entry and exit dates for Margaret Thatcher and Theresa May as British prime ministers, and what event or circumstance described in their articles led to the end of each premiership? Support your answer with evidence from both articles.",
+    "grading_notes": "The response should identify Margaret Thatcher's premiership as 1979 to 1990 and Theresa May's as 2016 to 2019, and explain the political circumstances associated with the end of each premiership using evidence from their respective articles. Evidence from both articles must be present.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Compare Nelson Mandela and Suharto as national leaders. For each person, determine the country led, leadership office, period in office, and the political circumstances associated with the beginning of that leadership. Support the comparison with evidence from both Wikipedia articles.",
+    "grading_notes": "The response should identify Mandela as President of South Africa from 1994 to 1999 and Suharto as President of Indonesia from 1967 to 1998. It should also explain the political circumstances associated with each leader's rise using evidence from both articles. Evidence from both required articles is necessary.",
+    "question_type": "original"
+  },
+  {
+    "question": "Compare Nelson Mandela and Suharto as national leaders: identify the country each led, their official positions, the years they were in power, and the political context at the start of each leader’s tenure, using evidence from the Wikipedia articles.",
+    "grading_notes": "The response should identify Mandela as President of South Africa from 1994 to 1999 and Suharto as President of Indonesia from 1967 to 1998. It should also explain the political circumstances associated with each leader's rise using evidence from both articles. Evidence from both required articles is necessary.",
+    "question_type": "variant"
+  },
+  {
+    "question": "How do Nelson Mandela and Suharto compare as national leaders in terms of the country they governed, the office they held, the time period of their leadership, and the political circumstances when their leadership began? Support your answer with information from both Wikipedia pages.",
+    "grading_notes": "The response should identify Mandela as President of South Africa from 1994 to 1999 and Suharto as President of Indonesia from 1967 to 1998. It should also explain the political circumstances associated with each leader's rise using evidence from both articles. Evidence from both required articles is necessary.",
+    "question_type": "variant"
+  },
+  {
+    "question": "For Nelson Mandela and Suharto, what country did each lead, what leadership role did each occupy, when did each serve, and what political situation marked the beginning of each person’s rule? Use evidence from both Wikipedia articles in your comparison.",
+    "grading_notes": "The response should identify Mandela as President of South Africa from 1994 to 1999 and Suharto as President of Indonesia from 1967 to 1998. It should also explain the political circumstances associated with each leader's rise using evidence from both articles. Evidence from both required articles is necessary.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Use the 'Presidency of Joe Biden' article to identify the event and date that began Biden's presidential tenure. Then compare that leadership transition with the presidential term information in the Barack Obama article. Explain the chronological relationship between the two presidencies using evidence from both articles.",
+    "grading_notes": "The response should identify Biden's inauguration on January 20, 2021 as the beginning of his presidential tenure using the 'Presidency of Joe Biden' article. It should also use evidence from the Barack Obama article for Obama's presidential term and accurately explain the chronological relationship. Evidence from both articles is required.",
+    "question_type": "original"
+  },
+  {
+    "question": "What event and date marked the start of Biden’s presidency according to the “Presidency of Joe Biden” article, and how does that compare with the presidential term details in the Barack Obama article? Explain how the two presidencies are ordered in time using evidence from both articles.",
+    "grading_notes": "The response should identify Biden's inauguration on January 20, 2021 as the beginning of his presidential tenure using the 'Presidency of Joe Biden' article. It should also use evidence from the Barack Obama article for Obama's presidential term and accurately explain the chronological relationship. Evidence from both articles is required.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Using the “Presidency of Joe Biden” article, identify the event and date when Biden’s presidential tenure began, then compare that transition to the presidential term information in the Barack Obama article. Describe the chronological relationship between the two presidencies with support from both articles.",
+    "grading_notes": "The response should identify Biden's inauguration on January 20, 2021 as the beginning of his presidential tenure using the 'Presidency of Joe Biden' article. It should also use evidence from the Barack Obama article for Obama's presidential term and accurately explain the chronological relationship. Evidence from both articles is required.",
+    "question_type": "variant"
+  },
+  {
+    "question": "According to the “Presidency of Joe Biden” article, what event and date initiated Biden’s time as president, and how does that line up with the term dates given in the Barack Obama article? Explain the timeline relationship between the two presidencies using evidence from both sources.",
+    "grading_notes": "The response should identify Biden's inauguration on January 20, 2021 as the beginning of his presidential tenure using the 'Presidency of Joe Biden' article. It should also use evidence from the Barack Obama article for Obama's presidential term and accurately explain the chronological relationship. Evidence from both articles is required.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Using only the Justin Trudeau article, determine his numbered position among Canadian prime ministers, the years he served, the political party he led, and what the article says about the end of his premiership. Retrieve additional evidence if the initial passages do not support every part of the answer.",
+    "grading_notes": "The response should identify Justin Trudeau as Canada's 23rd prime minister, give his term as 2015 to 2025, identify the Liberal Party, and accurately describe the end of his premiership using evidence from the Justin Trudeau article. Every requested fact should be grounded in retrieved evidence.",
+    "question_type": "original"
+  },
+  {
+    "question": "Using only the Justin Trudeau article, what was his ordinal rank among Canadian prime ministers, which years did he serve, what political party did he lead, and how does the article describe the end of his time as prime minister?",
+    "grading_notes": "The response should identify Justin Trudeau as Canada's 23rd prime minister, give his term as 2015 to 2025, identify the Liberal Party, and accurately describe the end of his premiership using evidence from the Justin Trudeau article. Every requested fact should be grounded in retrieved evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "From the Justin Trudeau article alone, can you identify his position in the sequence of Canadian prime ministers, the dates of his term in office, the party he was leader of, and the article’s explanation of how his premiership ended?",
+    "grading_notes": "The response should identify Justin Trudeau as Canada's 23rd prime minister, give his term as 2015 to 2025, identify the Liberal Party, and accurately describe the end of his premiership using evidence from the Justin Trudeau article. Every requested fact should be grounded in retrieved evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Based only on the Justin Trudeau article, what number prime minister of Canada was he, when did he serve, which party did he head, and what does the article say about the conclusion of his premiership?",
+    "grading_notes": "The response should identify Justin Trudeau as Canada's 23rd prime minister, give his term as 2015 to 2025, identify the Liberal Party, and accurately describe the end of his premiership using evidence from the Justin Trudeau article. Every requested fact should be grounded in retrieved evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Compare Queen Victoria, Nelson Mandela, Margaret Thatcher, and Abraham Lincoln as national leaders from different political systems. For each figure, identify the country, leadership role, and period of leadership stated in the corpus. Then classify each role as monarch, president, or prime minister and arrange the four leadership periods chronologically by starting year. Retrieve and cite evidence from every required article.",
+    "grading_notes": "The response should identify Queen Victoria as monarch of the United Kingdom (reign beginning 1837 and ending 1901), Abraham Lincoln as President of the United States (1861-1865), Margaret Thatcher as Prime Minister of the United Kingdom (1979-1990), and Nelson Mandela as President of South Africa (1994-1999). The roles should be classified correctly and ordered by starting year as Victoria -> Lincoln -> Thatcher -> Mandela. Evidence from all four required articles must be retrieved.",
+    "question_type": "original"
+  },
+  {
+    "question": "Compare Queen Victoria, Nelson Mandela, Margaret Thatcher, and Abraham Lincoln as national leaders from different political systems. For each person, state the country, leadership position, and time period of leadership given in the corpus, then label each as monarch, president, or prime minister and order the four periods by starting year. Use evidence from each required article.",
+    "grading_notes": "The response should identify Queen Victoria as monarch of the United Kingdom (reign beginning 1837 and ending 1901), Abraham Lincoln as President of the United States (1861-1865), Margaret Thatcher as Prime Minister of the United Kingdom (1979-1990), and Nelson Mandela as President of South Africa (1994-1999). The roles should be classified correctly and ordered by starting year as Victoria -> Lincoln -> Thatcher -> Mandela. Evidence from all four required articles must be retrieved.",
+    "question_type": "variant"
+  },
+  {
+    "question": "For Queen Victoria, Nelson Mandela, Margaret Thatcher, and Abraham Lincoln, identify the country, official role, and leadership dates mentioned in the corpus, classify each one as monarch, president, or prime minister, and sort the leadership terms chronologically by their start year. Include citations from all required articles.",
+    "grading_notes": "The response should identify Queen Victoria as monarch of the United Kingdom (reign beginning 1837 and ending 1901), Abraham Lincoln as President of the United States (1861-1865), Margaret Thatcher as Prime Minister of the United Kingdom (1979-1990), and Nelson Mandela as President of South Africa (1994-1999). The roles should be classified correctly and ordered by starting year as Victoria -> Lincoln -> Thatcher -> Mandela. Evidence from all four required articles must be retrieved.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Using the corpus, compare Queen Victoria, Nelson Mandela, Margaret Thatcher, and Abraham Lincoln as leaders of different political systems by giving each person’s country, title, and leadership period, then categorize the office as monarch, president, or prime minister and place the four tenures in start-date order. Cite evidence from every relevant article.",
+    "grading_notes": "The response should identify Queen Victoria as monarch of the United Kingdom (reign beginning 1837 and ending 1901), Abraham Lincoln as President of the United States (1861-1865), Margaret Thatcher as Prime Minister of the United Kingdom (1979-1990), and Nelson Mandela as President of South Africa (1994-1999). The roles should be classified correctly and ordered by starting year as Victoria -> Lincoln -> Thatcher -> Mandela. Evidence from all four required articles must be retrieved.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Using the George Washington, Abraham Lincoln, and Barack Obama articles, determine which numbered president each was, the years each served, and one major national circumstance associated with the beginning of each presidency as described in the respective article. Evidence must be retrieved from all three articles.",
+    "grading_notes": "The response should identify George Washington as the 1st U.S. president (1789-1797), Abraham Lincoln as the 16th (1861-1865), and Barack Obama as the 44th (2009-2017). It should also provide one relevant national circumstance associated with the beginning of each presidency using evidence from each of the three articles.",
+    "question_type": "original"
+  },
+  {
+    "question": "Which numbered president was George Washington, Abraham Lincoln, and Barack Obama, what years did each serve, and what major national circumstance marked the start of each presidency according to their articles?",
+    "grading_notes": "The response should identify George Washington as the 1st U.S. president (1789-1797), Abraham Lincoln as the 16th (1861-1865), and Barack Obama as the 44th (2009-2017). It should also provide one relevant national circumstance associated with the beginning of each presidency using evidence from each of the three articles.",
+    "question_type": "variant"
+  },
+  {
+    "question": "From the George Washington, Abraham Lincoln, and Barack Obama articles, identify each man’s presidential number, the years he served, and one key national situation tied to the beginning of his presidency as described in the articles.",
+    "grading_notes": "The response should identify George Washington as the 1st U.S. president (1789-1797), Abraham Lincoln as the 16th (1861-1865), and Barack Obama as the 44th (2009-2017). It should also provide one relevant national circumstance associated with the beginning of each presidency using evidence from each of the three articles.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Using the articles on George Washington, Abraham Lincoln, and Barack Obama, determine each president’s order number, the dates of their terms, and a major national circumstance at the start of each presidency mentioned in the articles.",
+    "grading_notes": "The response should identify George Washington as the 1st U.S. president (1789-1797), Abraham Lincoln as the 16th (1861-1865), and Barack Obama as the 44th (2009-2017). It should also provide one relevant national circumstance associated with the beginning of each presidency using evidence from each of the three articles.",
+    "question_type": "variant"
+  },
+  {
+    "question": "According to the Wikipedia article on Queen Victoria, identify when her reign began and explain the circumstances described around her accession to the throne. Use evidence for both the date and the surrounding context.",
+    "grading_notes": "The response should identify the beginning of Queen Victoria's reign as 20 June 1837 and explain the circumstances surrounding her accession as described in the Queen Victoria article. Evidence should support both the accession date and context.",
+    "question_type": "original"
+  },
+  {
+    "question": "When did Queen Victoria’s reign begin, and what circumstances around her accession to the throne are described in the Wikipedia article? Use evidence for both the date and the context.",
+    "grading_notes": "The response should identify the beginning of Queen Victoria's reign as 20 June 1837 and explain the circumstances surrounding her accession as described in the Queen Victoria article. Evidence should support both the accession date and context.",
+    "question_type": "variant"
+  },
+  {
+    "question": "According to the Wikipedia article on Queen Victoria, when did she start reigning, and what was happening around the time she came to the throne? Support your answer with evidence for both.",
+    "grading_notes": "The response should identify the beginning of Queen Victoria's reign as 20 June 1837 and explain the circumstances surrounding her accession as described in the Queen Victoria article. Evidence should support both the accession date and context.",
+    "question_type": "variant"
+  },
+  {
+    "question": "What date did Queen Victoria’s reign begin, and what does the Wikipedia article say about the circumstances of her accession to the throne? Include evidence for the timing and the surrounding context.",
+    "grading_notes": "The response should identify the beginning of Queen Victoria's reign as 20 June 1837 and explain the circumstances surrounding her accession as described in the Queen Victoria article. Evidence should support both the accession date and context.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Using the Wikipedia articles on Boris Johnson, Liz Truss, and Rishi Sunak, reconstruct the chronological transition of UK prime ministerial leadership across the three figures. Identify each person's term and use evidence from the articles to explain how one premiership gave way to the next.",
+    "grading_notes": "The response should establish the chronological order Boris Johnson -> Liz Truss -> Rishi Sunak and accurately identify their prime-ministerial terms. It should explain the transitions using evidence retrieved from all three articles rather than relying only on general chronology.",
+    "question_type": "original"
+  },
+  {
+    "question": "Using the Wikipedia pages for Boris Johnson, Liz Truss, and Rishi Sunak, how can I map the chronological handoff of UK prime ministerial power among them, and what evidence shows how each term ended and the next began?",
+    "grading_notes": "The response should establish the chronological order Boris Johnson -> Liz Truss -> Rishi Sunak and accurately identify their prime-ministerial terms. It should explain the transitions using evidence retrieved from all three articles rather than relying only on general chronology.",
+    "question_type": "variant"
+  },
+  {
+    "question": "From the Wikipedia articles on Boris Johnson, Liz Truss, and Rishi Sunak, what is the sequence of their premierships in the UK, and how did leadership pass from one to the next according to the articles?",
+    "grading_notes": "The response should establish the chronological order Boris Johnson -> Liz Truss -> Rishi Sunak and accurately identify their prime-ministerial terms. It should explain the transitions using evidence retrieved from all three articles rather than relying only on general chronology.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Based on the Wikipedia entries for Boris Johnson, Liz Truss, and Rishi Sunak, can you reconstruct the order of their terms as UK prime minister and explain, using the articles, how each transition in office occurred?",
+    "grading_notes": "The response should establish the chronological order Boris Johnson -> Liz Truss -> Rishi Sunak and accurately identify their prime-ministerial terms. It should explain the transitions using evidence retrieved from all three articles rather than relying only on general chronology.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Using the Suharto article, identify how Suharto came to national leadership in Indonesia, the period during which he served as president, and how the article describes the end of his rule. Use multiple passages if these facts are not located together.",
+    "grading_notes": "The response should explain Suharto's rise to national leadership, identify his presidency of Indonesia from 1967 to 1998, and describe the end of his rule using evidence from the Suharto article. The response should not invent details absent from the retrieved evidence.",
+    "question_type": "original"
+  },
+  {
+    "question": "According to the Suharto article, how did Suharto rise to national leadership in Indonesia, when did he serve as president, and how does the article describe the end of his rule?",
+    "grading_notes": "The response should explain Suharto's rise to national leadership, identify his presidency of Indonesia from 1967 to 1998, and describe the end of his rule using evidence from the Suharto article. The response should not invent details absent from the retrieved evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "Using the Suharto article, explain how Suharto became Indonesia’s national leader, what years he was president, and what the article says about how his rule ended.",
+    "grading_notes": "The response should explain Suharto's rise to national leadership, identify his presidency of Indonesia from 1967 to 1998, and describe the end of his rule using evidence from the Suharto article. The response should not invent details absent from the retrieved evidence.",
+    "question_type": "variant"
+  },
+  {
+    "question": "From the Suharto article, determine how Suharto came to power in Indonesia, the time span of his presidency, and the way the article characterizes the end of his presidency.",
+    "grading_notes": "The response should explain Suharto's rise to national leadership, identify his presidency of Indonesia from 1967 to 1998, and describe the end of his rule using evidence from the Suharto article. The response should not invent details absent from the retrieved evidence.",
+    "question_type": "variant"
+  }
+]

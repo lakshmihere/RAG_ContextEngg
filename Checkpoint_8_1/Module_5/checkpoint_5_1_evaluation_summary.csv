@@ -1,0 +1,4 @@
+﻿workflow,questions_evaluated,mean_score,pass_rate,partial_rate,fail_rate,mean_correctness,mean_completeness,mean_groundedness,mean_source_compliance,mean_latency_seconds,mean_passages_retrieved
+FIXED,5,67.48,20.0,40.0,40.0,2.2,2.2,3.6,2.8,2.09,4.0
+AGENTIC,5,76.24,20.0,60.0,20.0,2.4,2.4,3.8,3.6,4.77,5.0
+TOOL_USING_AGENT,5,81.26,40.0,60.0,0.0,2.6,2.6,3.8,4.0,5.29,10.0

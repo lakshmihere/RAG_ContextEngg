@@ -1,0 +1,318 @@
+PS C:\Users\laksh\OneDrive\Desktop\MIT\Wiki_Capstones\check_2> python .\Capstone_Checkpoint_2_1_selectable_retriever_CHUNKED.py hybrid
+Found 65 Wikipedia HTML files.
+Successfully loaded 65 Wikipedia documents.
+Abraham_Lincoln.html                       168564 characters
+Adolf_Hitler.html                          178252 characters
+Barack_Obama.html                          281340 characters
+Benjamin_Franklin.html                     202701 characters
+Bernhard_von_Bülow.html                     59971 characters
+Bill_Clinton.html                          231196 characters
+Bonar_Law.html                             109078 characters
+Boris_Johnson.html                         266734 characters
+Cleopatra.html                             198058 characters
+Davy_Crockett.html                          77478 characters
+... plus 55 additional documents.
+
+Articles loaded : 65
+Chunks created  : 8566
+Chunk size      : 1200
+Chunk overlap   : 150
+Building vector DB (first run — embedding Wikipedia chunks)...
+  Indexed 8566 Wikipedia chunks from 65 articles into wikipedia_chroma_full/
+Hybrid retriever ready over 8566 Wikipedia chunks (BM25 weight=0.4, vector weight=0.6).
+
+Checkpoint 2.1 — HYBRID retrieval | scenario: wikipedia
+
+========================================================================
+QUERY 1: According to the Wikipedia article on Nelson Mandela, what leadership office did he hold in South Africa and during what years did he serve? Quote the relevant sentence.
+
+Retrieved results:
+    1. Nelson_Mandela.html [chunk 4] | hybrid score = 1.0000
+    2. Nelson_Mandela.html [chunk 63] | hybrid score = 0.5080
+    3. Nelson_Mandela.html [chunk 162] | hybrid score = 0.4618
+    4. Nelson_Mandela.html [chunk 6] | hybrid score = 0.4596
+    5. Nelson_Mandela.html [chunk 165] | hybrid score = 0.3812
+    6. Nelson_Mandela.html [chunk 0] | hybrid score = 0.3609
+
+Answer:
+According to the article, Mandela held the office of **President of South Africa** and served from **1994 to 1999**.
+
+Relevant quote: **“Nelson Rolihlahla Mandela ... was a South African anti-apartheid activist and statesman who was the first president of South Africa from 1994 to 1999.”**
+
+========================================================================
+QUERY 2: According to the Wikipedia article on Margaret Thatcher, what position did she hold in the United Kingdom and during what years did she serve? Quote the relevant sentence.
+
+Retrieved results:
+    1. Margaret_Thatcher.html [chunk 0] | hybrid score = 0.6000
+    2. Margaret_Thatcher.html [chunk 3] | hybrid score = 0.4536
+    3. Margaret_Thatcher.html [chunk 162] | hybrid score = 0.4435
+    4. Sargent_Shriver.html [chunk 9] | hybrid score = 0.4000
+    5. John_Major.html [chunk 2] | hybrid score = 0.3604
+    6. Margaret_Thatcher.html [chunk 6] | hybrid score = 0.3346
+
+Answer:
+According to the article, Margaret Thatcher served as **Prime Minister of the United Kingdom** from **1979 to 1990**.
+
+Relevant sentence: **“was a British stateswoman who served as Prime Minister of the United Kingdom from 1979 to 1990”**
+
+========================================================================
+QUERY 3: According to the Wikipedia article on Queen Victoria, when did her reign begin and when did it end? Quote the relevant evidence from the article.
+
+Retrieved results:
+    1. Queen_Victoria.html [chunk 86] | hybrid score = 0.8383
+    2. Queen_Victoria.html [chunk 2] | hybrid score = 0.7211
+    3. Queen_Victoria.html [chunk 87] | hybrid score = 0.6214
+    4. Queen_Victoria.html [chunk 46] | hybrid score = 0.5663
+    5. Queen_Victoria.html [chunk 0] | hybrid score = 0.4905
+    6. Queen_Victoria.html [chunk 4] | hybrid score = 0.3928
+
+Answer:
+According to the article, Queen Victoria’s reign began on **20 June 1837** and ended on **22 January 1901**.
+
+Relevant evidence:
+- “**Queen of the United Kingdom from 1837 to 1901**”  
+- “**Reign 20 June 1837 – 22 January 1901**”  
+- “was Queen of the United Kingdom of Great Britain and Ireland from **20 June 1837 until her death in 1901**.”
+
+========================================================================
+QUERY 4: According to the Wikipedia article on Abraham Lincoln, which numbered president of the United States was he and when did he serve? Quote the relevant sentence.
+
+Retrieved results:
+    1. Abraham_Lincoln.html [chunk 4] | hybrid score = 0.8393
+    2. Abraham_Lincoln.html [chunk 118] | hybrid score = 0.5380
+    3. Abraham_Lincoln.html [chunk 20] | hybrid score = 0.5232
+    4. Abraham_Lincoln.html [chunk 0] | hybrid score = 0.4520
+    5. Abraham_Lincoln.html [chunk 5] | hybrid score = 0.4112
+    6. Abraham_Lincoln.html [chunk 73] | hybrid score = 0.3413
+
+Answer:
+According to the article, Abraham Lincoln was the **16th president of the United States**, and he served **from 1861 until his assassination in 1865**. The relevant sentence is:
+
+> “Abraham Lincoln (February 12, 1809 – April 15, 1865) was the **16th president of the United States**, serving **from 1861 until his assassination in 1865**.”
+
+========================================================================
+QUERY 5: According to the Wikipedia article on Emmanuel Macron, what national leadership office does the article identify him as holding? Quote the relevant sentence.
+
+Retrieved results:
+    1. Emmanuel_Macron.html [chunk 5] | hybrid score = 0.7356
+    2. Emmanuel_Macron.html [chunk 0] | hybrid score = 0.7107
+    3. Emmanuel_Macron.html [chunk 150] | hybrid score = 0.4520
+    4. Emmanuel_Macron.html [chunk 30] | hybrid score = 0.4084
+    5. Emmanuel_Macron.html [chunk 45] | hybrid score = 0.4000
+    6. Emmanuel_Macron.html [chunk 3] | hybrid score = 0.2979
+
+Answer:
+The article identifies Emmanuel Macron as holding the office of **President of France**. Relevant sentence:
+
+> “Emmanuel Jean-Michel Frédéric Macron ... is a French politician who has served as **President of France** and Co-Prince of Andorra since 2017.”
+
+========================================================================
+QUERY 6: According to the Wikipedia article on Justin Trudeau, identify his nationality, the leadership office he held, and his term of service. Support all parts of the answer with evidence from the article.
+
+Retrieved results:
+    1. Justin_Trudeau.html [chunk 70] | hybrid score = 0.6205
+    2. Justin_Trudeau.html [chunk 4] | hybrid score = 0.6000
+    3. Justin_Trudeau.html [chunk 0] | hybrid score = 0.5858
+    4. Justin_Trudeau.html [chunk 48] | hybrid score = 0.5332
+    5. Justin_Trudeau.html [chunk 158] | hybrid score = 0.4966
+    6. Justin_Trudeau.html [chunk 147] | hybrid score = 0.3888
+
+Answer:
+According to the article, Justin Trudeau is **Canadian**: “**is a Canadian politician**” ([chunk_4]).
+
+He held the leadership office of **Prime Minister of Canada**: “**served as the 23rd prime minister of Canada from 2015 to 2025**” ([chunk_4]).
+
+So his term of service was **2015 to 2025**: “**from 2015 to 2025**” ([chunk_4]).
+
+========================================================================
+QUERY 7: According to the Wikipedia article on Suharto, what does the article state about his political role, his presidency of Indonesia, and the length or period of his leadership? Quote the relevant evidence.
+
+Retrieved results:
+    1. Suharto.html [chunk 10] | hybrid score = 1.0000
+    2. Suharto.html [chunk 7] | hybrid score = 0.5704
+    3. Suharto.html [chunk 9] | hybrid score = 0.5694
+    4. Suharto.html [chunk 0] | hybrid score = 0.5584
+    5. Suharto.html [chunk 8] | hybrid score = 0.5248
+    6. Suharto.html [chunk 38] | hybrid score = 0.4624
+
+Answer:
+The article says Suharto was **“an Indonesian military officer and politician”** who **“served as the second and longest-serving president of Indonesia from 1967 to 1998.”** It also describes him as leading Indonesia **“as an authoritarian regime from 1967 until his resignation in 1998”** and refers to **“His 31-year dictatorship.”**
+
+Relevant quotes:
+- **“an Indonesian military officer and politician”**
+- **“served as the second and longest-serving president of Indonesia from 1967 to 1998”**
+- **“led Indonesia as an authoritarian regime from 1967 until his resignation in 1998”**
+- **“His 31-year dictatorship”**
+
+========================================================================
+QUERY 8: According to the Wikipedia article on Adolf Hitler, identify the major national leadership positions attributed to him and the periods associated with those positions. Use only information stated in thearticle and quote the supporting evidence.
+
+Retrieved results:
+    1. Adolf_Hitler.html [chunk 83] | hybrid score = 0.6300
+    2. Adolf_Hitler.html [chunk 0] | hybrid score = 0.6000
+    3. Adolf_Hitler.html [chunk 4] | hybrid score = 0.3487
+    4. Adolf_Hitler.html [chunk 94] | hybrid score = 0.2960
+    5. Rishi_Sunak.html [chunk 46] | hybrid score = 0.2336
+    6. Adolf_Hitler.html [chunk 82] | hybrid score = 0.1558
+
+Answer:
+According to the article, Hitler held these major national leadership positions and dates:
+
+- **Führer of Germany** — **2 August 1934 to 30 April 1945**  
+  > “**Führer of Germany**  
+  > **In office 2 August 1934 – 30 April 1945**”
+
+- **Chancellor of Germany** — **30 January 1933 to 30 April 1945**  
+  > “**Chancellor of Germany**  
+  > **In office 30 January 1933 – 30 April 1945**”
+
+- **Führer of the Nazi Party** — **29 July 1921 to 30 April 1945**  
+  > “**Führer of the Nazi Party**  
+  > **In office 29 July 1921 – 30 April 1945**”
+
+The article also states that after Hindenburg’s death, Hitler held the combined state leadership title:
+
+> “The position of **Führer und Reichskanzler** (‘Leader and Chancellor’) replaced the position of President... Hitler assumed this title after the death of Paul von Hindenburg... He was afterwards both **head of state and head of government**”
+
+If you want, I can also list these in a simple table.
+
+========================================================================
+QUERY 9: Compare Nelson Mandela and Suharto using their respective Wikipedia chunks. What country did each lead, what office did each hold, and how did their periods of leadership differ? Quote evidence from both articles.
+
+Retrieved results:
+    1. Nelson_Mandela.html [chunk 4] | hybrid score = 0.8321
+    2. Nelson_Mandela.html [chunk 161] | hybrid score = 0.5514
+    3. Nelson_Mandela.html [chunk 157] | hybrid score = 0.4696
+    4. Nelson_Mandela.html [chunk 165] | hybrid score = 0.4492
+    5. Nelson_Mandela.html [chunk 0] | hybrid score = 0.4422
+    6. Nelson_Mandela.html [chunk 162] | hybrid score = 0.4013
+
+Answer:
+From the provided Nelson Mandela chunks, Mandela led **South Africa** as **President of South Africa**. The evidence says: **“President of South Africa from 1994 to 1999”** and **“1st President of South Africa In office 10 May 1994 – 14 June 1999.”** It also says he was **“President of the African National Congress”** from 1991 to 1997.
+
+I don’t have any chunks for **Suharto** in the provided documents, so I can’t reliably state what country he led, what office he held, or compare their periods of leadership without guessing. If you provide the Suharto Wikipedia chunk, I can make the comparison directly.
+
+========================================================================
+QUERY 10: Compare Margaret Thatcher and Theresa May using their respective Wikipedia chunks. What leadership office did they share, and when did each serve? Cite evidence from both articles.
+
+Retrieved results:
+    1. Theresa_May.html [chunk 148] | hybrid score = 0.6126
+    2. Margaret_Thatcher.html [chunk 0] | hybrid score = 0.6000
+    3. Margaret_Thatcher.html [chunk 162] | hybrid score = 0.4199
+    4. Margaret_Thatcher.html [chunk 196] | hybrid score = 0.4000
+    5. Margaret_Thatcher.html [chunk 92] | hybrid score = 0.2476
+    6. Theresa_May.html [chunk 0] | hybrid score = 0.2277
+
+Answer:
+They shared the leadership office of **Prime Minister of the United Kingdom**.
+
+- For **Margaret Thatcher**, the article section heading says: **“Prime Minister of the United Kingdom (1979–1990)”**.  
+- For **Theresa May**, the article section heading says: **“Premiership (2016–2019)”**, and the contents list shows this as her prime ministership period.
+
+So, both served as UK Prime Minister, with **Thatcher from 1979 to 1990** and **May from 2016 to 2019**.
+
+========================================================================
+QUERY 11: Using the Wikipedia chunks on George Washington, Abraham Lincoln, and Barack Obama, identify which numbered U.S. president each was and the years each served. Provide supporting evidence from all threearticles.
+
+Retrieved results:
+    1. William_McKinley.html [chunk 111] | hybrid score = 0.6000
+    2. Donald_Trump.html [chunk 235] | hybrid score = 0.4815
+    3. Abraham_Lincoln.html [chunk 124] | hybrid score = 0.4587
+    4. Abraham_Lincoln.html [chunk 23] | hybrid score = 0.4000
+    5. James_Buchanan.html [chunk 94] | hybrid score = 0.3141
+    6. Jimmy_Carter.html [chunk 210] | hybrid score = 0.3040
+
+Answer:
+From the provided chunks, I can support Abraham Lincoln directly, and the presidency lists also show George Washington and Barack Obama:
+
+- **George Washington** — **1st U.S. president**, serving **1789–1797**.  
+  Evidence: the list begins with **“George Washington ( 1789–1797 )”** in the presidents timeline. ([Abraham_Lincoln.html::chunk_124])
+
+- **Abraham Lincoln** — **16th U.S. president**, serving **1861–1865**.  
+  Evidence: **“Abraham Lincoln ( 1861–1865 )”** appears in the presidents timeline. ([Abraham_Lincoln.html::chunk_124])  
+  The same sequence also places him after **James Buchanan (1857–1861)** and before **Andrew Johnson (1865–1869)**, confirming the numbering.
+
+- **Barack Obama** — **44th U.S. president**, serving **2009–2017**.  
+  Evidence: **“Barack Obama ( 2009–2017 )”** appears in the presidents timeline. ([William_McKinley.html::chunk_111], also [Jimmy_Carter.html::chunk_210])
+
+So the answers are:
+
+1. **George Washington** — **1st**, **1789–1797**  
+16. **Abraham Lincoln** — **16th**, **1861–1865**  
+44. **Barack Obama** — **44th**, **2009–2017**
+
+========================================================================
+QUERY 12: Quote, word for word, the opening sentence of the Wikipedia article on George Washington. Do not paraphrase.
+
+Retrieved results:
+    1. George_Washington.html [chunk 97] | hybrid score = 1.0000
+    2. George_Washington.html [chunk 109] | hybrid score = 0.4577
+    3. George_Washington.html [chunk 137] | hybrid score = 0.4468
+    4. George_Washington.html [chunk 0] | hybrid score = 0.4412
+    5. George_Washington.html [chunk 106] | hybrid score = 0.4384
+    6. George_Washington.html [chunk 59] | hybrid score = 0.3260
+
+Answer:
+“George Washington was an American military officer, statesman, and Founding Father who served as the first president of the United States from 1789 to 1797.”
+
+========================================================================
+QUERY 13: Quote, word for word, the opening sentence of the Wikipedia article on Cleopatra. Do not supplement the quotation with outside knowledge.
+
+Retrieved results:
+    1. Cleopatra.html [chunk 0] | hybrid score = 0.6000
+    2. Cleopatra.html [chunk 167] | hybrid score = 0.4748
+    3. Cleopatra.html [chunk 186] | hybrid score = 0.4214
+    4. Cleopatra.html [chunk 118] | hybrid score = 0.4000
+    5. Cleopatra.html [chunk 67] | hybrid score = 0.3476
+    6. Cleopatra.html [chunk 152] | hybrid score = 0.2895
+
+Answer:
+The provided documents do not include the article’s opening sentence.
+
+========================================================================
+QUERY 14: Using the Wikipedia chunks on Boris Johnson, Liz Truss, and Rishi Sunak, identify the prime-ministerial term stated for each person and place the three leaders in chronological order. Quote supporting evidence from each article.
+
+Retrieved results:
+    1. Liz_Truss.html [chunk 2] | hybrid score = 1.0000
+    2. Liz_Truss.html [chunk 96] | hybrid score = 0.6026
+    3. Boris_Johnson.html [chunk 243] | hybrid score = 0.4761
+    4. Rishi_Sunak.html [chunk 3] | hybrid score = 0.4710
+    5. Liz_Truss.html [chunk 94] | hybrid score = 0.4667
+    6. Rishi_Sunak.html [chunk 77] | hybrid score = 0.4165
+
+Answer:
+Here are the prime-ministerial terms stated in the chunks, in chronological order:
+
+1. **Boris Johnson** — “**Prime Minister of the United Kingdom In office 24 July 2019 – 6 September 2022**”  
+   - Supporting evidence from Boris Johnson article: the chunk shown lists Liz Truss and Rishi Sunak in leadership election context, and the Boris Johnson page identifies him as the outgoing leader, but the explicit PM term is not in the provided Boris chunk. So I can only cite the term from the other provided documents if needed. Since the Boris term itself is **not shown in the provided Boris chunk**, I can’t quote itfrom that chunk alone.
+
+2. **Liz Truss** — “**Prime Minister of the United Kingdom In office 6 September 2022 – 25 October 2022**”  
+   - From the Liz Truss article: “**Prime Minister of the United Kingdom In office 6 September 2022 – 25 October 2022**”
+
+3. **Rishi Sunak** — “**Prime Minister of the United Kingdom In office 25 October 2022 – 5 July 2024**”  
+   - From the Rishi Sunak article: “**Prime Minister of the United Kingdom In office 25 October 2022 – 5 July 2024**”
+
+**Chronological order:**  
+**Boris Johnson → Liz Truss → Rishi Sunak**
+
+If you want, I can also format this as a table.
+
+========================================================================
+QUERY 15: According to the Wikipedia article titled 'Presidency of Joe Biden', what event marked the beginning of Biden's presidential tenure and on what date did it occur? Quote the relevant sentence from that article. Do not answer from a general Joe Biden biography.
+
+Retrieved results:
+    1. Presidency_of_Joe_Biden.html [chunk 3] | hybrid score = 0.9015
+    2. Presidency_of_Joe_Biden.html [chunk 0] | hybrid score = 0.6000
+    3. Presidency_of_Joe_Biden.html [chunk 298] | hybrid score = 0.4692
+    4. Presidency_of_Joe_Biden.html [chunk 5] | hybrid score = 0.4245
+    5. Presidency_of_Joe_Biden.html [chunk 175] | hybrid score = 0.3238
+    6. Presidency_of_Joe_Biden.html [chunk 2] | hybrid score = 0.2718
+
+Answer:
+The article says Biden’s presidential tenure began with **his inauguration** on **January 20, 2021**. Relevant sentence:
+
+> “Joe Biden's tenure as the 46th president of the United States began with his inauguration on January 20, 2021, and ended on January 20, 2025.”
+
+========================================================================
+Done. Retrieval method used: HYBRID
+PS C:\Users\laksh\OneDrive\Desktop\MIT\Wiki_Capstones\check_2> 

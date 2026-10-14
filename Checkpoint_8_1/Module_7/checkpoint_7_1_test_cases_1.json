@@ -1,0 +1,248 @@
+[
+  {
+    "id": "mandela_presidency_transition",
+    "category": "multi_hop",
+    "question": "Using the Wikipedia article on Nelson Mandela, identify when he became President of South Africa and explain what the article says about the political transition surrounding his presidency. Support both the office/date and the surrounding political context with passage evidence.",
+    "expected_route": "agent",
+    "relevant_articles": [
+      "Nelson_Mandela.txt"
+    ],
+    "expected_keywords": [
+      "President",
+      "South Africa"
+    ],
+    "insufficient_evidence": false,
+    "retrieval_k": 8
+  },
+  {
+    "id": "victoria_accession_context",
+    "category": "multi_hop",
+    "question": "According to the Wikipedia article on Queen Victoria, identify when her reign began and explain the circumstances described around her accession to the throne. Use evidence for both the date and the surrounding context.",
+    "expected_route": "agent",
+    "relevant_articles": [
+      "Queen_Victoria.txt"
+    ],
+    "expected_keywords": [
+      "Victoria",
+      "reign"
+    ],
+    "insufficient_evidence": false,
+    "retrieval_k": 8
+  },
+  {
+    "id": "lincoln_presidency_crisis",
+    "category": "multi_hop",
+    "question": "Using the Wikipedia article on Abraham Lincoln, identify when his presidency began and explain the major national crisis described in the article around the beginning of his presidency. Support the answer with evidence from the relevant and surrounding passages.",
+    "expected_route": "agent",
+    "relevant_articles": [
+      "Abraham_Lincoln.txt"
+    ],
+    "expected_keywords": [
+      "Lincoln",
+      "president"
+    ],
+    "insufficient_evidence": false,
+    "retrieval_k": 8
+  },
+  {
+    "id": "trudeau_multifact_premiership",
+    "category": "multi_hop",
+    "question": "Using only the Justin Trudeau article, determine his numbered position among Canadian prime ministers, the years he served, the political party he led, and what the article says about the end of his premiership. Retrieve additional evidence if the initial passages do not support every part of the answer.",
+    "expected_route": "agent",
+    "relevant_articles": [
+      "Justin_Trudeau.txt"
+    ],
+    "expected_keywords": [
+      "Trudeau",
+      "prime minister"
+    ],
+    "insufficient_evidence": false,
+    "retrieval_k": 8
+  },
+  {
+    "id": "hitler_leadership_transition",
+    "category": "multi_hop",
+    "question": "From the Adolf Hitler article, identify when he became Chancellor of Germany, explain how his national leadership position changed after Paul von Hindenburg's death, and identify the title associated with that later position. Cite evidence supporting each stage of the leadership transition.",
+    "expected_route": "agent",
+    "relevant_articles": [
+      "Adolf_Hitler.txt"
+    ],
+    "expected_keywords": [
+      "Hitler",
+      "Chancellor"
+    ],
+    "insufficient_evidence": false,
+    "retrieval_k": 8
+  },
+  {
+    "id": "suharto_rise_and_end",
+    "category": "multi_hop",
+    "question": "Using the Suharto article, identify how Suharto came to national leadership in Indonesia, the period during which he served as president, and how the article describes the end of his rule. Use multiple passages if these facts are not located together.",
+    "expected_route": "agent",
+    "relevant_articles": [
+      "Suharto.txt"
+    ],
+    "expected_keywords": [
+      "Suharto",
+      "president"
+    ],
+    "insufficient_evidence": false,
+    "retrieval_k": 8
+  },
+  {
+    "id": "mandela_vs_suharto",
+    "category": "comparison",
+    "question": "Compare Nelson Mandela and Suharto as national leaders. For each person, determine the country led, leadership office, period in office, and the political circumstances associated with the beginning of that leadership. Support the comparison with evidence from both Wikipedia articles.",
+    "expected_route": "agent",
+    "relevant_articles": [
+      "Nelson_Mandela.txt",
+      "Suharto.txt"
+    ],
+    "expected_keywords": [
+      "Mandela",
+      "Suharto"
+    ],
+    "insufficient_evidence": false,
+    "retrieval_k": 10
+  },
+  {
+    "id": "thatcher_vs_may",
+    "category": "comparison",
+    "question": "Compare Margaret Thatcher and Theresa May as British prime ministers. Determine when each entered office, when each left office, and what political event or circumstance described in their respective articles was associated with the end of each premiership. Cite evidence from both articles.",
+    "expected_route": "agent",
+    "relevant_articles": [
+      "Margaret_Thatcher.txt",
+      "Theresa_May.txt"
+    ],
+    "expected_keywords": [
+      "Thatcher",
+      "May"
+    ],
+    "insufficient_evidence": false,
+    "retrieval_k": 10
+  },
+  {
+    "id": "washington_lincoln_obama",
+    "category": "comparison",
+    "question": "Using the George Washington, Abraham Lincoln, and Barack Obama articles, determine which numbered president each was, the years each served, and one major national circumstance associated with the beginning of each presidency as described in the respective article. Evidence must be retrieved from all three articles.",
+    "expected_route": "agent",
+    "relevant_articles": [
+      "George_Washington.txt",
+      "Abraham_Lincoln.txt",
+      "Barack_Obama.txt"
+    ],
+    "expected_keywords": [
+      "Washington",
+      "Lincoln",
+      "Obama"
+    ],
+    "insufficient_evidence": false,
+    "retrieval_k": 12
+  },
+  {
+    "id": "johnson_truss_sunak_transition",
+    "category": "comparison",
+    "question": "Using the Wikipedia articles on Boris Johnson, Liz Truss, and Rishi Sunak, reconstruct the chronological transition of UK prime ministerial leadership across the three figures. Identify each person's term and use evidence from the articles to explain how one premiership gave way to the next.",
+    "expected_route": "agent",
+    "relevant_articles": [
+      "Boris_Johnson.txt",
+      "Liz_Truss.txt",
+      "Rishi_Sunak.txt"
+    ],
+    "expected_keywords": [
+      "Johnson",
+      "Truss",
+      "Sunak"
+    ],
+    "insufficient_evidence": false,
+    "retrieval_k": 12
+  },
+  {
+    "id": "uk_pm_five_leaders_timeline",
+    "category": "multi_hop",
+    "question": "Using the Margaret Thatcher, Theresa May, Boris Johnson, Liz Truss, and Rishi Sunak articles, arrange the five leaders chronologically by their periods as UK prime minister. Then identify any gaps between their premierships that show that another prime minister must have served between members of this set. Base the dates only on evidence retrieved from the corpus.",
+    "expected_route": "agent",
+    "relevant_articles": [
+      "Margaret_Thatcher.txt",
+      "Theresa_May.txt",
+      "Boris_Johnson.txt",
+      "Liz_Truss.txt",
+      "Rishi_Sunak.txt"
+    ],
+    "expected_keywords": [
+      "Thatcher",
+      "May",
+      "Johnson",
+      "Truss",
+      "Sunak"
+    ],
+    "insufficient_evidence": false,
+    "retrieval_k": 16
+  },
+  {
+    "id": "washington_context_expansion",
+    "category": "multi_hop",
+    "question": "Locate the passage in the George Washington article that identifies him as the first president of the United States. Then inspect the surrounding article context and explain what additional leadership or nation-building role the nearby passages attribute to Washington. Cite the retrieved and neighboring passages separately.",
+    "expected_route": "agent",
+    "relevant_articles": [
+      "George_Washington.txt"
+    ],
+    "expected_keywords": [
+      "Washington",
+      "first president"
+    ],
+    "insufficient_evidence": false,
+    "retrieval_k": 8
+  },
+  {
+    "id": "macron_context_expansion",
+    "category": "multi_hop",
+    "question": "Locate evidence in the Emmanuel Macron article identifying his presidency of France. Then examine nearby passages to determine what immediately preceding political role or political background the article associates with his rise to the presidency. Support both parts using passage evidence.",
+    "expected_route": "agent",
+    "relevant_articles": [
+      "Emmanuel_Macron.txt"
+    ],
+    "expected_keywords": [
+      "Macron",
+      "France"
+    ],
+    "insufficient_evidence": false,
+    "retrieval_k": 8
+  },
+  {
+    "id": "biden_obama_transition",
+    "category": "comparison",
+    "question": "Use the 'Presidency of Joe Biden' article to identify the event and date that began Biden's presidential tenure. Then compare that leadership transition with the presidential term information in the Barack Obama article. Explain the chronological relationship between the two presidencies using evidence from both articles.",
+    "expected_route": "agent",
+    "relevant_articles": [
+      "Presidency_of_Joe_Biden.txt",
+      "Barack_Obama.txt"
+    ],
+    "expected_keywords": [
+      "Biden",
+      "Obama"
+    ],
+    "insufficient_evidence": false,
+    "retrieval_k": 10
+  },
+  {
+    "id": "four_leader_system_comparison",
+    "category": "multi_hop",
+    "question": "Compare Queen Victoria, Nelson Mandela, Margaret Thatcher, and Abraham Lincoln as national leaders from different political systems. For each figure, identify the country, leadership role, and period of leadership stated in the corpus. Then classify each role as monarch, president, or prime minister and arrange the four leadership periods chronologically by starting year. Retrieve and cite evidence from every required article.",
+    "expected_route": "agent",
+    "relevant_articles": [
+      "Queen_Victoria.txt",
+      "Nelson_Mandela.txt",
+      "Margaret_Thatcher.txt",
+      "Abraham_Lincoln.txt"
+    ],
+    "expected_keywords": [
+      "Victoria",
+      "Mandela",
+      "Thatcher",
+      "Lincoln"
+    ],
+    "insufficient_evidence": false,
+    "retrieval_k": 16
+  }
+]

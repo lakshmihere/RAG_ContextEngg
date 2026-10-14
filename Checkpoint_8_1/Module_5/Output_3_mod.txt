@@ -1,0 +1,335 @@
+Loaded 5 evaluation questions from Question_set.xlsx / Sheet1.
+Found 65 Wikipedia TXT files.
+Successfully loaded 65 Wikipedia text documents.
+Abraham_Lincoln.txt                             445712 characters
+Adolf_Hitler.txt                                411162 characters
+Barack_Obama.txt                                714968 characters
+Benjamin_Franklin.txt                           476136 characters
+Bernhard_von_B├╝low.txt                          122773 characters
+Bill_Clinton.txt                                532172 characters
+Bonar_Law.txt                                   231123 characters
+Boris_Johnson.txt                               600256 characters
+Cleopatra.txt                                   387892 characters
+Davy_Crockett.txt                               196963 characters
+... plus 55 additional documents.
+Prepared 13038 Wikipedia passages.
+Loading existing vector DB from Wikipedia_chroma_full/
+OpenRouter configured at https://openrouter.ai/api/v1
+Selected OpenRouter model: openai/gpt-5.4-mini
+OpenRouter configured at https://openrouter.ai/api/v1
+Selected OpenRouter model: openai/gpt-5.4-mini
+
+==============================================================================
+TEST 1
+==============================================================================
+QUESTION
+Using the Wikipedia article on Nelson Mandela, identify when he became President of South Africa and explain what the article says about the political transition surrounding his presidency. Support both the office/date and the surrounding political context with passage evidence.
+
+--- FIXED ---
+
+ANSWER
+Mandela became **President of South Africa in 1994**; the article describes him as ΓÇ£President of South Africa from 1994 to 1999.ΓÇ¥ [Nelson_Mandela.txt#p14]
+
+For the political transition surrounding his presidency, the article says that **the new Constitution of South Africa was agreed upon by parliament in May 1996**, creating institutions to place checks on political and administrative authority within a constitutional democracy. It also says that **De Klerk opposed the constitutionΓÇÖs implementation and withdrew with the National Party from the coalition government that month**, while the **ANC took over the cabinet positions formerly held by the Nationals, with Mbeki becoming sole Deputy President**. [Nelson_Mandela.txt#p102]
+
+It further says that **Inkatha remained part of the coalition**, and that when Mandela and Mbeki were both out of the country in September 1998, **Buthelezi was appointed ΓÇ£Acting President,ΓÇ¥** which the article says marked an improvement in his relationship with Mandela. [Nelson_Mandela.txt#p102]
+
+RUN SUMMARY
+  Stop reason       : single_pass
+  Time              : 2.78 s
+  Passages retrieved: 4
+  Retrieval rounds  : 1
+  LLM calls         : 1
+  Follow-up queries : none
+
+--- AGENTIC ---
+
+ANSWER
+Mandela became President of South Africa in 1994; the article states he was ΓÇ£President of South Africa from 1994 to 1999.ΓÇ¥ [Nelson_Mandela.txt#p14]
+
+For the political transition surrounding his presidency, the article says that in May 1996 a new Constitution of South Africa was agreed upon by parliament, establishing institutions to check political and administrative authority within a constitutional democracy. [Nelson_Mandela.txt#p102] It also says that De Klerk and the National Party withdrew from the coalition government in protest that month, claiming the ANC was not treating them as equals, after which the ANC took over the cabinet positions formerly held by the Nationals and Mbeki became sole Deputy President. [Nelson_Mandela.txt#p102]
+
+RUN SUMMARY
+  Stop reason       : evidence_sufficient
+  Time              : 6.44 s
+  Passages retrieved: 4
+  Retrieval rounds  : 1
+  LLM calls         : 2
+  Follow-up queries : none
+
+--- TOOL USING AGENT ---
+
+ANSWER
+Mandela became President of South Africa in 1994, when the country was transitioning ΓÇ£from apartheid minority rule to a multicultural democracy.ΓÇ¥ [Nelson_Mandela.txt#p89]
+
+The article says his presidency was centered on ΓÇ£national reconciliationΓÇ¥ as the primary task, and that he tried to build a broad Government of National Unity by appointing de Klerk as Deputy President, bringing in National Party officials as ministers, and naming Buthelezi as Minister for Home Affairs, while the ANC held the other cabinet posts. [Nelson_Mandela.txt#p89]
+
+RUN SUMMARY
+  Stop reason       : step_limit
+  Time              : 3.38 s
+  Passages retrieved: 8
+
+TOOL PATH
+  1. ARTICLE SEARCH | article=Nelson Mandela | query=President of South Africa date became president political transition surrounding his presidency passage evidence
+  2. GRAPH EXPAND
+  3. GRAPH EXPAND
+
+WORKFLOW COMPARISON
+Workflow             Stop reason                  Time (s)   Passages
+----------------------------------------------------------------------
+FIXED                single_pass                      2.78          4
+AGENTIC              evidence_sufficient              6.44          4
+TOOL USING AGENT     step_limit                       3.38          8
+
+==============================================================================
+TEST 2
+==============================================================================
+QUESTION
+Using only the Justin Trudeau article, determine his numbered position among Canadian prime ministers, the years he served, the political party he led, and what the article says about the end of his premiership. Retrieve additional evidence if the initial passages do not support every part of the answer.
+
+--- FIXED ---
+
+ANSWER
+Justin Trudeau was the **23rd Prime Minister of Canada** and served from **2015 to 2025**. [Justin_Trudeau.txt#p182] He led the **Liberal Party of Canada**. [Justin_Trudeau.txt#p182]
+
+The article says he **announced in January 2025 that he would resign as prime minister and leader of the Liberal Party**, remained Liberal leader until **Mark Carney** was elected successor on March 9, **resigned as prime minister five days later**, and **stood down as an MP at the 2025 federal election**. [Justin_Trudeau.txt#p17]
+
+RUN SUMMARY
+  Stop reason       : single_pass
+  Time              : 1.81 s
+  Passages retrieved: 4
+  Retrieval rounds  : 1
+  LLM calls         : 1
+  Follow-up queries : none
+
+--- AGENTIC ---
+
+ANSWER
+Justin Trudeau is identified as the **23rd Prime Minister of Canada**, and he served from **2015ΓÇô2025**. [Justin_Trudeau.txt#p182] He led the **Liberal Party of Canada**. [Justin_Trudeau.txt#p182]
+
+The article says his premiership **ended during a trade war with the United States**. [Justin_Trudeau.txt#p16] It also says that, in January 2025, **he announced he would resign as prime minister and leader of the Liberal Party**, remained Liberal leader until **Mark Carney** was elected successor on March 9, then **resigned as prime minister five days later**. [Justin_Trudeau.txt#p17]
+
+RUN SUMMARY
+  Stop reason       : evidence_sufficient
+  Time              : 5.33 s
+  Passages retrieved: 5
+  Retrieval rounds  : 2
+  LLM calls         : 3
+
+FOLLOW-UP QUERIES
+  1. Using only the Justin Trudeau article, what does it say in the lead or infobox about his position number as Prime Minister of Canada, the years of his premiership, and his party affiliation?
+  2. Using only the Justin Trudeau article, what wording does it use to describe the end of his premiership or resignation as prime minister?
+
+--- TOOL USING AGENT ---
+
+ANSWER
+Justin Trudeau was the **23rd Prime Minister of Canada**, and he served from **2015 to 2025**. [Justin_Trudeau.txt#p182] He led the **Liberal Party of Canada**. [Justin_Trudeau.txt#p182] The article says his premiership **ended during a trade war with the United States**. [Justin_Trudeau.txt#p16] It also says that in January 2025 he **announced he would resign as prime minister and leader of the Liberal Party**, remained Liberal leader until Mark Carney was elected successor on March 9, and then **resigned as prime minister five days later**. [Justin_Trudeau.txt#p17]
+
+RUN SUMMARY
+  Stop reason       : step_limit
+  Time              : 4.55 s
+  Passages retrieved: 9
+
+TOOL PATH
+  1. ARTICLE SEARCH | article=Justin Trudeau | query=Canadian prime minister numbered position, years served, political party, and statement about the end of his premiership
+  2. HYBRID SEARCH | query=Using only the Justin Trudeau article, determine his numbered position among Canadian prime ministers, the years he served, the political party he led, and what the article says about the end of his premiership. Retrieve additional evidence if the initial passages do not support every part of the answer.
+  3. GRAPH EXPAND
+
+WORKFLOW COMPARISON
+Workflow             Stop reason                  Time (s)   Passages
+----------------------------------------------------------------------
+FIXED                single_pass                      1.81          4
+AGENTIC              evidence_sufficient              5.33          5
+TOOL USING AGENT     step_limit                       4.55          9
+
+==============================================================================
+TEST 3
+==============================================================================
+QUESTION
+Compare Nelson Mandela and Suharto as national leaders. For each person, determine the country led, leadership office, period in office, and the political circumstances associated with the beginning of that leadership. Support the comparison with evidence from both Wikipedia articles.
+
+--- FIXED ---
+
+ANSWER
+Nelson Mandela led South Africa as President of South Africa from 1994 to 1999. [Nelson_Mandela.txt#p14]
+
+Suharto is identified in the passage only as someone Mandela met in Indonesia; the provided passages do not establish the country he led, his leadership office, his period in office, or the political circumstances at the beginning of that leadership. [Nelson_Mandela.txt#p74]
+
+RUN SUMMARY
+  Stop reason       : single_pass
+  Time              : 1.85 s
+  Passages retrieved: 4
+  Retrieval rounds  : 1
+  LLM calls         : 1
+  Follow-up queries : none
+
+--- AGENTIC ---
+
+ANSWER
+Nelson Mandela led **South Africa** as **President of South Africa**, serving **from 1994 to 1999**. [Nelson_Mandela.txt#p14] The provided passages do not establish the political circumstances associated with the beginning of that leadership. [Nelson_Mandela.txt#p14]
+
+Suharto led **Indonesia** as **President of Indonesia**, serving **from 12 March 1967 to 21 May 1998**. [Suharto.txt#p8] His leadership began after the **MPRS appointed him as acting president in March 1967**. [Suharto.txt#p17]
+
+RUN SUMMARY
+  Stop reason       : evidence_sufficient
+  Time              : 4.67 s
+  Passages retrieved: 8
+  Retrieval rounds  : 2
+  LLM calls         : 3
+
+FOLLOW-UP QUERIES
+  1. Suharto Wikipedia presidency office term circumstances beginning office
+
+--- TOOL USING AGENT ---
+
+ANSWER
+Nelson Mandela led South Africa as its first president of South Africa, serving from 1994 to 1999. He was formally elected by the newly elected National Assembly, and his inauguration followed South AfricaΓÇÖs first fully representative democratic election after the ANCΓÇÖs victory. [Nelson_Mandela.txt#p18] [Nelson_Mandela.txt#p84]
+
+Suharto led Indonesia as the 2nd president of Indonesia, serving from 12 March 1967 to 21 May 1998. The provided passages establish that he was president of Indonesia beginning in 1967, but they do not establish the specific political circumstances associated with the beginning of that leadership. [Suharto.txt#p8]
+
+RUN SUMMARY
+  Stop reason       : step_limit
+  Time              : 7.38 s
+  Passages retrieved: 21
+
+TOOL PATH
+  1. DECOMPOSE QUERY
+  2. ARTICLE SEARCH | article=Suharto | query=How did Suharto become president? What political circumstances preceded the start of his presidency, including the office title, dates in office, and any events such as the Supersemar or transition after Sukarno?
+  3. ARTICLE SEARCH | article=Nelson Mandela | query=Identify the country led, leadership office, dates in office, and the political circumstances at the start of Mandela's leadership. Look for the presidency section and details on the 1994 election or transition to office.
+
+WORKFLOW COMPARISON
+Workflow             Stop reason                  Time (s)   Passages
+----------------------------------------------------------------------
+FIXED                single_pass                      1.85          4
+AGENTIC              evidence_sufficient              4.67          8
+TOOL USING AGENT     step_limit                       7.38         21
+
+==============================================================================
+TEST 4
+==============================================================================
+QUESTION
+Using the Wikipedia articles on Boris Johnson, Liz Truss, and Rishi Sunak, reconstruct the chronological transition of UK prime ministerial leadership across the three figures. Identify each person's term and use evidence from the articles to explain how one premiership gave way to the next.
+
+--- FIXED ---
+
+ANSWER
+Boris Johnson was Prime Minister of the United Kingdom until 6 September 2022. His article notes his resignation in July 2022, and that he was succeeded by Liz Truss. [Boris_Johnson.txt#p238] [Liz_Truss.txt#p8]
+
+Liz Truss served as Prime Minister from 6 September 2022 to 25 October 2022. Her article states that she was preceded by Boris Johnson and succeeded by Rishi Sunak, showing the transition from JohnsonΓÇÖs premiership to hers and then to SunakΓÇÖs. [Liz_Truss.txt#p8]
+
+Rishi Sunak became Prime Minister after Truss, with the Liz Truss article identifying him as her successor. The provided passages do not establish SunakΓÇÖs exact start date as Prime Minister, but they do establish that he followed Truss in office. [Liz_Truss.txt#p8]
+
+RUN SUMMARY
+  Stop reason       : single_pass
+  Time              : 2.27 s
+  Passages retrieved: 4
+  Retrieval rounds  : 1
+  LLM calls         : 1
+  Follow-up queries : none
+
+--- AGENTIC ---
+
+ANSWER
+Boris Johnson was Prime Minister of the United Kingdom until 6 September 2022. [Boris_Johnson.txt#p238] Liz Truss then became Prime Minister, serving from 6 September 2022 to 25 October 2022. [Liz_Truss.txt#p8] Rishi Sunak succeeded Truss and became Prime Minister on 25 October 2022. [Liz_Truss.txt#p8]
+
+The transition from Johnson to Truss is supported by the Truss article, which says TrussΓÇÖs premiership was ΓÇ£Preceded by Boris Johnson,ΓÇ¥ and the Johnson article documents JohnsonΓÇÖs resignation as prime minister in July 2022. [Liz_Truss.txt#p8] [Boris_Johnson.txt#p238] The transition from Truss to Sunak is supported by the Truss article, which says Truss was ΓÇ£Succeeded by Rishi Sunak,ΓÇ¥ and Sunak is identified in the context of replacing Truss. [Liz_Truss.txt#p8]
+
+RUN SUMMARY
+  Stop reason       : evidence_sufficient
+  Time              : 3.81 s
+  Passages retrieved: 4
+  Retrieval rounds  : 1
+  LLM calls         : 2
+  Follow-up queries : none
+
+--- TOOL USING AGENT ---
+
+ANSWER
+Boris Johnson was Prime Minister of the United Kingdom until he announced his resignation in July 2022 after a mass resignation from his government; he was then succeeded by Liz Truss. [Boris_Johnson.txt#p24]
+
+Liz Truss served as Prime Minister of the United Kingdom from 6 September 2022 to 25 October 2022, and her article says she was preceded by Boris Johnson and succeeded by Rishi Sunak. [Liz_Truss.txt#p8] [Liz_Truss.txt#p127]
+
+Rishi Sunak served as Prime Minister of the United Kingdom from 25 October 2022 to 5 July 2024, and his article says he was preceded by Liz Truss. [Rishi_Sunak.txt#p9]
+
+So the chronological transition was Boris Johnson ΓåÆ Liz Truss ΓåÆ Rishi Sunak. [Boris_Johnson.txt#p24] [Liz_Truss.txt#p8] [Rishi_Sunak.txt#p9]
+
+RUN SUMMARY
+  Stop reason       : agent_evidence_sufficient
+  Time              : 6.19 s
+  Passages retrieved: 6
+
+TOOL PATH
+  1. DECOMPOSE QUERY
+  2. ANSWER | reason=The evidence already supports the full chronological handoff among the three premierships. Boris Johnson was Prime Minister before Liz Truss; the Boris Johnson article notes that in July 2022 his government was hit by mass resignations following the Chris Pincher scandal, and the Liz Truss article explicitly states that as Prime Minister she served from 6 September 2022 to 25 October 2022 and was preceded by Boris Johnson. It also says her premiership was succeeded by Rishi Sunak. The Rishi Sunak article states that he was Prime Minister from 25 October 2022 to 5 July 2024, confirming he followed Truss. Thus the sequence is Johnson (until 6 Sept 2022), then Truss (6 Sept 2022ΓÇô25 Oct 2022), then Sunak (from 25 Oct 2022).
+
+WORKFLOW COMPARISON
+Workflow             Stop reason                  Time (s)   Passages
+----------------------------------------------------------------------
+FIXED                single_pass                      2.27          4
+AGENTIC              evidence_sufficient              3.81          4
+TOOL USING AGENT     agent_evidence_sufficient        6.19          6
+
+==============================================================================
+TEST 5
+==============================================================================
+QUESTION
+Locate evidence in the Emmanuel Macron article identifying his presidency of France. Then examine nearby passages to determine what immediately preceding political role or political background the article associates with his rise to the presidency. Support both parts using passage evidence.
+
+--- FIXED ---
+
+ANSWER
+The article identifies MacronΓÇÖs presidency of France in the infobox as ΓÇ£President of FranceΓÇ¥ with a reign starting on 14 May 2017 and continuing ΓÇ£present.ΓÇ¥ [Emmanuel_Macron.txt#p13]
+
+Nearby passage evidence associates his rise to the presidency with founding the independent political party En Marche in Amiens on 6 April 2016, after tensions and deteriorating relations with the current government. [Emmanuel_Macron.txt#p34] The same passage describes En Marche as a ΓÇ£social-liberalΓÇ¥ and ΓÇ£progressiveΓÇ¥ political movement. [Emmanuel_Macron.txt#p34]
+
+RUN SUMMARY
+  Stop reason       : single_pass
+  Time              : 1.74 s
+  Passages retrieved: 4
+  Retrieval rounds  : 1
+  LLM calls         : 1
+  Follow-up queries : none
+
+--- AGENTIC ---
+
+ANSWER
+The article identifies Emmanuel MacronΓÇÖs presidency of France by showing him as the incumbent president with a reign beginning on 14 May 2017 and listing Fran├ºois Hollande as his predecessor. [Emmanuel_Macron.txt#p13]
+
+For the immediately preceding political role or political background associated with his rise to the presidency, the nearby passage says that amid tensions with the current government, Macron founded the independent political party En Marche in Amiens on 6 April 2016. It describes En Marche as a social-liberal, progressive political movement. [Emmanuel_Macron.txt#p34]
+
+RUN SUMMARY
+  Stop reason       : evidence_sufficient
+  Time              : 3.58 s
+  Passages retrieved: 4
+  Retrieval rounds  : 1
+  LLM calls         : 2
+  Follow-up queries : none
+
+--- TOOL USING AGENT ---
+
+ANSWER
+The article identifies Macron as having ΓÇ£served as President of France and Co-Prince of Andorra since 2017.ΓÇ¥ [Emmanuel_Macron.txt#p15]
+
+Immediately before that, the article says he ΓÇ£served as Minister of Economics and Finance under President Fran├ºois Hollande from 2014 to 2016,ΓÇ¥ and also notes that he was ΓÇ£a member of Renaissance since founding the party in 2016.ΓÇ¥ [Emmanuel_Macron.txt#p15]
+
+RUN SUMMARY
+  Stop reason       : agent_evidence_sufficient
+  Time              : 4.97 s
+  Passages retrieved: 6
+
+TOOL PATH
+  1. ARTICLE SEARCH | article=Emmanuel Macron | query=presidency of France; immediately preceding political role or political background associated with his rise to the presidency
+  2. GRAPH EXPAND
+  3. ANSWER | reason=The evidence already supports both parts. The article identifies MacronΓÇÖs presidency directly: it says he has served as 'President of France ... since 2017' and the infobox lists his 'Co-Prince of Andorra' reign starting 14 May 2017, the date he assumed the French presidency. For the immediately preceding political role/background associated with his rise, nearby passages state that he was appointed 'Deputy Secretary-General to the President' under Fran├ºois Hollande from 2012 to 2014, then 'Minister of Economics and Finance' from 2014 to 2016, and that he 'resigned in 2016 to launch his 2017 presidential campaign.' The article also notes he was a former member of the Socialist Party and ran under En Marche, which contextualizes his political background before becoming president.
+
+WORKFLOW COMPARISON
+Workflow             Stop reason                  Time (s)   Passages
+----------------------------------------------------------------------
+FIXED                single_pass                      1.74          4
+AGENTIC              evidence_sufficient              3.58          4
+TOOL USING AGENT     agent_evidence_sufficient        4.97          6
+
+==============================================================================
+Evaluation complete.
+Readable report: C:\Users\laksh\OneDrive\Desktop\MIT\Wiki_Capstones\check_5\mod_\checkpoint_5_1_readable_output.txt
+Detailed log   : C:\Users\laksh\OneDrive\Desktop\MIT\Wiki_Capstones\check_5\mod_\checkpoint_5_1_openrouter.log

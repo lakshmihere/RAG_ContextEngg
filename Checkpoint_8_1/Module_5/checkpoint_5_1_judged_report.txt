@@ -1,0 +1,241 @@
+LEADER LENS - CHECKPOINT 5.1 GROUND-TRUTH EVALUATION
+==============================================================================
+Judge model: openai/gpt-5.4
+Generated-results source: checkpoint_5_1_readable_output.txt
+Ground truth: wikipedia_GT_15.xlsx
+
+==============================================================================
+TEST 1
+==============================================================================
+QUESTION
+Using the Wikipedia article on Nelson Mandela, identify when he became President of South Africa and explain what the article says about the political transition surrounding his presidency. Support both the office/date and the surrounding political context with passage evidence.
+
+--- FIXED ---
+Correctness       : 2/4
+Completeness      : 2/4
+Groundedness      : 4/4
+Source compliance : 4/4
+Overall score     : 75.0%
+Verdict           : PARTIAL
+Time              : 2.78 s
+Passages retrieved: 4
+Judge reason      : The answer correctly identifies Mandela as President in 1994 and cites the Nelson Mandela article for that point. However, its political-context explanation focuses mainly on later 1996–1998 constitutional and coalition developments rather than the key transition surrounding his assumption of office in 1994. It omits the central article-supported context of the end of apartheid minority rule, the 1994 multiracial election, ANC victory, and formation of the Government of National Unity with ANC, National Party, and Inkatha participation. Citations are present and from the required source, so groundedness and source compliance are strong despite the incomplete and only partially on-target substance.
+Missing           : ["Did not provide the stronger article evidence that he was formally elected by the newly elected National Assembly and inaugurated in Pretoria on 10 May 1994.", "Did not explain the core surrounding transition from apartheid minority rule to multiracial democratic government.", "Did not mention the ANC's 1994 election victory.", "Did not state that the Government of National Unity included ANC, National Party, and Inkatha representatives at the start of his presidency."]
+Unsupported       : []
+
+--- AGENTIC ---
+Correctness       : 2/4
+Completeness      : 2/4
+Groundedness      : 4/4
+Source compliance : 4/4
+Overall score     : 75.0%
+Verdict           : PARTIAL
+Time              : 6.44 s
+Passages retrieved: 4
+Judge reason      : The answer correctly identifies Mandela as President in 1994 and cites the required Nelson Mandela article. However, its political-context explanation focuses on 1996 constitutional and coalition developments rather than the core 1994 transition surrounding his assumption of the presidency. It omits the main grading-note elements about the end of apartheid minority rule, the 1994 democratic election, Mandela's election/inauguration, and the Government of National Unity composition. Claims made are cited, so groundedness is strong, and source compliance is satisfied because only the required article is used.
+Missing           : ["Did not clearly state the stronger article-supported office/date evidence that he was elected by the newly elected National Assembly and inaugurated in Pretoria on 10 May 1994.", "Did not explain the key transition from apartheid minority rule to multiracial democratic government.", "Did not mention the ANC's 1994 election victory.", "Did not mention the Government of National Unity including ANC, National Party, and Inkatha representatives."]
+Unsupported       : []
+
+--- TOOL_USING_AGENT ---
+Correctness       : 2/4
+Completeness      : 2/4
+Groundedness      : 3/4
+Source compliance : 4/4
+Overall score     : 68.8%
+Verdict           : PARTIAL
+Time              : 3.38 s
+Passages retrieved: 8
+Judge reason      : The answer uses the required Nelson Mandela article and provides citation support for both the presidency timing and transition context. However, it only says Mandela became president 'in 1994' rather than giving the stronger article-based office/date detail expected in the grading notes. It also gives some transition context about moving from apartheid to democracy and forming a broad unity government, but omits key expected details such as the ANC's election victory, Mandela's formal election by the National Assembly, and the 10 May 1994 inauguration.
+Missing           : ["Does not clearly state the specific office/date evidence expected by the grading notes, such as election by the newly elected National Assembly and inauguration on 10 May 1994 in Pretoria.", "Does not mention the ANC's 1994 election victory as part of the political transition context.", "Does not explicitly identify the Government of National Unity as including ANC, National Party, and Inkatha representatives."]
+Unsupported       : []
+
+==============================================================================
+TEST 2
+==============================================================================
+QUESTION
+Using only the Justin Trudeau article, determine his numbered position among Canadian prime ministers, the years he served, the political party he led, and what the article says about the end of his premiership. Retrieve additional evidence if the initial passages do not support every part of the answer.
+
+--- FIXED ---
+Correctness       : 4/4
+Completeness      : 4/4
+Groundedness      : 4/4
+Source compliance : 4/4
+Overall score     : 100.0%
+Verdict           : PASS
+Time              : 1.81 s
+Passages retrieved: 4
+Judge reason      : The answer correctly identifies Trudeau as the 23rd prime minister, gives the service years 2015 to 2025, names the Liberal Party of Canada, and explains the end of his premiership with the January 2025 resignation announcement, Mark Carney's election on 9 March 2025, and Trudeau's resignation five days later. Each required fact is supported with citations to the Justin Trudeau article, and only the required source article is used.
+Missing           : []
+Unsupported       : []
+
+--- AGENTIC ---
+Correctness       : 4/4
+Completeness      : 4/4
+Groundedness      : 4/4
+Source compliance : 4/4
+Overall score     : 100.0%
+Verdict           : PASS
+Time              : 5.33 s
+Passages retrieved: 5
+Judge reason      : The answer includes all required facts from the Justin Trudeau article: his numbered position as 23rd prime minister, service years 2015–2025, leadership of the Liberal Party of Canada, and the end-of-premiership details that he announced in January 2025 he would resign, Mark Carney was elected successor on 9 March 2025, and Trudeau resigned five days later. All claims are tied to passage IDs from the required article, and no prohibited sources are used.
+Missing           : []
+Unsupported       : []
+
+--- TOOL_USING_AGENT ---
+Correctness       : 4/4
+Completeness      : 4/4
+Groundedness      : 4/4
+Source compliance : 4/4
+Overall score     : 100.0%
+Verdict           : PASS
+Time              : 4.55 s
+Passages retrieved: 9
+Judge reason      : The answer includes all required facts from the Justin Trudeau article: numbered position (23rd prime minister), years served (2015 to 2025), party led (Liberal Party of Canada), and the end-of-premiership details (announced resignation in January 2025, Mark Carney elected successor on 9 March 2025, Trudeau resigned five days later). Every component is cited to the required article, and no disallowed sources are used.
+Missing           : []
+Unsupported       : []
+
+==============================================================================
+TEST 3
+==============================================================================
+QUESTION
+Compare Nelson Mandela and Suharto as national leaders. For each person, determine the country led, leadership office, period in office, and the political circumstances associated with the beginning of that leadership. Support the comparison with evidence from both Wikipedia articles.
+
+--- FIXED ---
+Correctness       : 1/4
+Completeness      : 1/4
+Groundedness      : 3/4
+Source compliance : 0/4
+Overall score     : 31.2%
+Verdict           : FAIL
+Time              : 1.85 s
+Passages retrieved: 4
+Judge reason      : The answer correctly states Mandela was President of South Africa from 1994 to 1999, but it omits nearly all required accession-context details for Mandela and provides none of the required leadership facts for Suharto. It explicitly says the provided passages do not establish Suharto's leadership, which fails the task and grading notes. Groundedness is mostly adequate for the limited claims actually made because citations are provided, but source compliance fails because the response does not use the required Suharto article and instead cites only the Mandela article, including for Suharto.
+Missing           : ["Suharto's country led: Indonesia", "Suharto's leadership office: President of Indonesia", "Suharto's period in office: 1967 to 1998", "Suharto's accession circumstances: MPRS stripped Sukarno of remaining power on 12 March 1967 and named Suharto acting president", "Suharto's accession circumstances: MPRS elected Suharto to a full five-year presidential term on 27 March 1968", "Mandela's accession circumstances: ANC's 1994 election victory", "Mandela's accession circumstances: formal election by the National Assembly", "Mandela's accession circumstances: inauguration on 10 May 1994", "Mandela's accession circumstances: transition from apartheid to multiracial democratic government", "Cross-article comparison using both required articles"]
+Unsupported       : []
+
+--- AGENTIC ---
+Correctness       : 2/4
+Completeness      : 2/4
+Groundedness      : 4/4
+Source compliance : 4/4
+Overall score     : 75.0%
+Verdict           : PARTIAL
+Time              : 4.67 s
+Passages retrieved: 8
+Judge reason      : The answer correctly identifies both leaders' countries, offices, and broad periods in office, though Suharto's term is given from 12 March 1967 to 21 May 1998 rather than the grading note's expected 1967 to 1998 framing with distinction between acting president in 1967 and full elected term in 1968. It omits nearly all required accession circumstances for Mandela and part of the required displacement/election sequence for Suharto. Groundedness is strong because each claim is tied to passage IDs, and source compliance is satisfied because it uses both required articles and does not rely on outside sources.
+Missing           : ["Mandela accession circumstances: ANC's 1994 election victory", "Mandela accession circumstances: formal election by the National Assembly", "Mandela accession circumstances: inauguration on 10 May 1994", "Mandela accession circumstances: transition away from apartheid to multiracial democratic government", "Suharto accession circumstances: Sukarno was stripped of remaining power by the MPRS on 12 March 1967", "Suharto accession circumstances: MPRS elected Suharto to a full five-year presidential term on 27 March 1968", "Explicit comparison between the two leaders' accession circumstances"]
+Unsupported       : []
+
+--- TOOL_USING_AGENT ---
+Correctness       : 2/4
+Completeness      : 2/4
+Groundedness      : 4/4
+Source compliance : 4/4
+Overall score     : 75.0%
+Verdict           : PARTIAL
+Time              : 7.38 s
+Passages retrieved: 21
+Judge reason      : The answer correctly identifies Mandela as President of South Africa from 1994 to 1999 and Suharto as President of Indonesia beginning in 1967 and ending in 1998, and it uses both required articles with visible passage citations. Mandela's accession is mostly captured through the ANC election victory and formal election by the National Assembly, but key required details are omitted, especially the 10 May 1994 inauguration and the anti-apartheid democratic transition context. For Suharto, the office and broad dates are given, but the critical accession circumstances required by the grading notes are explicitly not provided, making the answer only partially correct and only partially complete.
+Missing           : ["Suharto's accession circumstances are missing: that the MPRS stripped Sukarno of remaining power on 12 March 1967 and named Suharto acting president.", "Suharto's 27 March 1968 election by the MPRS to a full five-year presidential term is missing.", "Mandela's start of leadership is not explicitly tied to his 10 May 1994 inauguration.", "Mandela's accession is not explicitly connected to the transition away from apartheid toward multiracial democratic government.", "The answer does not provide a clear comparative synthesis beyond listing each leader separately."]
+Unsupported       : []
+
+==============================================================================
+TEST 4
+==============================================================================
+QUESTION
+Using the Wikipedia articles on Boris Johnson, Liz Truss, and Rishi Sunak, reconstruct the chronological transition of UK prime ministerial leadership across the three figures. Identify each person's term and use evidence from the articles to explain how one premiership gave way to the next.
+
+--- FIXED ---
+Correctness       : 2/4
+Completeness      : 2/4
+Groundedness      : 3/4
+Source compliance : 2/4
+Overall score     : 56.2%
+Verdict           : FAIL
+Time              : 2.27 s
+Passages retrieved: 4
+Judge reason      : The answer gets the overall order Boris Johnson -> Liz Truss -> Rishi Sunak correct and correctly gives Truss's term and Johnson's end date, but it omits major required term dates and does not explain the transitions as required by the grading notes. Grounding is mostly present for the claims it makes because it cites passage IDs, but the response relies only on Boris Johnson and Liz Truss citations and does not use the required Rishi Sunak article, so source compliance is only partial.
+Missing           : ["Does not reconstruct the full sequence with all expected term dates: Boris Johnson's start date (24 July 2019) is missing.", "Does not provide Rishi Sunak's full term dates; specifically missing his start date (25 October 2022) and end date (5 July 2024).", "Does not explain the Johnson-to-Truss transition via Johnson's resignation and the Conservative leadership election resulting in Truss succeeding him.", "Does not explain the Truss-to-Sunak transition via Truss's resignation and the subsequent leadership process leading to Sunak.", "Does not use evidence from the Rishi Sunak article."]
+Unsupported       : ["The answer says the passages do not establish Sunak’s exact start date, so the chronology is left incomplete rather than supported from the required sources."]
+
+--- AGENTIC ---
+Correctness       : 2/4
+Completeness      : 2/4
+Groundedness      : 3/4
+Source compliance : 2/4
+Overall score     : 56.2%
+Verdict           : FAIL
+Time              : 3.81 s
+Passages retrieved: 4
+Judge reason      : The answer gets the basic chronology Johnson -> Truss -> Sunak and correctly gives Truss's dates, but it omits Johnson's start date and Sunak's end date required by the grading notes. It only partially explains the transitions: Johnson's resignation is mentioned, but not the leadership election producing Truss; Truss being succeeded by Sunak is noted, but not her resignation and the ensuing leadership process. Citation coverage is mostly present for the claims made, but the response fails the requirement to cover all three named articles because it does not cite the Rishi Sunak article at all.
+Missing           : ["Does not give Boris Johnson's full term start date (24 July 2019).", "Does not give Rishi Sunak's full term end date (5 July 2024).", "Does not clearly state that Johnson's resignation led to a Conservative leadership election that resulted in Truss succeeding him.", "Does not clearly explain that Truss's resignation triggered the leadership process through which Sunak succeeded her.", "Does not use evidence from the Rishi Sunak article."]
+Unsupported       : ["The claim that Sunak 'became Prime Minister on 25 October 2022' is not cited to the Rishi Sunak article and relies on Liz_Truss.txt#p8 alone.", "The statement that Sunak is 'identified in the context of replacing Truss' is vague and not directly tied to a cited passage from the Rishi Sunak article."]
+
+--- TOOL_USING_AGENT ---
+Correctness       : 3/4
+Completeness      : 3/4
+Groundedness      : 4/4
+Source compliance : 4/4
+Overall score     : 87.5%
+Verdict           : PASS
+Time              : 6.19 s
+Passages retrieved: 6
+Judge reason      : The answer gets the overall chronology right and correctly identifies Truss's and Sunak's terms, with citation coverage tied to all three required articles. It also notes Johnson's resignation as part of the first transition. However, it omits Johnson's full term dates and does not fully explain both leadership transitions as required by the grading notes, especially the Conservative leadership election after Johnson and the resignation/leadership process after Truss.
+Missing           : ["Boris Johnson's full prime ministerial term dates (24 July 2019 to 6 September 2022) are not stated.", "The transition from Johnson to Truss is only partially explained: it mentions Johnson's resignation but does not explicitly mention that the Conservative leadership election resulted in Truss succeeding him.", "The transition from Truss to Sunak is only partially explained: it gives succession facts but does not explicitly explain that Truss resigned and that the ensuing leadership process led to Sunak succeeding her."]
+Unsupported       : []
+
+==============================================================================
+TEST 5
+==============================================================================
+QUESTION
+Locate evidence in the Emmanuel Macron article identifying his presidency of France. Then examine nearby passages to determine what immediately preceding political role or political background the article associates with his rise to the presidency. Support both parts using passage evidence.
+
+--- FIXED ---
+Correctness       : 2/4
+Completeness      : 2/4
+Groundedness      : 4/4
+Source compliance : 4/4
+Overall score     : 75.0%
+Verdict           : PARTIAL
+Time              : 1.74 s
+Passages retrieved: 4
+Judge reason      : The answer correctly identifies evidence that Macron was President of France beginning in 2017 and cites the Emmanuel Macron article. It also provides some nearby political-background evidence by mentioning En Marche. However, the grading notes require the political background associated with his rise to include, especially, his more immediate role as Minister of Economics and Finance and his resignation before the 2017 election, with Deputy Secretary-General of the Elysee as relevant earlier background. Those elements are missing, so the answer is only partially correct and only somewhat complete. All claims presented are tied to passage IDs from the required source article.
+Missing           : ["Does not mention Macron's immediately preceding role as Minister of Economics and Finance", "Does not mention his resignation from government before the 2017 presidential election", "Does not mention the article's more distant political background of serving as Deputy Secretary-General of the Elysee from 2012 to 2014", "Does not clearly distinguish immediate pre-presidential background from earlier career history"]
+Unsupported       : []
+
+--- AGENTIC ---
+Correctness       : 2/4
+Completeness      : 2/4
+Groundedness      : 4/4
+Source compliance : 4/4
+Overall score     : 75.0%
+Verdict           : PARTIAL
+Time              : 3.58 s
+Passages retrieved: 4
+Judge reason      : The answer correctly supports that Macron became President of France beginning in 2017 and cites the Emmanuel Macron article. It also provides one relevant piece of nearby political background—founding En Marche in 2016. However, per the grading notes, the key immediately preceding role associated with his rise is his service as Minister of Economics and Finance, along with resignation from government before the 2017 election, and optionally the earlier Elysee post. Because those central background elements are omitted, the answer is only partially correct and only somewhat complete. All claims made are tied to the required source article and cited passage IDs.
+Missing           : ["Does not identify the more immediate pre-presidential government role as Minister of Economics and Finance.", "Does not mention his earlier Elysee role as Deputy Secretary-General from 2012 to 2014.", "Does not mention his resignation from government before the 2017 presidential election.", "Only partially distinguishes immediate political background from more distant career history."]
+Unsupported       : []
+
+--- TOOL_USING_AGENT ---
+Correctness       : 2/4
+Completeness      : 2/4
+Groundedness      : 4/4
+Source compliance : 4/4
+Overall score     : 75.0%
+Verdict           : PARTIAL
+Time              : 4.97 s
+Passages retrieved: 6
+Judge reason      : The answer correctly identifies that the article presents Macron as President of France since 2017 and supports this with a passage citation. It also correctly cites his immediately prior role as Minister of Economics and Finance from 2014 to 2016. However, it is only partially correct and incomplete relative to the grading notes because it omits key nearby political background the article associates with his rise: his earlier Elysee role, the creation of En Marche, and his resignation from government before the 2017 election. The claim about being a member of Renaissance since founding the party in 2016 does not address the requested En Marche background and does not fully satisfy the requested local-context explanation, though it is cited. All claims given are tied to the required Emmanuel Macron article.
+Missing           : ["Does not mention the more complete immediately preceding political background noted in the article: Deputy Secretary-General of the Elysee from 2012 to 2014.", "Does not mention formation of En Marche and its role in his rise.", "Does not mention that he resigned from government before the 2017 presidential election.", "Does not explicitly connect the ministerial/political background to his rise to the presidency in 2017."]
+Unsupported       : []
+
+==============================================================================
+WORKFLOW SUMMARY
+==============================================================================
+        workflow  questions_evaluated  mean_score  pass_rate  partial_rate  fail_rate  mean_correctness  mean_completeness  mean_groundedness  mean_source_compliance  mean_latency_seconds  mean_passages_retrieved
+           FIXED                    5       67.48       20.0          40.0       40.0               2.2                2.2                3.6                     2.8                  2.09                      4.0
+         AGENTIC                    5       76.24       20.0          60.0       20.0               2.4                2.4                3.8                     3.6                  4.77                      5.0
+TOOL_USING_AGENT                    5       81.26       40.0          60.0        0.0               2.6                2.6                3.8                     4.0                  5.29                     10.0
+
+NOTE
+Groundedness in this standalone evaluator measures citation coverage and source alignment visible in the saved TXT. Full passage-content verification requires the original retrieved passage text.

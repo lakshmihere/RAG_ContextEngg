@@ -1,0 +1,289 @@
+PS C:\Users\laksh\OneDrive\Desktop\MIT\Wiki_Capstones\check_4> python .\capstone_checkpoint_4_1_GRAPH_EXPANDED.py
+Found 65 Wikipedia TXT files.
+Successfully loaded 65 Wikipedia text documents.
+Abraham_Lincoln.txt                             445712 characters
+Adolf_Hitler.txt                                411162 characters
+Barack_Obama.txt                                714968 characters
+Benjamin_Franklin.txt                           476136 characters
+Bernhard_von_Bülow.txt                          122773 characters
+Bill_Clinton.txt                                532172 characters
+Bonar_Law.txt                                   231123 characters
+Boris_Johnson.txt                               600256 characters
+Cleopatra.txt                                   387892 characters
+Davy_Crockett.txt                               196963 characters
+... plus 55 additional documents.
+
+CATEGORY METADATA CHECK
+Topic metadata not found at wikipedia_topics_10.json; graph will use text links only.
+Wikipedia graph ready: 65 nodes, 39 edges.
+Loading existing vector DB from Wikipedia_chroma_full/
+Hybrid retriever ready over 65 Wikipedia articles (BM25 weight=0.4, vector weight=0.6).
+Graph retriever ready (seed_k=2, linked≤3, topic≤3).
+========================================================================================
+Checkpoint 4.1 — Wikipedia advanced retrieval | scenario=wikipedia
+Articles=65 | test queries=15
+========================================================================================
+
+Q1: According to the Wikipedia article on Nelson Mandela, what leadership office did he hold in South Africa and during what years did he serve? Quote the relevant sentence.
+  BASELINE: ['Nelson_Mandela.txt', 'Abraham_Lincoln.txt', 'Barack_Obama.txt']
+  HYBRID:   ['Nelson_Mandela.txt', 'Boris_Johnson.txt', 'George_W._Bush.txt']
+  decomposed into: ['According to the Wikipedia article on Nelson Mandela, what leadership office did he hold in South Africa?', 'According to the Wikipedia article on Nelson Mandela, during what years did he serve in that office?', 'What is the exact sentence in the Wikipedia article on Nelson Mandela that states his office and years of service?']
+  MULTI:    ['Bill_Clinton.txt', 'Abraham_Lincoln.txt', 'Dwight_D._Eisenhower.txt']
+  GRAPH:    ['Nelson_Mandela.txt', 'Boris_Johnson.txt']
+  LABELS:   [('Nelson_Mandela.txt', 'seed'), ('Boris_Johnson.txt', 'seed')]
+
+  [answer generation] sending to LM Studio | context chars=3,653
+  [answer generation] LM Studio response received
+  ANSWER:   According to the document, Mandela was **president of South Africa**. The relevant sentence says:
+
+> "Although the 1996 constitution allowed the president to serve two consecutive five-year terms, Mandela had never planned to stand for a second term in office. He gave his farewell speech to Parliament on 29 March 1999 when it adjourned prior to the 1999 general elections, after which he retired."
+
+From this, the years of his service are **1994 to 1999**.
+
+Q2: According to the Wikipedia article on Queen Victoria, when did her reign begin and when did it end? Quote the relevant evidence from the article.
+  BASELINE: ['Boris_Johnson.txt', 'Cleopatra.txt', 'Edward_Heath.txt']
+  HYBRID:   ['Boris_Johnson.txt', 'Julius_Caesar.txt', 'Rishi_Sunak.txt']
+  decomposed into: ['What dates does the Wikipedia article on Queen Victoria give for the start and end of her reign?', 'What exact sentence or wording in the Queen Victoria article states when her reign began and ended?', "Is there a direct quote in the article mentioning the accession date and death date that bracket Queen Victoria's reign?"]
+  MULTI:    ['James_II_of_England.txt', 'Elizabeth_II.txt', 'Henry_I_of_England.txt']
+  GRAPH:    ['Boris_Johnson.txt', 'Julius_Caesar.txt']
+  LABELS:   [('Boris_Johnson.txt', 'seed'), ('Julius_Caesar.txt', 'seed')]
+
+  [answer generation] sending to LM Studio | context chars=4,857
+  [answer generation] LM Studio response received
+  ANSWER:   I’m sorry, but the provided documents do not include the Wikipedia article on Queen Victoria, so I can’t determine her reign dates from them.
+
+The documents only contain excerpts from:
+- **Boris_Johnson.txt**
+- **Julius_Caesar.txt**
+
+Neither excerpt mentions Queen Victoria or her reign.
+
+Q3: According to the Wikipedia article on Justin Trudeau, identify his nationality, the leadership office he held, and his term of service. Support all parts of the answer with evidence from the article.
+  BASELINE: ['Presidency_of_Joe_Biden.txt', 'Barack_Obama.txt', 'Emmanuel_Macron.txt']
+  HYBRID:   ['Presidency_of_Joe_Biden.txt', 'Boris_Johnson.txt', 'Emmanuel_Macron.txt']
+  decomposed into: ['What nationality is Justin Trudeau according to his Wikipedia article?', 'What leadership office did Justin Trudeau hold according to his Wikipedia article?', "What were the start and end dates of Justin Trudeau's term of service in that leadership office according to his Wikipedia article?"]
+  MULTI:    ['Emmanuel_Macron.txt', 'Presidency_of_Joe_Biden.txt', 'Boris_Johnson.txt']
+  GRAPH:    ['Presidency_of_Joe_Biden.txt', 'Boris_Johnson.txt', 'James_A._Garfield.txt']
+  LABELS:   [('Presidency_of_Joe_Biden.txt', 'seed'), ('Boris_Johnson.txt', 'seed'), ('James_A._Garfield.txt', 'linked')]
+
+  [answer generation] sending to LM Studio | context chars=7,303
+  [answer generation] LM Studio response received
+  ANSWER:   The provided documents do not include the Wikipedia article on Justin Trudeau, so I can’t identify his nationality, leadership office, or term of service from these documents alone.
+
+The documents shown are about Joe Biden, Boris Johnson, and James A. Garfield, not Justin Trudeau.
+
+Q4: According to the Wikipedia article on Margaret Thatcher, what position did she hold in the United Kingdom and during what years did she serve? Quote the relevant sentence.
+  BASELINE: ['Boris_Johnson.txt', 'Edward_Heath.txt', 'Nelson_Mandela.txt']
+  HYBRID:   ['Boris_Johnson.txt', 'Rishi_Sunak.txt', 'Theresa_May.txt']
+  decomposed into: ['What position did Margaret Thatcher hold in the United Kingdom according to the Wikipedia article?', 'During what years did Margaret Thatcher serve in that position according to the Wikipedia article?', 'What is the relevant sentence from the Wikipedia article on Margaret Thatcher that states her position and years of service?']
+  MULTI:    ['Boris_Johnson.txt', 'Edward_Heath.txt', 'Bill_Clinton.txt']
+  GRAPH:    ['Boris_Johnson.txt', 'Rishi_Sunak.txt']
+  LABELS:   [('Boris_Johnson.txt', 'seed'), ('Rishi_Sunak.txt', 'seed')]
+
+  [answer generation] sending to LM Studio | context chars=4,855
+  [answer generation] LM Studio response received
+  ANSWER:   The provided documents do not include the Wikipedia article on Margaret Thatcher, so I can’t determine her position and years of service from them.
+
+Q5: According to the Wikipedia article on Adolf Hitler, identify the major national leadership positions attributed to him and the periods associated with those positions. Use only information stated in the article and quote the supporting evidence.
+  BASELINE: ['Barack_Obama.txt', 'Boris_Johnson.txt', 'John_F._Kennedy.txt']
+  HYBRID:   ['Boris_Johnson.txt', 'Barack_Obama.txt', 'Liz_Truss.txt']
+  decomposed into: ['According to the Wikipedia article on Adolf Hitler, what major national leadership positions are attributed to him, and what periods are associated with each position?', 'In the Adolf Hitlerarticle, what exact wording supports the dates or time spans for his leadership roles?', 'Does the article distinguish between Hitler’s formal office titles and his de facto leadership status, and what evidence is given?']
+  MULTI:    ['Barack_Obama.txt', 'Margaret_Thatcher.txt', 'Bill_Clinton.txt']
+  GRAPH:    ['Boris_Johnson.txt', 'Barack_Obama.txt', 'James_A._Garfield.txt']
+  LABELS:   [('Boris_Johnson.txt', 'seed'), ('Barack_Obama.txt', 'seed'), ('James_A._Garfield.txt', 'linked')]
+
+  [answer generation] sending to LM Studio | context chars=7,292
+  [answer generation] LM Studio response received
+  ANSWER:   I’m sorry, but the provided documents do not include the Wikipedia article on Adolf Hitler, so I can’t identify his leadership positions or dates from the supplied text.
+
+The documents shown are for **Boris Johnson**, **Barack Obama**, and **James A. Garfield**, not Adolf Hitler.
+
+Q6: Quote, word for word, the opening sentence of the Wikipedia article on George Washington. Do not paraphrase.
+  BASELINE: ['Barack_Obama.txt', 'Benjamin_Franklin.txt', 'Bill_Clinton.txt']
+  HYBRID:   ['Boris_Johnson.txt', 'Nelson_Mandela.txt', 'James_Buchanan.txt']
+  decomposed into: ['What is the opening sentence of the Wikipedia article on George Washington?', 'Provide the exact first sentence word for word from that article']
+  MULTI:    ['Bill_Clinton.txt', 'Elizabeth_II.txt', 'Donald_Trump.txt']
+  GRAPH:    ['Boris_Johnson.txt', 'Nelson_Mandela.txt']
+  LABELS:   [('Boris_Johnson.txt', 'seed'), ('Nelson_Mandela.txt', 'seed')]
+
+  [answer generation] sending to LM Studio | context chars=4,858
+  [answer generation] LM Studio response received
+  ANSWER:   I’m sorry, but the provided documents do not include the Wikipedia article on George Washington, so I can’t quote its opening sentence word for word.
+
+Q7: According to the Wikipedia article on Abraham Lincoln, which numbered president of the United States was he and when did he serve? Quote the relevant sentence.
+  BASELINE: ['Nelson_Mandela.txt', 'Abraham_Lincoln.txt', 'Barack_Obama.txt']
+  HYBRID:   ['Boris_Johnson.txt', 'Ulysses_S._Grant.txt', 'Justin_Trudeau.txt']
+  decomposed into: ['According to the Wikipedia article on Abraham Lincoln, what numbered president of the United States was he?', 'According to the Wikipedia article on Abraham Lincoln, when did he serve as president?', 'What is the exact sentence in the Wikipedia article on Abraham Lincoln that states his presidential number and term dates?']
+  MULTI:    ['Bill_Clinton.txt', 'Abraham_Lincoln.txt', 'Donald_Trump.txt']
+  GRAPH:    ['Boris_Johnson.txt', 'Ulysses_S._Grant.txt', 'William_Henry_Harrison.txt']
+  LABELS:   [('Boris_Johnson.txt', 'seed'), ('Ulysses_S._Grant.txt', 'seed'), ('William_Henry_Harrison.txt', 'linked')]
+
+  [answer generation] sending to LM Studio | context chars=6,096
+  [answer generation] LM Studio response received
+  ANSWER:   I’m sorry, but the provided documents do not include the Wikipedia article on Abraham Lincoln, so I can’t answer that from the documents alone.
+
+Q8: Using the Wikipedia chunks on George Washington, Abraham Lincoln, and Barack Obama, identify which numbered U.S. president each was and the years each served. Provide supporting evidence from all three articles.
+  BASELINE: ['Barack_Obama.txt', 'Franklin_D._Roosevelt.txt', 'John_F._Kennedy.txt']
+  HYBRID:   ['Jimmy_Carter.txt', 'Bill_Clinton.txt', 'Dwight_D._Eisenhower.txt']
+  decomposed into: ['What numbered U.S. president was George Washington, and what years did he serve?', 'What numbered U.S. president was Abraham Lincoln, and what years did he serve?', 'What numbered U.S. president was Barack Obama, and what years did he serve?']
+  MULTI:    ['Abraham_Lincoln.txt', 'Barack_Obama.txt', 'Bill_Clinton.txt']
+  GRAPH:    ['Jimmy_Carter.txt', 'Bill_Clinton.txt', 'James_A._Garfield.txt']
+  LABELS:   [('Jimmy_Carter.txt', 'seed'), ('Bill_Clinton.txt', 'seed'), ('James_A._Garfield.txt', 'linked')]
+
+  [answer generation] sending to LM Studio | context chars=4,881
+  [answer generation] LM Studio response received
+  ANSWER:   I can identify the presidents and dates **only for George Washington and Barack Obama from the provided chunks**. I do **not** have a usable chunk for Abraham Lincoln in the supplied documents, so I can’t quote that one without guessing.
+
+From the documents:
+
+- **George Washington** — the list of presidents includes “**1. [George Washington]**,” indicating he was the **1st U.S. president**.  
+  The visible document snippet also shows later presidents in sequence, which confirms the numbering format.
+
+- **Barack Obama** — the document explicitly says “**44. [Barack Obama] ([2009–2017])**,” so he was the **44th U.S. president**, serving **2009–2017**.
+
+- **Abraham Lincoln** — **not supported by the provided chunks**. The James A. Garfield chunk mentions Lincoln in passing, but it does **not** identify Lincoln’s presidential number or years served.
+
+If you want, I can still answer the Lincoln part if you provide the Lincoln Wikipedia chunk.
+
+Q9: According to the Wikipedia article on Emmanuel Macron, what national leadership office does the article identify him as holding? Quote the relevant sentence.
+  BASELINE: ['Boris_Johnson.txt', 'Donald_Trump.txt', 'Edward_Heath.txt']
+  HYBRID:   ['Boris_Johnson.txt', 'Rishi_Sunak.txt', 'Edward_Heath.txt']
+  decomposed into: ['According to the Wikipedia article on Emmanuel Macron, what national leadership office is he identified as holding?', 'What is the exact sentence in the Wikipedia article on Emmanuel Macron that states his national leadership office?']
+  MULTI:    ['Donald_Trump.txt', 'Justin_Trudeau.txt', 'Bill_Clinton.txt']
+  GRAPH:    ['Boris_Johnson.txt', 'Rishi_Sunak.txt']
+  LABELS:   [('Boris_Johnson.txt', 'seed'), ('Rishi_Sunak.txt', 'seed')]
+
+  [answer generation] sending to LM Studio | context chars=4,855
+  [answer generation] LM Studio response received
+  ANSWER:   I’m sorry, but the provided documents do not include the Wikipedia article on Emmanuel Macron, so I can’t verify what national leadership office it identifies him as holding.
+
+Q10: Compare Margaret Thatcher and Theresa May using their respective Wikipedia chunks. What leadership office did they share, and when did each serve? Cite evidence from both articles.
+  BASELINE: ['Barack_Obama.txt', 'Bill_Clinton.txt', 'Boris_Johnson.txt']
+  HYBRID:   ['Boris_Johnson.txt', 'Theresa_May.txt', 'Margaret_Thatcher.txt']
+  decomposed into: ['What leadership office did Margaret Thatcher hold, and what were the dates of her tenure according to her Wikipedia article?', 'What leadership office did Theresa May hold, and what were thedates of her tenure according to her Wikipedia article?', 'What evidence from both Wikipedia articles shows the shared leadership office and the service dates for Margaret Thatcher and Theresa May?']
+  MULTI:    ['Boris_Johnson.txt', 'Margaret_Thatcher.txt', 'Theresa_May.txt']
+  GRAPH:    ['Boris_Johnson.txt', 'Theresa_May.txt']
+  LABELS:   [('Boris_Johnson.txt', 'seed'), ('Theresa_May.txt', 'seed')]
+
+  [answer generation] sending to LM Studio | context chars=3,650
+  [answer generation] LM Studio response received
+  ANSWER:   Margaret Thatcher and Theresa May both held the office of **Prime Minister of the United Kingdom**.
+
+From the Theresa May chunk: she “**served as Leader of the Conservative Party from 2016 to 2019**” and is described as “**the second female British prime minister**.”  
+From the Margaret Thatcher article, Thatcher is listed as a former British prime minister; the comparison in the Theresa May article explicitly says May was “**after Margaret Thatcher**,” confirming Thatcher also held that office.
+
+So, the shared leadership office was **Prime Minister**, and the service periods were:
+- **Margaret Thatcher:** Prime Minister from **1979 to 1990**
+- **Theresa May:** Prime Minister from **2016 to 2019**
+
+I should note: the provided Theresa May chunk explicitly gives her Conservative Party leadership dates, but not her prime minister dates; the Thatcher dates are also not fully shown in the excerpt. So the exact service dates are not fully contained in the provided chunks.
+
+Q11: According to the Wikipedia article titled 'Presidency of Joe Biden', what event marked the beginning of Biden's presidential tenure and on what date did it occur? Quote the relevant sentence from that article. Do not answer from a general Joe Biden biography.
+  BASELINE: ['Boris_Johnson.txt', 'Jimmy_Carter.txt', 'George_W._Bush.txt']
+  HYBRID:   ['Boris_Johnson.txt', 'George_W._Bush.txt', 'Jimmy_Carter.txt']
+  decomposed into: ["In the Wikipedia article 'Presidency of Joe Biden', what event is described as marking the beginning of Biden's presidential tenure?", "In the Wikipedia article 'Presidency of Joe Biden', onwhat exact date did that event occur?", "What is the relevant sentence in 'Presidency of Joe Biden' that mentions the event and date together?"]
+  MULTI:    ['Bill_Clinton.txt', 'Presidency_of_Joe_Biden.txt', 'Boris_Johnson.txt']
+  GRAPH:    ['Boris_Johnson.txt', 'George_W._Bush.txt', 'William_Henry_Harrison.txt']
+  LABELS:   [('Boris_Johnson.txt', 'seed'), ('George_W._Bush.txt', 'seed'), ('William_Henry_Harrison.txt', 'linked')]
+
+  [answer generation] sending to LM Studio | context chars=7,299
+  [answer generation] LM Studio response received
+  ANSWER:   The provided documents do **not** include the article titled **“Presidency of Joe Biden”**, so I can’t quote the relevant sentence from that article or verify the exact event and date from it.
+
+If you want, I can help answer using another provided document, but I shouldn’t guess without the specific article text.
+
+Q12: Compare Nelson Mandela and Suharto using their respective Wikipedia chunks. What country did each lead, what office did each hold, and how did their periods of leadership differ? Quote evidence from both articles.
+  BASELINE: ['Barack_Obama.txt', 'Nelson_Mandela.txt', 'Abraham_Lincoln.txt']
+  HYBRID:   ['Nelson_Mandela.txt', 'Bill_Clinton.txt', 'Suharto.txt']
+  decomposed into: ['What country did Nelson Mandela lead, and what office did he hold according to his Wikipedia chunk? Quote the relevant evidence.', 'What country did Suharto lead, and what office did he holdaccording to his Wikipedia chunk? Quote the relevant evidence.', "How did Nelson Mandela's and Suharto's periods of leadership differ in duration, chronology, or manner, based on their Wikipedia chunks? Quote evidence from both articles."]
+  MULTI:    ['Dwight_D._Eisenhower.txt', 'Nelson_Mandela.txt', 'Barack_Obama.txt']
+  GRAPH:    ['Nelson_Mandela.txt', 'Bill_Clinton.txt', 'James_A._Garfield.txt']
+  LABELS:   [('Nelson_Mandela.txt', 'seed'), ('Bill_Clinton.txt', 'seed'), ('James_A._Garfield.txt', 'linked')]
+
+  [answer generation] sending to LM Studio | context chars=6,088
+  [answer generation] LM Studio response received
+  ANSWER:   The provided chunks do **not** contain enough information to answer the comparison fully.
+
+What we can say from the Mandela chunk is:
+
+- Mandela led **South Africa**: he “**became president**” after the “**1994 multiracial general election**.”
+- His period of leadership came **after imprisonment and negotiation**, since “**Mandela served 27 years in prison**” and then “**Mandela and de Klerk led efforts to negotiate an end to apartheid**.”
+
+However, the provided documents do **not** include the relevant Suharto chunk at all, so I can’t quote evidence about:
+
+- what country Suharto led,
+- what office he held, or
+- how his leadership period differed from Mandela’s.
+
+If you provide the Suharto document chunk, I can compare them directly using only the supplied text.
+
+Q13: Quote, word for word, the opening sentence of the Wikipedia article on Cleopatra. Do not supplement the quotation with outside knowledge.
+  BASELINE: ['Boris_Johnson.txt', 'Bonar_Law.txt', 'Cleopatra.txt']
+  HYBRID:   ['Julius_Caesar.txt', 'Cleopatra.txt', 'Boris_Johnson.txt']
+  decomposed into: ['What is the opening sentence of the Wikipedia article on Cleopatra?', 'What exact wording appears as the first sentence in the Cleopatra Wikipedia article?']
+  MULTI:    ['Henry_I_of_England.txt', 'Hermann_Göring.txt', 'Bill_Clinton.txt']
+  GRAPH:    ['Julius_Caesar.txt', 'Cleopatra.txt']
+  LABELS:   [('Julius_Caesar.txt', 'seed'), ('Cleopatra.txt', 'seed')]
+
+  [answer generation] sending to LM Studio | context chars=3,648
+  [answer generation] LM Studio response received
+  ANSWER:   The provided document for **Cleopatra** does not include the opening sentence of the article. It only shows a references/links section, not the article’s first sentence, so I can’t quote it word for word from the provided text.
+
+Q14: According to the Wikipedia article on Suharto, what does the article state about his political role, his presidency of Indonesia, and the length or period of his leadership? Quote the relevant evidence.
+  BASELINE: ['Bill_Clinton.txt', 'Boris_Johnson.txt', 'Dwight_D._Eisenhower.txt']
+  HYBRID:   ['Suharto.txt', 'Nelson_Mandela.txt', 'Bill_Clinton.txt']
+  decomposed into: ['What does the Wikipedia article on Suharto say about his political role or position in Indonesia?', 'What does the Wikipedia article on Suharto say about his presidency of Indonesia?', 'Whatdoes the Wikipedia article on Suharto say about the length or period of his leadership, and what exact wording does it use?']
+  MULTI:    ['Bill_Clinton.txt', 'Dwight_D._Eisenhower.txt', 'Jimmy_Carter.txt']
+  GRAPH:    ['Suharto.txt', 'Nelson_Mandela.txt']
+  LABELS:   [('Suharto.txt', 'seed'), ('Nelson_Mandela.txt', 'seed')]
+
+  [answer generation] sending to LM Studio | context chars=3,647
+  [answer generation] LM Studio response received
+  ANSWER:   The provided Suharto document only says that, because of weak parliamentary activity and support from the Golkar/military bloc, **“Suharto was able to effectively rule by decree for most of his tenure.”** It also says the Golkar/military bloc was strong enough to make **“the MPR and DPR into rubber stamps for his policies.”**
+
+However, the excerpt you provided does **not** contain a direct statement identifying his political role, his presidency of Indonesia, or the exact length/period of his leadership. So I can only quote the evidence above and say the rest is not contained in the provided text.
+
+Q15: Using the Wikipedia chunks on Boris Johnson, Liz Truss, and Rishi Sunak, identify the prime-ministerial term stated for each person and place the three leaders in chronological order. Quote supporting evidence from each article.
+  BASELINE: ['Boris_Johnson.txt', 'Bonar_Law.txt', 'Liz_Truss.txt']
+  HYBRID:   ['John_Major.txt', 'Margaret_Thatcher.txt', 'John_Russell,_1st_Earl_Russell.txt']
+  decomposed into: ['What prime-ministerial term is stated for Boris Johnson in the Wikipedia chunk, and what exact supporting quote gives that term?', 'What prime-ministerial term is stated for Liz Truss in theWikipedia chunk, and what exact supporting quote gives that term?', 'What prime-ministerial term is stated for Rishi Sunak in the Wikipedia chunk, and what exact supporting quote gives that term?', 'Based on thestated terms, what is the chronological order of Boris Johnson, Liz Truss, and Rishi Sunak as UK prime ministers?']
+  MULTI:    ['Boris_Johnson.txt', 'Bonar_Law.txt', 'John_Major.txt']
+  GRAPH:    ['John_Major.txt', 'Margaret_Thatcher.txt']
+  LABELS:   [('John_Major.txt', 'seed'), ('Margaret_Thatcher.txt', 'seed')]
+
+  [answer generation] sending to LM Studio | context chars=2,448
+  [answer generation] LM Studio response received
+  ANSWER:   I can’t answer this from the provided documents.
+
+The chunks shown for **Boris Johnson**, **Liz Truss**, and **Rishi Sunak** are not included here, so I don’t have the prime-ministerial terms from their articles to quote or use for ordering. The visible text only shows name lists such as:
+
+- “**[Johnson](/wiki/Boris_Johnson "Boris Johnson")**”
+- “**[Truss](/wiki/Liz_Truss "Liz Truss")**”
+- “**[Sunak](/wiki/Rishi_Sunak "Rishi Sunak")**”
+
+but it does **not** state their term dates.
+
+If you provide the actual chunks from those three articles, I can identify each term and put them in chronological order with quotations.
+
+Advanced-retrieval plan:
+{
+  "technique": "both",
+  "node_types": [
+    "article",
+    "category",
+    "topic"
+  ],
+  "edge_types": [
+    "belongs_to_category",
+    "category_contains",
+    "relates_to"
+  ],
+  "test_queries": [
+    "Compare the leadership roles and historical significance of Margaret Thatcher and Adolf Hitler as described in their respective Wikipedia articles. Support the comparison with a direct quote from each article.",
+    "According to the Wikipedia article on Emirates, when was the airline founded, where is it based, and who owns it?",
+    "According to the Wikipedia article on Margaret Thatcher, where did she study, what degree did she receive, and when did she graduate?"
+  ],
+  "rationale": "The Wikipedia corpus contains complex multi-part questions and relationships among articles, categories, and topics. Query decomposition separates complex questions into focused retrieval needs, while graph-based retrieval can expand the initial hybrid retrieval results through shared Wikipedia metadata. Together, these techniques are intended to improve evidence coverage for questions that are difficultto answer with a single retrieval pass."
+}
+========================================================================================
+PS C:\Users\laksh\OneDrive\Desktop\MIT\Wiki_Capstones\check_4> 
